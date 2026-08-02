@@ -51,7 +51,7 @@ export default function ProposalsPage() {
                 pkg.featured ? "bg-ink text-sand-light border-ink" : "bg-cream-card text-ink border-ink/10"
               }`}
             >
-              <div className="relative aspect-[4/3]">
+              <div className="relative aspect-square bg-cream-card">
                 <Image src={pkg.img} alt={pkg.name} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
               </div>
               <div className="p-8 flex flex-col flex-1">
@@ -105,7 +105,8 @@ export default function ProposalsPage() {
           <p className="text-ink-soft max-w-xl mb-8">
             Watch a real proposal reveal, and see more on our official TikTok.
           </p>
-          <div className="max-w-2xl rounded-2xl overflow-hidden border border-ink/10 mb-8">
+
+          <div className="rounded-2xl overflow-hidden border border-ink/10 shadow-lg mb-6">
             <div className="relative aspect-video">
               <iframe
                 src="https://www.youtube.com/embed/2Q6u-VzaCH8?si=ezziYnUg6kq5_upc"
@@ -117,17 +118,50 @@ export default function ProposalsPage() {
               />
             </div>
           </div>
+
           <a
             href={SOCIAL_LINKS.tiktokOfficial}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-full bg-ink text-sand-light px-7 py-3 font-semibold hover:bg-clay-deep transition-colors"
+            className="inline-block rounded-full bg-ink text-sand-light px-7 py-3 font-semibold hover:bg-clay-deep transition-colors mb-16"
           >
             Watch more on TikTok
           </a>
+
+          {/* More reveals — portrait TikTok row */}
+          <div className="flex items-center gap-3 mb-6">
+            <span className="divider-arch text-clay-deep" aria-hidden="true" />
+            <h3 className="font-display text-2xl text-ink">More reveals from TikTok</h3>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-5">
+            {/*
+              To feature a specific TikTok video, replace each placeholder
+              below with:
+              <TikTokEmbed url="https://www.tiktok.com/@azure.staycation2/video/XXXXXXXXXXXXXXXXXX" videoId="XXXXXXXXXXXXXXXXXX" />
+              Get the video ID from the numbers at the end of the video's
+              share link.
+            */}
+            {[1, 2, 3].map((n) => (
+              <a
+                key={n}
+                href={SOCIAL_LINKS.tiktokOfficial}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative aspect-[9/16] rounded-2xl overflow-hidden border border-ink/10 bg-ink flex flex-col items-center justify-center text-sand-light/70 hover:text-sand-light hover:border-clay-deep transition-colors"
+              >
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" className="mb-2">
+                  <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z" />
+                </svg>
+                <span className="text-xs font-medium px-3 text-center">
+                  Add a reveal video
+                </span>
+              </a>
+            ))}
+          </div>
           <p className="text-xs text-ink-soft/60 mt-4 max-w-md">
-            Have more reveal videos you&rsquo;d like added here? Send the
-            YouTube or TikTok links and they can be embedded the same way.
+            Send the specific TikTok video links you&rsquo;d like featured
+            here (not just the profile link) and they&rsquo;ll be embedded as
+            real playable portrait clips, right alongside the YouTube video.
           </p>
         </div>
       </section>

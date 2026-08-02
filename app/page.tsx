@@ -101,7 +101,7 @@ export default function Home() {
           </div>
 
           <div className="relative">
-            <div className="arch aspect-[3/4] relative border border-ink/10">
+            <div className="relative aspect-square rounded-2xl overflow-hidden border border-ink/10">
               <Image
                 src="/images/unit-bedroom.jpg"
                 alt="Azure Staycation by Siaos one-bedroom unit"
@@ -164,10 +164,17 @@ export default function Home() {
             <span className="divider-arch text-clay-deep" aria-hidden="true" />
             <h2 className="font-display text-3xl text-ink">Guest&rsquo;s Ratings / Reviews</h2>
           </div>
-          <p className="text-ink-soft max-w-lg mx-auto mb-8">
+          <p className="text-ink-soft max-w-lg mx-auto mb-10">
             See what real guests have said about their stay and celebration
             setups with us.
           </p>
+          <div className="grid md:grid-cols-3 gap-5 mb-10 text-left">
+            {["/images/review-1.jpg", "/images/review-2.jpg", "/images/review-3.jpg"].map((src) => (
+              <div key={src} className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-ink/10">
+                <Image src={src} alt="Guest review" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
+              </div>
+            ))}
+          </div>
           <a
             href={CANVA_LINKS.clientReviews}
             target="_blank"
