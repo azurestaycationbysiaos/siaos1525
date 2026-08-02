@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --color-sand: #EAE1D0;
+  --color-sand-light: #F4EFE4;
+  --color-ink: #2E2013;
+  --color-ink-soft: #4A3A28;
+  --color-clay: #B97A63;
+  --color-clay-deep: #9C5C46;
+  --color-sage: #7C8867;
+  --color-sage-deep: #5F6B4D;
+  --color-gold: #C79A3F;
+  --color-cream-card: #FBF8F2;
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Libre Franklin', system-ui, sans-serif;
+}
+
+@theme inline {
+  --color-sand: var(--color-sand);
+  --color-sand-light: var(--color-sand-light);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-clay: var(--color-clay);
+  --color-clay-deep: var(--color-clay-deep);
+  --color-sage: var(--color-sage);
+  --color-sage-deep: var(--color-sage-deep);
+  --color-gold: var(--color-gold);
+  --color-cream-card: var(--color-cream-card);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-sand-light);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Arch signature shape, used to frame photography and mark section breaks */
+.arch {
+  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+  overflow: hidden;
+}
+
+.arch-top {
+  border-radius: 999px 999px 0 0;
+}
+
+.divider-arch {
+  width: 56px;
+  height: 28px;
+  border: 2px solid currentColor;
+  border-bottom: none;
+  border-radius: 999px 999px 0 0;
+}
+
+/* Focus visibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-clay);
+  outline-offset: 3px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
