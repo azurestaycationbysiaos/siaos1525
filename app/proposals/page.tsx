@@ -38,7 +38,8 @@ export default function ProposalsPage() {
           Trusted with Intimate Events since 2023
         </p>
         <h1 className="font-display text-5xl text-ink leading-[1.05] max-w-2xl">
-          Intimate Wedding <em className="italic text-clay-deep">Proposal Packages</em>
+          Intimate Wedding<br />
+          <em className="italic text-clay-deep">Proposal Packages</em>
         </h1>
       </section>
 
@@ -132,7 +133,7 @@ export default function ProposalsPage() {
           <div className="flex items-center gap-3 mb-6">
             <h3 className="font-display text-2xl text-ink">More reveals from TikTok</h3>
           </div>
-          <div className="grid grid-cols-2 gap-5 max-w-md">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 max-w-2xl">
             <div className="rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
               <TikTokEmbed
                 url="https://www.tiktok.com/@azure.staycation2/video/7663277706225716501"
@@ -145,11 +146,17 @@ export default function ProposalsPage() {
                 videoId="7402220237451578641"
               />
             </div>
+            <div className="rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
+              <TikTokEmbed
+                url="https://www.tiktok.com/@azure.staycation2/video/7545708408477879560"
+                videoId="7545708408477879560"
+              />
+            </div>
           </div>
           <p className="text-xs text-ink-soft/60 mt-4 max-w-md">
             Have another reveal video you&rsquo;d like added here? Send the
-            embed code (TikTok: Share → Embed) and it&rsquo;ll be added as a
-            third clip.
+            embed code (TikTok: Share → Embed) and it&rsquo;ll be added
+            alongside these.
           </p>
         </div>
       </section>
