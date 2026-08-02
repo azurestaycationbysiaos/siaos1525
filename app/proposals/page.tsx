@@ -133,7 +133,7 @@ export default function ProposalsPage() {
           <div className="flex items-center gap-3 mb-6">
             <h3 className="font-display text-2xl text-ink">More reveals from TikTok</h3>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 max-w-2xl">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-2xl mx-auto sm:mx-0">
             <div className="rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
               <TikTokEmbed
                 url="https://www.tiktok.com/@azure.staycation2/video/7663277706225716501"
@@ -153,11 +153,6 @@ export default function ProposalsPage() {
               />
             </div>
           </div>
-          <p className="text-xs text-ink-soft/60 mt-4 max-w-md">
-            Have another reveal video you&rsquo;d like added here? Send the
-            embed code (TikTok: Share → Embed) and it&rsquo;ll be added
-            alongside these.
-          </p>
         </div>
       </section>
 
@@ -165,11 +160,11 @@ export default function ProposalsPage() {
       <section id="book" className="mx-auto max-w-6xl px-6 py-24">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h2 className="font-display text-3xl text-ink mb-4">Tell us your love story.</h2>
+            <h2 className="font-display text-3xl text-ink mb-4">Start Planning Your Proposal</h2>
             <p className="text-ink-soft max-w-sm mb-8">
-              We&rsquo;ll design the moment around it. Fill out the inquiry
-              form and we&rsquo;ll get back to you with availability and next
-              steps — usually within a few hours.
+              Fill out the inquiry form to check availability, choose the
+              perfect proposal package, and personalize your proposal setup.
+              We&rsquo;ll get back to you within a few hours.
             </p>
           </div>
 
@@ -244,7 +239,7 @@ export default function ProposalsPage() {
             </div>
             <div>
               <label htmlFor="message" className="text-sm text-ink-soft">
-                Tell us your love story
+                Personalize your proposal setup
               </label>
               <textarea
                 id="message"

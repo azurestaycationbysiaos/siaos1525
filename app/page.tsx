@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import TeamSection from "./components/TeamSection";
+import BookingForm from "./components/BookingForm";
 import { SOCIAL_LINKS, CANVA_LINKS, CONTACT } from "../lib/links";
 
 const AMENITIES = [
@@ -31,10 +33,10 @@ const SOCIAL_PROOFS = [
 ];
 
 const READY_TO_BOOK = [
-  { label: "House Rules", href: CANVA_LINKS.houseRules },
-  { label: "Booking Process", href: CANVA_LINKS.bookingProcess },
-  { label: "Payment Channels", href: CANVA_LINKS.paymentChannels },
-  { label: "Terms and Conditions", href: CANVA_LINKS.termsAndConditions },
+  { label: "House Rules", href: "/house-rules", internal: true },
+  { label: "Booking Process", href: CANVA_LINKS.bookingProcess, internal: false },
+  { label: "Payment Channels", href: CANVA_LINKS.paymentChannels, internal: false },
+  { label: "Terms and Conditions", href: "/terms-and-conditions", internal: true },
 ];
 
 export default function Home() {
@@ -54,7 +56,7 @@ export default function Home() {
             priority
           />
           <div className="absolute inset-0 bg-ink/20 flex items-end justify-center pb-4 sm:pb-6">
-            <p className="font-display italic text-sand-light text-sm sm:text-lg md:text-xl tracking-wide drop-shadow-md text-center px-4">
+            <p className="font-display italic text-sand-light text-xl sm:text-2xl md:text-3xl tracking-wide drop-shadow-md text-center px-4">
               Trusted with Intimate Events since 2023
             </p>
           </div>
@@ -110,10 +112,6 @@ export default function Home() {
                 className="object-cover"
                 priority
               />
-            </div>
-            <div className="absolute -bottom-6 -left-6 hidden md:block bg-cream-card border border-ink/10 rounded-2xl px-5 py-4 shadow-sm">
-              <p className="font-display text-2xl text-clay-deep">Since 2023</p>
-              <p className="text-xs text-ink-soft">Trusted with intimate events</p>
             </div>
           </div>
         </div>
@@ -179,14 +177,12 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <a
-            href={CANVA_LINKS.clientReviews}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/reviews"
             className="inline-block rounded-full bg-ink text-sand-light px-7 py-3 font-semibold hover:bg-clay-deep transition-colors"
           >
             What our clients say about us
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -241,6 +237,8 @@ export default function Home() {
         </div>
       </section>
 
+      <TeamSection />
+
       {/* Other Social Proofs */}
       <section className="bg-cream-card border-y border-ink/10">
         <div className="mx-auto max-w-6xl px-6 py-20">
@@ -269,17 +267,27 @@ export default function Home() {
           <h2 className="font-display text-3xl text-ink">Ready to Book?</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-          {READY_TO_BOOK.map((r) => (
-            <a
-              key={r.label}
-              href={r.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-xl border border-ink/10 px-4 py-6 text-sm font-semibold text-ink hover:border-clay-deep hover:text-clay-deep transition-colors"
-            >
-              {r.label}
-            </a>
-          ))}
+          {READY_TO_BOOK.map((r) =>
+            r.internal ? (
+              <Link
+                key={r.label}
+                href={r.href}
+                className="rounded-xl border border-ink/10 px-4 py-6 text-sm font-semibold text-ink hover:border-clay-deep hover:text-clay-deep transition-colors"
+              >
+                {r.label}
+              </Link>
+            ) : (
+              <a
+                key={r.label}
+                href={r.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl border border-ink/10 px-4 py-6 text-sm font-semibold text-ink hover:border-clay-deep hover:text-clay-deep transition-colors"
+              >
+                {r.label}
+              </a>
+            )
+          )}
         </div>
         <Link
           href="/proposals#book"
@@ -288,6 +296,13 @@ export default function Home() {
           Book your celebration
         </Link>
       </section>
+
+      <BookingForm
+        heading="Book Your Staycation"
+        subtext="Share your preferred dates, number of guests, and any special requests. We'll help you plan a comfortable and hassle-free staycation."
+        requestLabel="Special requests"
+        requestPlaceholder="Anything we should prepare or know ahead of your stay"
+      />
 
       {/* Contact */}
       <section id="contact" className="bg-ink text-sand-light">

@@ -15,7 +15,7 @@ export default function TikTokEmbed({
         className="tiktok-embed"
         cite={url}
         data-video-id={videoId}
-        style={{ maxWidth: "325px", minWidth: "270px", margin: "0 auto" }}
+        style={{ maxWidth: "325px", width: "100%", margin: "0 auto" }}
       >
         <section />
       </blockquote>

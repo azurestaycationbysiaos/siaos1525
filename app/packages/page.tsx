@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import BookingForm from "../components/BookingForm";
 import { CANVA_LINKS } from "../../lib/links";
 
 export const metadata = {
@@ -96,6 +97,14 @@ export default function PackagesPage() {
           </div>
         ))}
       </section>
+
+      <BookingForm
+        heading="Plan Your Staycation + Celebration"
+        subtext="Share your celebration details, preferred date, number of guests, decoration theme, and special requests. We'll recommend the best staycation and room decoration package for your occasion."
+        showDecorTheme
+        requestLabel="Celebration details"
+        requestPlaceholder="What are you celebrating, and anything else we should know"
+      />
 
       <Footer />
     </div>
