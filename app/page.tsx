@@ -1,49 +1,40 @@
+import Image from "next/image";
 import Link from "next/link";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { SOCIAL_LINKS, CANVA_LINKS, CONTACT } from "../lib/links";
 
-const PACKAGES = [
-  {
-    name: "Signature Proposal Setup",
-    price: "₱10,999",
-    tagline: "For the moment you get down on one knee.",
-    inclusions: [
-      "One-area themed decoration (balloon arch, petals, fairy lights)",
-      "\"Marry Me\" signage",
-      "LED candles and ambient lighting",
-      "Bluetooth speaker for your playlist or speech backing track",
-      "2 hours of private, uninterrupted access to the setup",
-    ],
-  },
-  {
-    name: "Happily Ever After Setup",
-    price: "₱14,999",
-    tagline: "Full-room transformation, built for the whole story — not just the ask.",
-    inclusions: [
-      "Everything in the Signature Setup",
-      "Full-room decoration, not just one area",
-      "Private candlelit dinner setup for two",
-      "Rose petal pathway from the door to the proposal spot",
-      "Dessert or cake spread on request",
-      "Priority scheduling for golden-hour timing",
-    ],
-    featured: true,
-  },
+const AMENITIES = [
+  { img: "/images/amenity-entertainment.jpg", label: "Entertainment for couples, groups of four, and families" },
+  { img: "/images/amenity-dining.jpg", label: "Romantic dining setup + optional meal service (additional fee for meals)" },
+  { img: "/images/amenity-kitchen.jpg", label: "Fully equipped kitchen with complete cookware and dining ware" },
+  { img: "/images/amenity-projector.jpg", label: "Projector and portable karaoke" },
+  { img: "/images/amenity-ps4games.jpg", label: "PS4 games for kids and kids at heart" },
+  { img: "/images/amenity-ps4console.jpg", label: "PS4 console for entertainment" },
+  { img: "/images/amenity-karaoke.jpg", label: "Platinum karaoke with 2 microphones" },
+  { img: "/images/amenity-netflix.jpg", label: "Netflix and Disney+ access" },
+  { img: "/images/amenity-cards.jpg", label: "Card and board games" },
 ];
 
-const TRUST_POINTS = [
-  {
-    title: "We've done this before",
-    body: "Every setup is pre-tested — timing, lighting, and flow are already worked out from real proposals we've run, not a first attempt.",
-  },
-  {
-    title: "Discretion, handled",
-    body: "Our team briefs on your exact timing so there are no interruptions, no staff walking in at the wrong second, no giveaways.",
-  },
-  {
-    title: "Verifiable, not anonymous",
-    body: "We're a real, ID-verified operator with an active transaction history and a name behind the business — check our legitimacy proof before you book.",
-  },
+const SUNSET_VIEWS = [
+  { img: "/images/sunset-1.jpg", label: "Pink and purple skies" },
+  { img: "/images/sunset-2.jpg", label: "Sunset view" },
+  { img: "/images/sunset-3.jpg", label: "See planes taking off" },
+];
+
+const SOCIAL_PROOFS = [
+  { label: "Official Facebook Page", href: SOCIAL_LINKS.facebookPage },
+  { label: "Official TikTok Account", href: SOCIAL_LINKS.tiktokOfficial },
+  { label: "Instagram Account", href: SOCIAL_LINKS.instagram },
+  { label: "Owner's TikTok Account", href: SOCIAL_LINKS.tiktokOwner },
+  { label: "Closed Deals Proof", href: SOCIAL_LINKS.closedDealsAlbum },
+];
+
+const READY_TO_BOOK = [
+  { label: "House Rules", href: CANVA_LINKS.houseRules },
+  { label: "Booking Process", href: CANVA_LINKS.bookingProcess },
+  { label: "Payment Channels", href: CANVA_LINKS.paymentChannels },
+  { label: "Terms and Conditions", href: CANVA_LINKS.termsAndConditions },
 ];
 
 export default function Home() {
@@ -51,6 +42,26 @@ export default function Home() {
     <div className="flex flex-col">
       <Header />
 
+      {/* Hero banner strip */}
+      <section className="relative">
+        <div className="relative w-full h-[220px] sm:h-[320px] md:h-[420px]">
+          <Image
+            src="/images/hero-banner.jpg"
+            alt="Azure Staycation by Siaos proposal setups"
+            fill
+            sizes="100vw"
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-ink/20 flex items-end justify-center pb-4 sm:pb-6">
+            <p className="font-display italic text-sand-light text-sm sm:text-lg md:text-xl tracking-wide drop-shadow-md text-center px-4">
+              Trusted with Intimate Events since 2023
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="mx-auto max-w-6xl px-6 pt-16 pb-24 grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -58,255 +69,263 @@ export default function Home() {
               Azure Urban Resort Residences · Parañaque
             </p>
             <h1 className="font-display text-5xl md:text-6xl leading-[1.05] text-ink">
-              The room where <em className="italic text-clay-deep">she says yes.</em>
+              Staycation <em className="italic text-clay-deep">&amp; Celebration</em>
             </h1>
+            <p className="mt-4 font-display text-xl text-ink-soft italic">
+              Welcome to your luxurious home away from home
+            </p>
             <p className="mt-6 text-lg text-ink-soft max-w-md">
-              A modern boho 1-bedroom staycation, built for up to 4 guests and
-              one very important question. Proposal setups, anniversaries, and
-              quiet celebrations, within the metro.
+              Enjoy a modern boho-themed 1-bedroom staycation unit at Azure Urban
+              Resort Residences, perfect for up to 4 guests. Ideal for intimate
+              occasions like anniversaries, birthdays, proposals, and more.
+              Surprise your loved one with a relaxing getaway within the metro.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href="#packages"
+                href={CANVA_LINKS.inclusionsAndPhotos}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full bg-clay-deep text-sand-light px-7 py-3 font-semibold hover:bg-ink transition-colors"
               >
-                See proposal packages
+                Inclusions and other photos
               </a>
               <a
-                href="#contact"
+                href={CANVA_LINKS.exclusions}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-full border border-ink/20 px-7 py-3 font-semibold text-ink hover:border-ink transition-colors"
               >
-                Ask us anything
+                Exclusions: motor and pool access
               </a>
             </div>
           </div>
 
           <div className="relative">
-            <div className="arch aspect-[3/4] bg-gradient-to-b from-clay/40 via-sage/30 to-gold/30 flex items-center justify-center border border-ink/10">
-              <span className="font-display italic text-ink-soft/60 text-sm px-8 text-center">
-                Replace with a real photo of your best proposal setup — the
-                arch frame is part of the page&rsquo;s design.
-              </span>
+            <div className="arch aspect-[3/4] relative border border-ink/10">
+              <Image
+                src="/images/unit-bedroom.jpg"
+                alt="Azure Staycation by Siaos one-bedroom unit"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
+                priority
+              />
             </div>
             <div className="absolute -bottom-6 -left-6 hidden md:block bg-cream-card border border-ink/10 rounded-2xl px-5 py-4 shadow-sm">
-              <p className="font-display text-2xl text-clay-deep">40+</p>
-              <p className="text-xs text-ink-soft">Proposals hosted since 2023</p>
+              <p className="font-display text-2xl text-clay-deep">Since 2023</p>
+              <p className="text-xs text-ink-soft">Trusted with intimate events</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="trust" className="bg-cream-card border-y border-ink/10">
+      {/* Room Amenities */}
+      <section id="amenities" className="bg-cream-card border-y border-ink/10">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="flex items-center gap-3 mb-10">
             <span className="divider-arch text-clay-deep" aria-hidden="true" />
-            <h2 className="font-display text-3xl text-ink">Why couples trust this room</h2>
+            <h2 className="font-display text-3xl text-ink">Room Amenities</h2>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {TRUST_POINTS.map((point) => (
-              <div key={point.title}>
-                <h3 className="font-display text-xl text-clay-deep mb-2">{point.title}</h3>
-                <p className="text-ink-soft leading-relaxed">{point.body}</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
+            {AMENITIES.map((a) => (
+              <div key={a.label} className="rounded-2xl overflow-hidden border border-ink/10 bg-sand-light">
+                <div className="relative aspect-square">
+                  <Image src={a.img} alt={a.label} fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover" />
+                </div>
+                <p className="p-3 text-xs text-ink-soft leading-snug">{a.label}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="packages" className="mx-auto max-w-6xl px-6 py-24">
-        <div className="flex items-center gap-3 mb-4">
-          <span className="divider-arch text-clay-deep" aria-hidden="true" />
-          <h2 className="font-display text-3xl text-ink">Proposal packages</h2>
-        </div>
-        <p className="text-ink-soft max-w-xl mb-12">
-          Two setups, both proposal-tested. Pick the one that fits the moment
-          you want to create.
-        </p>
-        <div className="grid md:grid-cols-2 gap-8">
-          {PACKAGES.map((pkg) => (
-            <div
-              key={pkg.name}
-              className={`rounded-3xl p-8 border flex flex-col ${
-                pkg.featured
-                  ? "bg-ink text-sand-light border-ink"
-                  : "bg-cream-card text-ink border-ink/10"
-              }`}
-            >
-              {pkg.featured && (
-                <span className="text-xs uppercase tracking-wider text-gold font-semibold mb-3">
-                  Most booked
-                </span>
-              )}
-              <h3 className="font-display text-2xl mb-1">{pkg.name}</h3>
-              <p
-                className={`text-sm mb-4 ${
-                  pkg.featured ? "text-sand-light/70" : "text-ink-soft"
-                }`}
-              >
-                {pkg.tagline}
-              </p>
-              <p className="font-display text-4xl mb-6">{pkg.price}</p>
-              <ul className="space-y-3 mb-8 flex-1">
-                {pkg.inclusions.map((item) => (
-                  <li key={item} className="flex gap-3 text-sm leading-relaxed">
-                    <span
-                      className={`mt-1 ${pkg.featured ? "text-gold" : "text-sage-deep"}`}
-                      aria-hidden="true"
-                    >
-                      ✦
-                    </span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <a
-                href="#contact"
-                className={`text-center rounded-full px-6 py-3 font-semibold transition-colors ${
-                  pkg.featured
-                    ? "bg-sand-light text-ink hover:bg-gold hover:text-ink"
-                    : "bg-ink text-sand-light hover:bg-clay-deep"
-                }`}
-              >
-                Reserve this setup
-              </a>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section id="gallery" className="bg-cream-card border-y border-ink/10">
-        <div className="mx-auto max-w-6xl px-6 py-24">
-          <div className="flex items-center gap-3 mb-10">
-            <span className="divider-arch text-clay-deep" aria-hidden="true" />
-            <h2 className="font-display text-3xl text-ink">Setup gallery</h2>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {["One-area setup", "Full-room decor", "Candlelit dinner", "The room by day"].map(
-              (label) => (
-                <div
-                  key={label}
-                  className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-sage/30 via-sand to-clay/30 border border-ink/10 flex items-end p-4"
-                >
-                  <span className="text-xs font-medium text-ink-soft">{label}</span>
-                </div>
-              )
-            )}
-          </div>
-          <p className="text-xs text-ink-soft/70 mt-4">
-            Swap these four blocks for real photos of past setups — this grid
-            is where your Canva samples become actual indexable images.
-          </p>
-        </div>
-      </section>
-
-      <section id="reviews" className="mx-auto max-w-6xl px-6 py-24">
+      {/* City and Sunset View */}
+      <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="flex items-center gap-3 mb-10">
           <span className="divider-arch text-clay-deep" aria-hidden="true" />
-          <h2 className="font-display text-3xl text-ink">What guests say</h2>
+          <h2 className="font-display text-3xl text-ink">City and Sunset View</h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="bg-cream-card border border-ink/10 rounded-2xl p-6">
-              <p className="text-ink-soft text-sm leading-relaxed mb-4">
-                Placeholder — replace with a real guest review, written out in
-                full text so it can actually be indexed by Google.
-              </p>
-              <p className="font-display text-clay-deep">— Guest name, Month Year</p>
+        <div className="grid md:grid-cols-3 gap-5">
+          {SUNSET_VIEWS.map((s) => (
+            <div key={s.label} className="rounded-2xl overflow-hidden border border-ink/10">
+              <div className="relative aspect-[4/3]">
+                <Image src={s.img} alt={s.label} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
+              </div>
+              <p className="p-3 text-xs text-ink-soft bg-cream-card">{s.label}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section id="contact" className="bg-ink text-sand-light">
-        <div className="mx-auto max-w-6xl px-6 py-24 grid md:grid-cols-2 gap-12">
+      {/* Guest Reviews */}
+      <section id="reviews" className="bg-cream-card border-y border-ink/10">
+        <div className="mx-auto max-w-6xl px-6 py-20 text-center">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="divider-arch text-clay-deep" aria-hidden="true" />
+            <h2 className="font-display text-3xl text-ink">Guest&rsquo;s Ratings / Reviews</h2>
+          </div>
+          <p className="text-ink-soft max-w-lg mx-auto mb-8">
+            See what real guests have said about their stay and celebration
+            setups with us.
+          </p>
+          <a
+            href={CANVA_LINKS.clientReviews}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block rounded-full bg-ink text-sand-light px-7 py-3 font-semibold hover:bg-clay-deep transition-colors"
+          >
+            What our clients say about us
+          </a>
+        </div>
+      </section>
+
+      {/* Legitimacy Check */}
+      <section id="legitimacy" className="mx-auto max-w-6xl px-6 py-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="font-display text-3xl mb-4">Tell us your love story.</h2>
-            <p className="text-sand-light/70 max-w-sm">
-              We&rsquo;ll design the moment around it. Fill this out and
-              we&rsquo;ll reply with availability and next steps — usually
-              within a few hours.
+            <div className="flex items-center gap-3 mb-6">
+              <span className="divider-arch text-clay-deep" aria-hidden="true" />
+              <h2 className="font-display text-3xl text-ink">Legitimacy Check</h2>
+            </div>
+            <p className="text-ink-soft leading-relaxed mb-6">
+              Hi, I&rsquo;m Lyryque Lysl Camylle Siaotong, the owner of Azure
+              Staycation by Siaos. You can check out our social proof,
+              legitimate transactions, verification checks, my personal
+              profiles, and our active social pages to do your own due
+              diligence. We&rsquo;ve been in the staycation business since 2023.
             </p>
-            <div className="mt-10 space-y-2 text-sm text-sand-light/70">
-              <p>15th floor Santorini Tower, Km. 16, West Service Road, Bicutan, Parañaque City</p>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href={CANVA_LINKS.legitimacyCheck}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-clay-deep text-sand-light px-6 py-3 text-sm font-semibold hover:bg-ink transition-colors"
+              >
+                Check our legitimacy here
+              </a>
+              <a
+                href={SOCIAL_LINKS.closedDealsAlbum}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full border border-ink/20 px-6 py-3 text-sm font-semibold text-ink hover:border-ink transition-colors"
+              >
+                Proof of transactions
+              </a>
+              <a
+                href="#contact"
+                className="rounded-full border border-ink/20 px-6 py-3 text-sm font-semibold text-ink hover:border-ink transition-colors"
+              >
+                Feel free to get in touch
+              </a>
+            </div>
+          </div>
+          <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-ink/10">
+            <Image
+              src="/images/legitimacy-1.jpg"
+              alt="Azure Staycation by Siaos owner"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Other Social Proofs */}
+      <section className="bg-cream-card border-y border-ink/10">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="flex items-center gap-3 mb-10">
+            <span className="divider-arch text-clay-deep" aria-hidden="true" />
+            <h2 className="font-display text-3xl text-ink">Other Social Proofs</h2>
+          </div>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {SOCIAL_PROOFS.map((p) => (
+              <a
+                key={p.label}
+                href={p.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl bg-sand-light border border-ink/10 px-5 py-4 text-sm font-semibold text-ink hover:border-clay-deep hover:text-clay-deep transition-colors text-center"
+              >
+                {p.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Ready to Book */}
+      <section className="mx-auto max-w-6xl px-6 py-20 text-center">
+        <div className="flex items-center justify-center gap-3 mb-10">
+          <span className="divider-arch text-clay-deep" aria-hidden="true" />
+          <h2 className="font-display text-3xl text-ink">Ready to Book?</h2>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+          {READY_TO_BOOK.map((r) => (
+            <a
+              key={r.label}
+              href={r.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl border border-ink/10 px-4 py-6 text-sm font-semibold text-ink hover:border-clay-deep hover:text-clay-deep transition-colors"
+            >
+              {r.label}
+            </a>
+          ))}
+        </div>
+        <Link
+          href="/proposals#book"
+          className="inline-block rounded-full bg-clay-deep text-sand-light px-8 py-4 font-semibold hover:bg-ink transition-colors"
+        >
+          Book your celebration
+        </Link>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="bg-ink text-sand-light">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <h2 className="font-display text-3xl mb-2">Contact Information</h2>
+          <p className="text-sand-light/70 mb-8">Azure Staycation by Siaos</p>
+          <div className="grid md:grid-cols-2 gap-8 text-sm text-sand-light/80">
+            <div className="space-y-3">
+              <p>{CONTACT.addressFull}</p>
               <p>
-                <Link href="https://www.facebook.com/profile.php?id=61552788271481" className="underline hover:text-gold">
+                <a href={`mailto:${CONTACT.email}`} className="underline hover:text-gold">
+                  {CONTACT.email}
+                </a>
+              </p>
+              <p>
+                <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} className="underline hover:text-gold">
+                  {CONTACT.phone}
+                </a>
+              </p>
+              <p>
+                <a
+                  href={SOCIAL_LINKS.googleMaps}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-gold"
+                >
+                  View on Google Maps
+                </a>
+              </p>
+            </div>
+            <div className="space-y-2">
+              <p>
+                <a href={SOCIAL_LINKS.facebookPage} target="_blank" rel="noopener noreferrer" className="underline hover:text-gold">
                   Facebook
-                </Link>
+                </a>
                 {" · "}
-                <Link href="https://www.instagram.com/azurestaycationbysiaos/" className="underline hover:text-gold">
+                <a href={SOCIAL_LINKS.instagram} target="_blank" rel="noopener noreferrer" className="underline hover:text-gold">
                   Instagram
-                </Link>
+                </a>
                 {" · "}
-                <Link href="https://www.tiktok.com/@azure.staycation2" className="underline hover:text-gold">
+                <a href={SOCIAL_LINKS.tiktokOfficial} target="_blank" rel="noopener noreferrer" className="underline hover:text-gold">
                   TikTok
-                </Link>
+                </a>
               </p>
             </div>
           </div>
-          <form className="space-y-4">
-            <div>
-              <label htmlFor="name" className="text-sm text-sand-light/70">
-                Your name
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                className="mt-1 w-full rounded-lg bg-sand-light/10 border border-sand-light/20 px-4 py-3 text-sand-light placeholder:text-sand-light/40 focus:outline-none focus:border-gold"
-                placeholder="Juan Dela Cruz"
-              />
-            </div>
-            <div>
-              <label htmlFor="date" className="text-sm text-sand-light/70">
-                Preferred date
-              </label>
-              <input
-                id="date"
-                name="date"
-                type="date"
-                required
-                className="mt-1 w-full rounded-lg bg-sand-light/10 border border-sand-light/20 px-4 py-3 text-sand-light focus:outline-none focus:border-gold"
-              />
-            </div>
-            <div>
-              <label htmlFor="package" className="text-sm text-sand-light/70">
-                Package
-              </label>
-              <select
-                id="package"
-                name="package"
-                className="mt-1 w-full rounded-lg bg-sand-light/10 border border-sand-light/20 px-4 py-3 text-sand-light focus:outline-none focus:border-gold"
-              >
-                <option className="text-ink">Signature Proposal Setup — ₱10,999</option>
-                <option className="text-ink">Happily Ever After Setup — ₱14,999</option>
-                <option className="text-ink">Not sure yet</option>
-              </select>
-            </div>
-            <div>
-              <label htmlFor="message" className="text-sm text-sand-light/70">
-                Tell us about the two of you
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={3}
-                className="mt-1 w-full rounded-lg bg-sand-light/10 border border-sand-light/20 px-4 py-3 text-sand-light placeholder:text-sand-light/40 focus:outline-none focus:border-gold"
-                placeholder="How you met, what she loves, anything we should know"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full rounded-full bg-gold text-ink font-semibold px-6 py-3 hover:bg-sand-light transition-colors"
-            >
-              Send inquiry
-            </button>
-            <p className="text-xs text-sand-light/50">
-              This form needs to be connected to an email service before it
-              goes live — it&rsquo;s wired up visually but not yet sending
-              anywhere.
-            </p>
-          </form>
         </div>
       </section>
 

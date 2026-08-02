@@ -1,0 +1,94 @@
+import Image from "next/image";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import { CANVA_LINKS } from "../../lib/links";
+
+export const metadata = {
+  title: "Room Decorations — Anniversary, Birthday & Welcome Home Setups | Azure Staycation by Siaos",
+  description:
+    "Themed staycation room decoration packages for anniversaries, birthdays, welcome home celebrations, bridal showers, and gender reveals in Parañaque.",
+};
+
+const SAMPLES = [
+  {
+    title: "Staycation + 1 Area with Decorations",
+    body: "Check out our sample setups for a single area, perfect for birthdays, anniversaries, and romantic surprises. Get your inspo for your next special celebration!",
+    img: "/images/sample-1area.jpg",
+    href: CANVA_LINKS.oneAreaPortfolio,
+  },
+  {
+    title: "Full Room Decorations / Themed Set Ups",
+    body: "Explore our full-room decoration samples, perfect for birthdays, anniversaries, and special surprises. Transform your staycation into a magical celebration!",
+    img: "/images/sample-fullroom.jpg",
+    href: CANVA_LINKS.fullRoomPortfolio,
+  },
+  {
+    title: "Will You Be My Girlfriend Set Ups",
+    body: "Transform your staycation into a memorable moment with our romantic full-room decorations made for that special \u201cWill you be my girlfriend?\u201d ask.",
+    img: "/images/sample-girlfriend.jpg",
+    href: CANVA_LINKS.girlfriendPortfolio,
+  },
+  {
+    title: "Bridal Shower Set Ups",
+    body: "Celebrate the bride-to-be with our beautifully styled full-room bridal shower setup, designed to create a fun, elegant, and unforgettable pre-wedding celebration.",
+    img: "/images/sample-bridalshower.jpg",
+    href: CANVA_LINKS.bridalShowerPortfolio,
+  },
+  {
+    title: "Pregnancy Announcement & Gender Reveals",
+    body: "Share your joyful news with a beautifully styled full-room setup, perfect for intimate pregnancy announcements and memorable gender reveal celebrations.",
+    img: "/images/sample-pregnancy.jpg",
+    href: CANVA_LINKS.pregnancyGenderPortfolio,
+  },
+];
+
+export default function PackagesPage() {
+  return (
+    <div className="flex flex-col">
+      <Header />
+
+      <section className="mx-auto max-w-6xl px-6 pt-16 pb-10">
+        <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-4">
+          Room Decorations
+        </p>
+        <h1 className="font-display text-5xl text-ink leading-[1.05] max-w-2xl">
+          Anniversary, birthday, and welcome-home{" "}
+          <em className="italic text-clay-deep">celebrations.</em>
+        </h1>
+        <p className="mt-6 text-lg text-ink-soft max-w-xl">
+          Trusted with intimate events since 2023. Browse our sample setups
+          below and view the full photo portfolio for each theme.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-24 space-y-16">
+        {SAMPLES.map((s, i) => (
+          <div
+            key={s.title}
+            className={`grid md:grid-cols-2 gap-10 items-center ${
+              i % 2 === 1 ? "md:[&>*:first-child]:order-2" : ""
+            }`}
+          >
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-ink/10">
+              <Image src={s.img} alt={s.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+            </div>
+            <div>
+              <h2 className="font-display text-2xl text-ink mb-3">{s.title}</h2>
+              <p className="text-ink-soft leading-relaxed mb-6">{s.body}</p>
+              <a
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded-full bg-clay-deep text-sand-light px-6 py-3 text-sm font-semibold hover:bg-ink transition-colors"
+              >
+                View our portfolio here
+              </a>
+            </div>
+          </div>
+        ))}
+      </section>
+
+      <Footer />
+    </div>
+  );
+}
