@@ -123,7 +123,6 @@ export default function Home() {
       <section id="amenities" className="bg-cream-card border-y border-ink/10">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="flex items-center gap-3 mb-10">
-            <span className="divider-arch text-clay-deep" aria-hidden="true" />
             <h2 className="font-display text-3xl text-ink">Room Amenities</h2>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-5">
@@ -140,18 +139,24 @@ export default function Home() {
       </section>
 
       {/* City and Sunset View */}
-      <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="flex items-center gap-3 mb-10">
-          <span className="divider-arch text-clay-deep" aria-hidden="true" />
-          <h2 className="font-display text-3xl text-ink">City and Sunset View</h2>
+      <section className="py-24">
+        <div className="mx-auto max-w-6xl px-6 mb-10">
+          <h2 className="font-display text-4xl text-ink">City and Sunset View</h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-3 gap-1">
           {SUNSET_VIEWS.map((s) => (
-            <div key={s.label} className="rounded-2xl overflow-hidden border border-ink/10">
-              <div className="relative aspect-[4/3]">
-                <Image src={s.img} alt={s.label} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
-              </div>
-              <p className="p-3 text-xs text-ink-soft bg-cream-card">{s.label}</p>
+            <div key={s.label} className="relative aspect-[3/4] group overflow-hidden">
+              <Image
+                src={s.img}
+                alt={s.label}
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent" />
+              <p className="absolute bottom-6 left-6 text-sand-light font-display text-xl italic">
+                {s.label}
+              </p>
             </div>
           ))}
         </div>
@@ -161,7 +166,6 @@ export default function Home() {
       <section id="reviews" className="bg-cream-card border-y border-ink/10">
         <div className="mx-auto max-w-6xl px-6 py-20 text-center">
           <div className="flex items-center justify-center gap-3 mb-6">
-            <span className="divider-arch text-clay-deep" aria-hidden="true" />
             <h2 className="font-display text-3xl text-ink">Guest&rsquo;s Ratings / Reviews</h2>
           </div>
           <p className="text-ink-soft max-w-lg mx-auto mb-10">
@@ -170,7 +174,7 @@ export default function Home() {
           </p>
           <div className="grid md:grid-cols-3 gap-5 mb-10 text-left">
             {["/images/review-1.jpg", "/images/review-2.jpg", "/images/review-3.jpg"].map((src) => (
-              <div key={src} className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-ink/10">
+              <div key={src} className="relative aspect-square rounded-2xl overflow-hidden border border-ink/10 bg-cream-card">
                 <Image src={src} alt="Guest review" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
               </div>
             ))}
@@ -191,7 +195,6 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <span className="divider-arch text-clay-deep" aria-hidden="true" />
               <h2 className="font-display text-3xl text-ink">Legitimacy Check</h2>
             </div>
             <p className="text-ink-soft leading-relaxed mb-6">
@@ -242,7 +245,6 @@ export default function Home() {
       <section className="bg-cream-card border-y border-ink/10">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="flex items-center gap-3 mb-10">
-            <span className="divider-arch text-clay-deep" aria-hidden="true" />
             <h2 className="font-display text-3xl text-ink">Other Social Proofs</h2>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -264,7 +266,6 @@ export default function Home() {
       {/* Ready to Book */}
       <section className="mx-auto max-w-6xl px-6 py-20 text-center">
         <div className="flex items-center justify-center gap-3 mb-10">
-          <span className="divider-arch text-clay-deep" aria-hidden="true" />
           <h2 className="font-display text-3xl text-ink">Ready to Book?</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
@@ -304,6 +305,37 @@ export default function Home() {
               <p>
                 <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} className="underline hover:text-gold">
                   {CONTACT.phone}
+                </a>
+                {" · "}
+                <a href={`tel:${CONTACT.phone2.replace(/\s/g, "")}`} className="underline hover:text-gold">
+                  {CONTACT.phone2}
+                </a>
+              </p>
+              <p>
+                <a
+                  href={`viber://chat?number=%2B63${CONTACT.viber.replace(/\s/g, "").slice(1)}`}
+                  className="underline hover:text-gold"
+                >
+                  Viber: {CONTACT.viber}
+                </a>
+              </p>
+              <p>
+                <a
+                  href={`https://wa.me/${CONTACT.whatsapp1.replace(/[\s+]/g, "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-gold"
+                >
+                  WhatsApp: {CONTACT.whatsapp1}
+                </a>
+                {" · "}
+                <a
+                  href={`https://wa.me/${CONTACT.whatsapp2.replace(/[\s+]/g, "")}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-gold"
+                >
+                  {CONTACT.whatsapp2}
                 </a>
               </p>
               <p>

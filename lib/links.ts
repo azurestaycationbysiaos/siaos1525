@@ -35,6 +35,10 @@ export const CONTACT = {
     "15th floor Santorini Tower, Km. 16, West Service Road, Bicutan, Parañaque City",
   email: "staycationnearme2023@gmail.com",
   phone: "0920 970 1226",
+  phone2: "0962 523 2140",
+  viber: "0920 970 1226",
+  whatsapp1: "+63 920 970 1226",
+  whatsapp2: "+63 991 925 2497",
   calendarEmbedSrc:
     "https://calendar.google.com/calendar/embed?src=staycationnearme2023%40gmail.com&ctz=Asia%2FManila",
 };

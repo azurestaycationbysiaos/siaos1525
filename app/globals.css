@@ -62,13 +62,7 @@ body {
   border-radius: 999px 999px 0 0;
 }
 
-.divider-arch {
-  width: 56px;
-  height: 28px;
-  border: 2px solid currentColor;
-  border-bottom: none;
-  border-radius: 999px 999px 0 0;
-}
+
 
 /* Focus visibility */
 a:focus-visible,

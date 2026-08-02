@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { CANVA_LINKS, SOCIAL_LINKS, CONTACT } from "../../lib/links";
+import TikTokEmbed from "../components/TikTokEmbed";
+import { CANVA_LINKS, SOCIAL_LINKS } from "../../lib/links";
 
 export const metadata = {
   title: "Proposal Packages — Signature & Happily Ever After Setups | Azure Staycation by Siaos",
@@ -37,7 +38,7 @@ export default function ProposalsPage() {
           Trusted with Intimate Events since 2023
         </p>
         <h1 className="font-display text-5xl text-ink leading-[1.05] max-w-2xl">
-          The room where <em className="italic text-clay-deep">she says yes.</em>
+          Intimate Wedding <em className="italic text-clay-deep">Proposal Packages</em>
         </h1>
       </section>
 
@@ -99,7 +100,6 @@ export default function ProposalsPage() {
       <section className="bg-cream-card border-y border-ink/10">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="flex items-center gap-3 mb-6">
-            <span className="divider-arch text-clay-deep" aria-hidden="true" />
             <h2 className="font-display text-3xl text-ink">See it in action</h2>
           </div>
           <p className="text-ink-soft max-w-xl mb-8">
@@ -130,38 +130,26 @@ export default function ProposalsPage() {
 
           {/* More reveals — portrait TikTok row */}
           <div className="flex items-center gap-3 mb-6">
-            <span className="divider-arch text-clay-deep" aria-hidden="true" />
             <h3 className="font-display text-2xl text-ink">More reveals from TikTok</h3>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-5">
-            {/*
-              To feature a specific TikTok video, replace each placeholder
-              below with:
-              <TikTokEmbed url="https://www.tiktok.com/@azure.staycation2/video/XXXXXXXXXXXXXXXXXX" videoId="XXXXXXXXXXXXXXXXXX" />
-              Get the video ID from the numbers at the end of the video's
-              share link.
-            */}
-            {[1, 2, 3].map((n) => (
-              <a
-                key={n}
-                href={SOCIAL_LINKS.tiktokOfficial}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative aspect-[9/16] rounded-2xl overflow-hidden border border-ink/10 bg-ink flex flex-col items-center justify-center text-sand-light/70 hover:text-sand-light hover:border-clay-deep transition-colors"
-              >
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" className="mb-2">
-                  <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6 0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64 0 3.33 2.76 5.7 5.69 5.7 3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z" />
-                </svg>
-                <span className="text-xs font-medium px-3 text-center">
-                  Add a reveal video
-                </span>
-              </a>
-            ))}
+          <div className="grid grid-cols-2 gap-5 max-w-md">
+            <div className="rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
+              <TikTokEmbed
+                url="https://www.tiktok.com/@azure.staycation2/video/7663277706225716501"
+                videoId="7663277706225716501"
+              />
+            </div>
+            <div className="rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
+              <TikTokEmbed
+                url="https://www.tiktok.com/@azure.staycation2/video/7402220237451578641"
+                videoId="7402220237451578641"
+              />
+            </div>
           </div>
           <p className="text-xs text-ink-soft/60 mt-4 max-w-md">
-            Send the specific TikTok video links you&rsquo;d like featured
-            here (not just the profile link) and they&rsquo;ll be embedded as
-            real playable portrait clips, right alongside the YouTube video.
+            Have another reveal video you&rsquo;d like added here? Send the
+            embed code (TikTok: Share → Embed) and it&rsquo;ll be added as a
+            third clip.
           </p>
         </div>
       </section>
@@ -172,21 +160,10 @@ export default function ProposalsPage() {
           <div>
             <h2 className="font-display text-3xl text-ink mb-4">Tell us your love story.</h2>
             <p className="text-ink-soft max-w-sm mb-8">
-              We&rsquo;ll design the moment around it. Check our live
-              availability below, then fill out the inquiry form and
-              we&rsquo;ll get back to you — usually within a few hours.
+              We&rsquo;ll design the moment around it. Fill out the inquiry
+              form and we&rsquo;ll get back to you with availability and next
+              steps — usually within a few hours.
             </p>
-
-            <h3 className="font-display text-xl text-ink mb-3">Check availability</h3>
-            <div className="rounded-2xl overflow-hidden border border-ink/10">
-              <iframe
-                src={CONTACT.calendarEmbedSrc}
-                style={{ border: 0 }}
-                width="100%"
-                height="400"
-                title="Azure Staycation by Siaos availability calendar"
-              />
-            </div>
           </div>
 
           <form className="space-y-4 bg-cream-card border border-ink/10 rounded-2xl p-8">
