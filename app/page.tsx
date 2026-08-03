@@ -83,14 +83,12 @@ export default function Home() {
               Surprise your loved one with a relaxing getaway within the metro.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href={CANVA_LINKS.inclusionsAndPhotos}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/inclusions"
                 className="rounded-full bg-clay-deep text-sand-light px-7 py-3 font-semibold hover:bg-ink transition-colors"
               >
                 Inclusions and other photos
-              </a>
+              </Link>
               <a
                 href={CANVA_LINKS.exclusions}
                 target="_blank"
