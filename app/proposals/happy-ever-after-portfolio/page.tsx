@@ -52,12 +52,14 @@ export default function HappyEverAfterPortfolioPage() {
               className="relative aspect-square rounded-2xl overflow-hidden border border-ink/10 bg-cream-card"
             >
               <Image
-                src={src}
-                alt={`Happily Ever After proposal set up — photo ${i + 1}`}
-                fill
-                sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
-                className="object-cover"
-                priority={i < 4}
+     src={src}
+     alt={`Happily Ever After proposal set up — photo ${i + 1}`}
+     fill
+     unoptimized
+     sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
+     className="object-cover"
+     priority={i < 4}
+   />
               />
             </div>
           ))}
