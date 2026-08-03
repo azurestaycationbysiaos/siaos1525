@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import BookingForm from "../components/BookingForm";
@@ -15,7 +16,8 @@ const SAMPLES = [
     title: "Staycation + 1 Area with Decorations",
     body: "Check out our sample setups for a single area, perfect for birthdays, anniversaries, and romantic surprises. Get your inspo for your next special celebration!",
     img: "/images/sample-1area.jpg",
-    href: CANVA_LINKS.oneAreaPortfolio,
+    href: "/packages/one-area-portfolio",
+    internal: true,
     aspect: "aspect-square",
   },
   {
@@ -85,14 +87,23 @@ export default function PackagesPage() {
             <div>
               <h2 className="font-display text-2xl text-ink mb-3">{s.title}</h2>
               <p className="text-ink-soft leading-relaxed mb-6">{s.body}</p>
-              <a
-                href={s.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block rounded-full bg-clay-deep text-sand-light px-6 py-3 text-sm font-semibold hover:bg-ink transition-colors"
-              >
-                View our portfolio here
-              </a>
+              {"internal" in s && s.internal ? (
+                <Link
+                  href={s.href}
+                  className="inline-block rounded-full bg-clay-deep text-sand-light px-6 py-3 text-sm font-semibold hover:bg-ink transition-colors"
+                >
+                  View our portfolio here
+                </Link>
+              ) : (
+                <a
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block rounded-full bg-clay-deep text-sand-light px-6 py-3 text-sm font-semibold hover:bg-ink transition-colors"
+                >
+                  View our portfolio here
+                </a>
+              )}
             </div>
           </div>
         ))}

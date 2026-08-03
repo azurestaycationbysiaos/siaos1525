@@ -20,7 +20,6 @@ export const CANVA_LINKS = {
   bookingProcess: "https://www.canva.com/design/DAGf6S94bdU/cxDPTkLwzZVR8TM0JcHXxw/view",
   paymentChannels: "https://www.canva.com/design/DAGf6cocW_A/b1tGFzpZ-c4i7ny92O_hPg/view",
   termsAndConditions: "https://www.canva.com/design/DAGf6cocW_A/b1tGFzpZ-c4i7ny92O_hPg/view",
-  oneAreaPortfolio: "https://www.canva.com/design/DAGj1WmyPtI/iIwcJQ7P90HJjwHpg96h8w/view",
   fullRoomPortfolio: "https://www.canva.com/design/DAGf6S94bdU/cxDPTkLwzZVR8TM0JcHXxw/view",
   girlfriendPortfolio: "https://www.canva.com/design/DAHC4jZNoGU/idJMgslL8dTF98erlO3WDg/view",
   bridalShowerPortfolio: "https://www.canva.com/design/DAHC4202Pxk/bg-SNtuxEuekAzzR6xjOqg/view",
