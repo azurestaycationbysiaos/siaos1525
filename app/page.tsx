@@ -89,14 +89,12 @@ export default function Home() {
               >
                 Inclusions and other photos
               </Link>
-              <a
-                href={CANVA_LINKS.exclusions}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/exclusions"
                 className="rounded-full border border-ink/20 px-7 py-3 font-semibold text-ink hover:border-ink transition-colors"
               >
                 Exclusions: Parking fee and Pool access
-              </a>
+              </Link>
             </div>
           </div>
 
