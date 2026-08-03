@@ -215,12 +215,6 @@ export default function Home() {
               >
                 Proof of transactions
               </a>
-              <a
-                href="#contact"
-                className="rounded-full border border-ink/20 px-6 py-3 text-sm font-semibold text-ink hover:border-ink transition-colors"
-              >
-                Feel free to get in touch
-              </a>
             </div>
           </div>
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-ink/10">
@@ -303,7 +297,7 @@ export default function Home() {
       {/* Contact */}
       <section id="contact" className="bg-ink text-sand-light">
         <div className="mx-auto max-w-6xl px-6 py-24">
-          <h2 className="font-display text-3xl mb-2">Contact Information</h2>
+          <h2 className="font-display text-3xl mb-2">Feel free to get in touch</h2>
           <p className="text-sand-light/70 mb-8">Azure Staycation by Siaos</p>
           <div className="grid md:grid-cols-2 gap-8 text-sm text-sand-light/80">
             <div className="space-y-3">
