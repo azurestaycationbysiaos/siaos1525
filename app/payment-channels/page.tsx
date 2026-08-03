@@ -12,7 +12,7 @@ const CHANNELS = [
   { name: "GCash", number: "0920 970 1226", qr: "/images/payment/qr-1.jpg" },
   { name: "Maya", number: "0920 970 1226", qr: "/images/payment/qr-2.jpg" },
   { name: "Vybe", number: "0920 970 1226", qr: "/images/payment/qr-3.jpg" },
-  { name: "BPI", number: "Available upon request", qr: "/images/payment/qr-4.jpg" },
+  { name: "BPI", number: "8159416654", qr: "/images/payment/qr-4.jpg" },
 ];
 
 export default function PaymentChannelsPage() {
@@ -42,18 +42,7 @@ export default function PaymentChannelsPage() {
           ))}
         </div>
 
-        <div className="space-y-3 text-ink-soft leading-relaxed border-t border-ink/10 pt-8">
-          <h2 className="font-display text-xl text-ink mb-2">Good to know</h2>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>Reservations are on a first-come, first-served basis and subject to room availability.</li>
-            <li>The reservation fee is non-refundable.</li>
-            <li>For cancellations on peak dates/holidays, rescheduling is not allowed. Peak dates, holidays, wedding proposals, engagement parties, stag parties, and bridal showers require a 50% reservation fee.</li>
-            <li>We reserve the right to set the reservation fee depending on your selected date.</li>
-            <li>Please send a screenshot of your payment once completed. Balance upon arrival must also be settled via GCash, Maya, Vybe, or BPI bank transfer only.</li>
-          </ul>
-        </div>
-
-        <p className="text-sm text-ink-soft mt-10 pt-6 border-t border-ink/10">
+        <p className="text-sm text-ink-soft mt-2 pt-8 border-t border-ink/10">
           Please also review our{" "}
           <a href="/house-rules" className="text-clay-deep underline">
             house rules

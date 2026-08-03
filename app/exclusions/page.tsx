@@ -151,20 +151,6 @@ export default function ExclusionsPage() {
               </div>
             ))}
           </div>
-          <div className="rounded-2xl overflow-hidden border border-ink/10">
-            <div className="relative aspect-square">
-              <Image
-                src="/images/exclusion-pool-signage.jpg"
-                alt="Azure pool registration and wave pool entry requirements, as posted at the registration booth"
-                fill
-                sizes="(max-width: 768px) 100vw, 800px"
-                className="object-cover"
-              />
-            </div>
-            <p className="p-3 text-xs text-ink-soft leading-snug">
-              Actual signage posted at Azure&rsquo;s pool registration booth.
-            </p>
-          </div>
         </section>
 
         {/* Parking */}
@@ -242,14 +228,14 @@ export default function ExclusionsPage() {
             <div className="relative aspect-square">
               <Image
                 src="/images/exclusion-parking-rates.jpg"
-                alt="Azure Urban Resort Residences official parking rates card"
+                alt="Azure Urban Resort Residences official parking rates card — for guests who prefer to park inside Azure"
                 fill
                 sizes="(max-width: 768px) 100vw, 800px"
                 className="object-cover"
               />
             </div>
             <p className="p-3 text-xs text-ink-soft leading-snug">
-              Azure&rsquo;s official parking rate card, for direct (walk-in) parking.
+              Azure&rsquo;s official parking rate card, for direct (walk-in) parking. Rates are collected by Azure and subject to change without prior notice.
             </p>
           </div>
         </section>

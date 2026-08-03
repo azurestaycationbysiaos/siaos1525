@@ -1,10 +1,11 @@
+import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Terms and Conditions — Azure Staycation by Siaos",
   description:
-    "Terms and conditions for surprise wedding proposal setup delivery at Azure Staycation by Siaos, Parañaque.",
+    "Booking, payment, and cancellation terms and conditions for Azure Staycation by Siaos, Parañaque.",
 };
 
 export default function TermsPage() {
@@ -13,58 +14,55 @@ export default function TermsPage() {
       <Header />
       <article className="mx-auto max-w-2xl px-6 pt-16 pb-24">
         <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-3">
-          Wedding Proposal Delivery
+          Azure Staycation by Siaos
         </p>
         <h1 className="font-display text-4xl text-ink mb-10">Terms and Conditions</h1>
 
-        <div className="text-ink-soft leading-relaxed space-y-8 [&_h2]:font-display [&_h2]:text-xl [&_h2]:text-ink [&_h2]:mt-8 [&_h2]:mb-3 [&_p]:mb-3">
+        <div className="text-ink-soft leading-relaxed space-y-8 [&_h2]:font-display [&_h2]:text-xl [&_h2]:text-ink [&_h2]:mt-8 [&_h2]:mb-3 [&_p]:mb-3 [&_li]:mb-2">
           <p>
-            Terms and conditions for surprise wedding proposal setup delivery
-            provided by Azure Staycation by Siaos (&ldquo;Provider&rdquo;). By
-            booking this service, the client (&ldquo;Guest&rdquo;) agrees to
-            abide by these terms, as well as relevant Azure policies,
-            staycation house rules, and Philippine laws.
+            By booking a staycation with Azure Staycation by Siaos
+            (&ldquo;Provider&rdquo;), the guest (&ldquo;Guest&rdquo;) agrees
+            to abide by these terms, as well as our house rules and relevant
+            Azure Urban Resort Residences policies.
           </p>
 
           <div>
-            <h2>1. Booking and Payment</h2>
-            <p>Bookings must be made 2-3 days prior to ensure availability and proper preparation. Spontaneous bookings can be accommodated depending on availability.</p>
-            <p>A 50% reservation fee is required upon confirmation of the booking. The reservation fee is non-refundable. Any add-on to the availed package must be paid on top of the reservation fee, and full payment is required right after the scheduled delivery and setup.</p>
-            <p>Payments are non-refundable — refunds cannot be issued due to accidental disclosure. Even if the person being proposed to declines, the Guest is still required to pay the full agreed amount as per the booking terms.</p>
+            <h2>1. Reservations</h2>
+            <p>Reservations are on a first-come, first-served basis and subject to room availability.</p>
+            <p>We reserve the right to set the reservation fee depending on your selected date.</p>
+            <p>Peak dates, holidays, wedding proposals, engagement parties, stag parties, and bridal showers require a 50% reservation fee.</p>
           </div>
 
           <div>
-            <h2>2. Delivery and Setup</h2>
-            <p>The setup will be delivered and installed at Azure Staycation by Siaos unit at 15th floor, Santorini Tower, Azure Urban Resort Residences.</p>
+            <h2>2. Payment</h2>
+            <p>All accounts are under Lyryque Lysl Camylle Siaotong. We do not accept cash payments for bookings — please ensure you can transfer online via GCash, Maya, Vybe, or BPI bank transfer.</p>
+            <p>The reservation fee is non-refundable.</p>
+            <p>Please send a screenshot of your payment once completed. Any balance upon arrival must also be settled via GCash, Maya, Vybe, or BPI bank transfer only.</p>
           </div>
 
           <div>
-            <h2>3. Usage and Liability</h2>
-            <p>The setup is for decorative purposes only and should not be altered or used in a manner that may cause damage. The Guest is responsible for ensuring that all guests and third parties comply with safety precautions related to the setup, including following decoration guidelines to avoid short circuits or fire hazards.</p>
-            <p>The Provider is not responsible for any accidents, injuries, or damages arising from misuse of the decorations. Any loss or damage to decorations or props caused by the Guest or third parties may incur additional charges.</p>
+            <h2>3. Cancellations and Rescheduling</h2>
+            <p>The reservation fee is strictly non-refundable.</p>
+            <p>For cancellations on peak dates or holidays, rescheduling is not allowed.</p>
           </div>
 
           <div>
-            <h2>4. Cancellation and Refund Policy</h2>
-            <p>The reservation fee is strictly non-refundable, and cancellations will not be eligible for a refund. Rescheduling is allowed subject to availability and must be requested at least a week before the original booking date. For medical emergencies and force majeure, rescheduling of the setup only (not a refund) is available.</p>
-          </div>
-
-          <div>
-            <h2>5. Force Majeure</h2>
-            <p>The Provider shall not be held liable for any failure or delay in performing its obligations due to circumstances beyond its reasonable control, including but not limited to natural disasters, acts of government, pandemics, unforeseen travel restrictions, medical emergencies, or other extraordinary events preventing fulfillment of the service.</p>
-            <p>In such cases, the Guest may request to reschedule the service within the same month, subject to availability, without additional charges.</p>
-          </div>
-
-          <div>
-            <h2>6. Compliance and Governing Law</h2>
-            <p>The Guest acknowledges that the service must comply with Azure policies, staycation house rules, and policies when availed within the property. Any legal disputes arising from the service shall be resolved under Philippine law, with the appropriate courts in the Philippines having jurisdiction.</p>
-          </div>
-
-          <div>
-            <h2>7. Contact Information</h2>
+            <h2>4. Compliance</h2>
             <p>
-              For inquiries, customizations, or concerns, please contact
-              Azure Staycation by Siaos at{" "}
+              Guests must comply with our{" "}
+              <Link href="/house-rules" className="text-clay-deep underline">
+                house rules
+              </Link>{" "}
+              and Azure Urban Resort Residences policies at all times during
+              their stay.
+            </p>
+          </div>
+
+          <div>
+            <h2>5. Contact Information</h2>
+            <p>
+              For inquiries or concerns, please contact Azure Staycation by
+              Siaos at{" "}
               <a href="tel:+639209701226" className="text-clay-deep underline">
                 +63 920 970 1226
               </a>
@@ -72,6 +70,14 @@ export default function TermsPage() {
             </p>
           </div>
         </div>
+
+        <p className="text-sm text-ink-soft mt-14 pt-6 border-t border-ink/10">
+          Booking a wedding proposal setup?{" "}
+          <Link href="/proposals/terms-and-conditions" className="text-clay-deep underline">
+            View proposal delivery terms and conditions
+          </Link>
+          .
+        </p>
       </article>
       <Footer />
     </div>

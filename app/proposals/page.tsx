@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TikTokEmbed from "../components/TikTokEmbed";
@@ -95,6 +96,13 @@ export default function ProposalsPage() {
             </div>
           ))}
         </div>
+        <p className="text-sm text-ink-soft mt-8">
+          Please review our{" "}
+          <Link href="/proposals/terms-and-conditions" className="text-clay-deep underline">
+            terms and conditions
+          </Link>{" "}
+          for proposal setup delivery before booking.
+        </p>
       </section>
 
       {/* Videos */}
