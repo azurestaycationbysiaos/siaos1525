@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -32,8 +31,16 @@ export default function ReviewsPage() {
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {REVIEWS.map((src) => (
-            <div key={src} className="relative aspect-square rounded-2xl overflow-hidden border border-ink/10">
-              <Image src={src} alt="Guest review" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
+            <div
+              key={src}
+              style={{ height: "320px" }}
+              className="overflow-hidden rounded-2xl border border-ink/10"
+            >
+              <img
+                src={src}
+                alt="Guest review"
+                style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }}
+              />
             </div>
           ))}
         </div>
@@ -42,3 +49,4 @@ export default function ReviewsPage() {
     </div>
   );
 }
+
