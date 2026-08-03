@@ -18,13 +18,15 @@ const PACKAGES = [
     body: "Delight your partner with our signature wedding proposal setup, designed for an unforgettable \u201cYes!\u201d moment in an elegant, fully decorated room.",
     img: "/images/proposal-signature.jpg",
     portfolio: CANVA_LINKS.signatureProposalPortfolio,
+    portfolioExternal: true,
   },
   {
     name: "Happily Ever After Set Up",
     price: "₱14,999",
     body: "Experience the ultimate proposal setup with our full-room decorations, designed to create the perfect \u201chappily ever after\u201d moment for the love of your life.",
     img: "/images/proposal-happyeverafter.jpg",
-    portfolio: CANVA_LINKS.happyEverAfterPortfolio,
+    portfolio: "/proposals/happy-ever-after-portfolio",
+    portfolioExternal: false,
     featured: true,
   },
 ];
@@ -69,16 +71,27 @@ export default function ProposalsPage() {
                   {pkg.body}
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <a
-                    href={pkg.portfolio}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`rounded-full px-5 py-3 text-sm font-semibold transition-colors ${
-                      pkg.featured ? "bg-sand-light text-ink hover:bg-gold" : "bg-ink text-sand-light hover:bg-clay-deep"
-                    }`}
-                  >
-                    View our samples here
-                  </a>
+                  {pkg.portfolioExternal ? (
+                    <a
+                      href={pkg.portfolio}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`rounded-full px-5 py-3 text-sm font-semibold transition-colors ${
+                        pkg.featured ? "bg-sand-light text-ink hover:bg-gold" : "bg-ink text-sand-light hover:bg-clay-deep"
+                      }`}
+                    >
+                      View our samples here
+                    </a>
+                  ) : (
+                    <Link
+                      href={pkg.portfolio}
+                      className={`rounded-full px-5 py-3 text-sm font-semibold transition-colors ${
+                        pkg.featured ? "bg-sand-light text-ink hover:bg-gold" : "bg-ink text-sand-light hover:bg-clay-deep"
+                      }`}
+                    >
+                      View our samples here
+                    </Link>
+                  )}
                   <a
                     href={SOCIAL_LINKS.tiktokOfficial}
                     target="_blank"
