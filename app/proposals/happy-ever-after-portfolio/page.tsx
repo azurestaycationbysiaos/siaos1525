@@ -55,7 +55,6 @@ export default function HappyEverAfterPortfolioPage() {
      src={src}
      alt={`Happily Ever After proposal set up — photo ${i + 1}`}
      fill
-     unoptimized
      sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 25vw"
      className="object-cover"
      priority={i < 4}
