@@ -34,8 +34,8 @@ const SOCIAL_PROOFS = [
 
 const READY_TO_BOOK = [
   { label: "House Rules", href: "/house-rules", internal: true },
-  { label: "Booking Process", href: CANVA_LINKS.bookingProcess, internal: false },
-  { label: "Payment Channels", href: CANVA_LINKS.paymentChannels, internal: false },
+  { label: "Booking Process", href: "/booking-process", internal: true },
+  { label: "Payment Channels", href: "/payment-channels", internal: true },
   { label: "Terms and Conditions", href: "/terms-and-conditions", internal: true },
 ];
 
@@ -97,7 +97,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="rounded-full border border-ink/20 px-7 py-3 font-semibold text-ink hover:border-ink transition-colors"
               >
-                Exclusions: motor and pool access
+                Exclusions: Parking fee and Pool access
               </a>
             </div>
           </div>
@@ -262,17 +262,21 @@ export default function Home() {
       </section>
 
       {/* Ready to Book */}
-      <section className="mx-auto max-w-6xl px-6 py-20 text-center">
-        <div className="flex items-center justify-center gap-3 mb-10">
-          <h2 className="font-display text-3xl text-ink">Ready to Book?</h2>
+      <section className="mx-auto max-w-6xl px-6 py-24 text-center">
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <h2 className="font-display text-4xl text-ink">Ready to Book?</h2>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+        <p className="text-ink-soft max-w-lg mx-auto mb-12">
+          Everything you need to know before your stay — review these, then
+          send us your inquiry below.
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           {READY_TO_BOOK.map((r) =>
             r.internal ? (
               <Link
                 key={r.label}
                 href={r.href}
-                className="rounded-xl border border-ink/10 px-4 py-6 text-sm font-semibold text-ink hover:border-clay-deep hover:text-clay-deep transition-colors"
+                className="rounded-2xl border border-ink/10 bg-cream-card px-6 py-10 text-base font-semibold text-ink hover:border-clay-deep hover:text-clay-deep hover:shadow-md transition-all"
               >
                 {r.label}
               </Link>
@@ -282,19 +286,13 @@ export default function Home() {
                 href={r.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-xl border border-ink/10 px-4 py-6 text-sm font-semibold text-ink hover:border-clay-deep hover:text-clay-deep transition-colors"
+                className="rounded-2xl border border-ink/10 bg-cream-card px-6 py-10 text-base font-semibold text-ink hover:border-clay-deep hover:text-clay-deep hover:shadow-md transition-all"
               >
                 {r.label}
               </a>
             )
           )}
         </div>
-        <Link
-          href="/proposals#book"
-          className="inline-block rounded-full bg-clay-deep text-sand-light px-8 py-4 font-semibold hover:bg-ink transition-colors"
-        >
-          Book your celebration
-        </Link>
       </section>
 
       <BookingForm
