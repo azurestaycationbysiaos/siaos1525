@@ -12,7 +12,8 @@ export const metadata = {
 
 const IMAGE_COUNT = 100;
 const IMAGES = Array.from({ length: IMAGE_COUNT }, (_, i) => {
-  return `/images/packages/one-area/${i + 1}.jpg`;
+  const n = String(i + 1).padStart(2, "0");
+  return `/images/packages/one-area/${n}.jpg`;
 });
 
 export default function OneAreaPortfolioPage() {

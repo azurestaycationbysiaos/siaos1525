@@ -5,15 +5,14 @@ import Footer from "../components/Footer";
 export const metadata = {
   title: "Payment Channels — Azure Staycation by Siaos",
   description:
-    "Accepted payment methods for Azure Staycation by Siaos: BPI bank transfer, Vybe, Maya, and GCash.",
+    "Accepted payment methods for Azure Staycation by Siaos: GCash, Maya, Vybe, and BPI bank transfer.",
 };
 
 const CHANNELS = [
-  { name: "BPI", number: "8159416654", qr: "/images/payment/qr-1.jpg" 
-},
-  { name: "Vybe", number: "0920 970 1226", qr: "/images/payment/qr-2.jpg" },
-  { name: "Maya", number: "0920 970 1226", qr: "/images/payment/qr-3.jpg" },
-  { name: "GCash", number: "0920 970 1226", qr: "/images/payment/qr-4.jpg" },
+  { name: "GCash", number: "0920 970 1226", qr: "/images/payment/qr-1.jpg" },
+  { name: "Maya", number: "0920 970 1226", qr: "/images/payment/qr-2.jpg" },
+  { name: "Vybe", number: "0920 970 1226", qr: "/images/payment/qr-3.jpg" },
+  { name: "BPI", number: "8159416654", qr: "/images/payment/qr-4.jpg" },
 ];
 
 export default function PaymentChannelsPage() {
@@ -59,4 +58,3 @@ export default function PaymentChannelsPage() {
     </div>
   );
 }
-
