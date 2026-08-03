@@ -7,7 +7,7 @@ export const metadata = {
   title:
     "Happily Ever After Set Up — Portfolio | Azure Staycation by Siaos",
   description:
-    "Real photos from our Happily Ever After proposal setups — full-room decorations, balloon arches, and floral details from actual client bookings.",
+    "Real photos from our Happily Ever After proposal setups — full-room decorations samples from actual client bookings.",
 };
 
 const IMAGE_COUNT = 54;
