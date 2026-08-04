@@ -1,6 +1,6 @@
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
-import RouteMap from "../../components/RouteMap";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import RouteMap from "../components/RouteMap";
 
 export const metadata = {
   title: "Location — Azure Staycation by Siaos",
