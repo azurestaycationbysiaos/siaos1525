@@ -12,7 +12,7 @@ export const metadata = {
 const IMAGE_COUNT = 56;
 const IMAGES = Array.from({ length: IMAGE_COUNT }, (_, i) => {
   const n = String(i + 1).padStart(2, "0");
-  return `/images/packages/signature-proposal/${n}.jpg`;
+  return `/images/proposals/signature-proposal/${n}.jpg`;
 });
 
 export default function SignatureProposalPortfolioPage() {
