@@ -80,3 +80,12 @@ textarea:focus-visible {
 .font-body {
   font-family: var(--font-body);
 }
+
+.leaflet-popup-content-wrapper {
+  background: #f4ece1;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(43, 36, 32, 0.15);
+}
+.leaflet-popup-tip {
+  background: #f4ece1;
+}
