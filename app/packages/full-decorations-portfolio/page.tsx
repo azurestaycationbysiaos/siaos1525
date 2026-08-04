@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export const metadata = {
   title: "Full Room Decorations & Themed Set Ups — Portfolio | Azure Staycation by Siaos",
@@ -12,7 +12,7 @@ export const metadata = {
 const IMAGE_COUNT = 109;
 const IMAGES = Array.from({ length: IMAGE_COUNT }, (_, i) => {
   const n = String(i + 1).padStart(3, "0");
-  return `/images/packages/full-decorations/${n}.jpg`;
+  return `/images/packages/full-setups/${n}.jpg`;
 });
 
 export default function FullDecorationsPortfolioPage() {
