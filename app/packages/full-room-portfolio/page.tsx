@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import Image from "next/image";
 import Link from "next/link";
 import Header from "../../components/Header";
@@ -10,17 +12,21 @@ export const metadata = {
     "Real photos from our full-room decoration and themed set ups — birthday, anniversary, and celebration transformations from actual client bookings.",
 };
 
-const IMAGE_COUNT = 103;
-const IMAGES = Array.from({ length: IMAGE_COUNT }, (_, i) => {
-  const n = String(i + 1).padStart(2, "0");
-  return `/images/packages/full-room/${n}.jpg`;
-});
+function getImages() {
+  const dir = path.join(process.cwd(), "public/images/packages/full-setups");
+  const files = fs
+    .readdirSync(dir)
+    .filter((f) => /\.(jpe?g|png|webp)$/i.test(f))
+    .sort();
+  return files.map((f) => `/images/packages/full-setups/${f}`);
+}
 
 export default function FullRoomPortfolioPage() {
+  const IMAGES = getImages();
+
   return (
     <div className="flex flex-col">
       <Header />
-
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-8">
         <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-3">
           Room Decorations
@@ -42,7 +48,6 @@ export default function FullRoomPortfolioPage() {
           </Link>
         </div>
       </section>
-
       <section className="mx-auto max-w-6xl px-6 pb-24">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
           {IMAGES.map((src, i) => (
@@ -52,19 +57,3 @@ export default function FullRoomPortfolioPage() {
             >
               <Image
                 src={src}
-                alt={`Full room decoration set up — photo ${i + 1}`}
-                width={600}
-                height={600}
-                unoptimized
-                className="block w-full h-auto aspect-square object-cover"
-                priority={i < 4}
-              />
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <Footer />
-    </div>
-  );
-}
