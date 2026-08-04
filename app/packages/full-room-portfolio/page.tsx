@@ -57,3 +57,18 @@ export default function FullRoomPortfolioPage() {
             >
               <Image
                 src={src}
+alt={`Full room decoration set up — photo ${i + 1}`}
+                width={600}
+                height={600}
+                unoptimized
+                className="block w-full h-auto aspect-square object-cover"
+                priority={i < 4}
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+      <Footer />
+    </div>
+  );
+}
