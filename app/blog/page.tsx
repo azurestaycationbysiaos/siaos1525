@@ -43,11 +43,11 @@ export default async function BlogIndex() {
 
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-10">
         <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-4">
-          Proposal Tips &amp; Ideas
+          Azure Staycation Blog
         </p>
         <h1 className="font-display text-5xl text-ink leading-[1.05] max-w-2xl">
-          Everything we&rsquo;ve learned about pulling off the perfect{" "}
-          <em className="italic text-clay-deep">yes.</em>
+          Your guide to proposals, birthdays, and celebrations at{" "}
+<em className="italic text-clay-deep">Azure Staycation by Siaos, Azure Urban Resort Residences, Parañaque.</em>
         </h1>
       </section>
 
