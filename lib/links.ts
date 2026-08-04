@@ -24,7 +24,7 @@ export const CANVA_LINKS = {
   girlfriendPortfolio: "/packages/girlfriend-portfolio",
   bridalShowerPortfolio: "/packages/bridal-shower-portfolio",
   pregnancyGenderPortfolio: "/packages/pregnancy-gender-portfolio",
-  signatureProposalPortfolio: "https://www.canva.com/design/DAGf6n0nMg4/hbir1IqR5VND4OOR95bhQw/view",
+  signatureProposalPortfolio: "proposals/signature-proposal-portfolio",
   happyEverAfterPortfolio: "https://www.canva.com/design/DAGf60egjUA/O6iKyMkYeyHdZgvB7kxe9w/view",
 };
 
