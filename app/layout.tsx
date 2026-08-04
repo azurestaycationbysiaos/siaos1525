@@ -1,21 +1,22 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { SITE_URL, SITE_NAME } from "../lib/site";
+import StructuredData from "./components/StructuredData";
 
-const siteUrl = "https://azurestaycationbysiaos.vercel.app";
 const siteTitle =
   "Azure Staycation by Siaos — Staycation, Celebration & Proposal Packages in Parañaque";
 const siteDescription =
   "A modern boho 1-bedroom staycation at Azure Urban Resort Residences, Parañaque. Book a romantic getaway, intimate celebration, or themed room decoration for anniversaries, birthdays, welcome-home celebrations, and wedding proposals — good for up to 4 guests.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
   title: siteTitle,
   description: siteDescription,
   openGraph: {
     title: siteTitle,
     description: siteDescription,
-    url: siteUrl,
-    siteName: "Azure Staycation by Siaos",
+    url: SITE_URL,
+    siteName: SITE_NAME,
     locale: "en_PH",
     type: "website",
     images: [
@@ -43,6 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <head>
+        <StructuredData />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
