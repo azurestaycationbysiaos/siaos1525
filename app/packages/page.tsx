@@ -24,7 +24,8 @@ const SAMPLES = [
     title: "Full Room Decorations / Themed Set Ups",
     body: "Explore our full-room decoration samples, perfect for birthdays, anniversaries, and special surprises. Transform your staycation into a magical celebration!",
     img: "/images/sample-fullroom.jpg",
-    href: CANVA_LINKS.fullRoomPortfolio,
+    href: "/packages/full-room-portfolio",
+    internal: true,
     aspect: "aspect-square",
   },
   {
@@ -38,7 +39,8 @@ const SAMPLES = [
     title: "Bridal Shower Set Ups",
     body: "Celebrate the bride-to-be with our beautifully styled full-room bridal shower setup, designed to create a fun, elegant, and unforgettable pre-wedding celebration.",
     img: "/images/sample-bridalshower.jpg",
-    href: CANVA_LINKS.bridalShowerPortfolio,
+    href: "/packages/bridal-shower-portfolio",
+    internal: true,
     aspect: "aspect-square",
   },
   {
@@ -46,7 +48,8 @@ const SAMPLES = [
     body: "Share your joyful news with a beautifully styled full-room setup, perfect for intimate pregnancy announcements and memorable gender reveal celebrations.",
     img: "/images/sample-pregnancy.jpg",
     aspect: "aspect-square",
-    href: CANVA_LINKS.pregnancyGenderPortfolio,
+    href: "/packages/pregnancy-gender-portfolio",
+    internal: true,
   },
 ];
 

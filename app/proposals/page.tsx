@@ -3,7 +3,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TikTokEmbed from "../components/TikTokEmbed";
-import { CANVA_LINKS, SOCIAL_LINKS } from "../../lib/links";
+import { SOCIAL_LINKS } from "../../lib/links";
 
 export const metadata = {
   title: "Proposal Packages — Signature & Happily Ever After Setups | Azure Staycation by Siaos",
@@ -17,8 +17,8 @@ const PACKAGES = [
     price: "₱10,999",
     body: "Delight your partner with our signature wedding proposal setup, designed for an unforgettable \u201cYes!\u201d moment in an elegant, fully decorated room.",
     img: "/images/proposal-signature.jpg",
-    portfolio: CANVA_LINKS.signatureProposalPortfolio,
-    portfolioExternal: true,
+    portfolio: "/proposals/signature-proposal-portfolio",
+    portfolioExternal: false,
   },
   {
     name: "Happily Ever After Set Up",
