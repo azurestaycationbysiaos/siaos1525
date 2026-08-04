@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export const metadata = {
   title: "Full Room Decorations & Themed Set Ups — Portfolio | Azure Staycation by Siaos",
