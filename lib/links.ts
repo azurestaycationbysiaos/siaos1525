@@ -21,7 +21,7 @@ export const CANVA_LINKS = {
   paymentChannels: "https://www.canva.com/design/DAGf6cocW_A/b1tGFzpZ-c4i7ny92O_hPg/view",
   termsAndConditions: "https://www.canva.com/design/DAGf6cocW_A/b1tGFzpZ-c4i7ny92O_hPg/view",
   fullRoomPortfolio: "/packages/full-decorations-portfolio",
-  girlfriendPortfolio: "https://www.canva.com/design/DAHC4jZNoGU/idJMgslL8dTF98erlO3WDg/view",
+  girlfriendPortfolio: "/packages/girlfriend-portfolio",
   bridalShowerPortfolio: "https://www.canva.com/design/DAHC4202Pxk/bg-SNtuxEuekAzzR6xjOqg/view",
   pregnancyGenderPortfolio: "https://www.canva.com/design/DAHC496-HIg/ydcFnPxofXTUu-uDhTHSvg/view",
   signatureProposalPortfolio: "https://www.canva.com/design/DAGf6n0nMg4/hbir1IqR5VND4OOR95bhQw/view",
