@@ -22,8 +22,8 @@ export const CANVA_LINKS = {
   termsAndConditions: "https://www.canva.com/design/DAGf6cocW_A/b1tGFzpZ-c4i7ny92O_hPg/view",
   fullRoomPortfolio: "/packages/full-decorations-portfolio",
   girlfriendPortfolio: "/packages/girlfriend-portfolio",
-  bridalShowerPortfolio: "https://www.canva.com/design/DAHC4202Pxk/bg-SNtuxEuekAzzR6xjOqg/view",
-  pregnancyGenderPortfolio: "https://www.canva.com/design/DAHC496-HIg/ydcFnPxofXTUu-uDhTHSvg/view",
+  bridalShowerPortfolio: "/packages/bridal-shower-portfolio",
+  pregnancyGenderPortfolio: "/packages/pregnancy-gender-portfolio",
   signatureProposalPortfolio: "https://www.canva.com/design/DAGf6n0nMg4/hbir1IqR5VND4OOR95bhQw/view",
   happyEverAfterPortfolio: "https://www.canva.com/design/DAGf60egjUA/O6iKyMkYeyHdZgvB7kxe9w/view",
 };
