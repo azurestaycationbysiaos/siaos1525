@@ -15,7 +15,7 @@ export const CANVA_LINKS = {
   inclusionsAndPhotos: "https://www.canva.com/design/DAGf55gKsa4/CaLJ99pYuHM6SgSjscS7hw/view",
   exclusions: "https://www.canva.com/design/DAHDJcAsfiQ/KiyRC8dpi6-i8EVAGJ6c0w/view",
   clientReviews: "https://www.canva.com/design/DAGfz2uGXbA/lUWqfKP79NSUeMj2d-c0TA/view",
-  legitimacyCheck: "https://www.canva.com/design/DAGf6cmt3IY/9f_hPRKvFL4MFIm5SaMyXQ/view",
+  legitimacyCheck: "https://www.facebook.com/share/p/1EyV285U3c/",
   houseRules: "https://www.canva.com/design/DAGj1WmyPtI/iIwcJQ7P90HJjwHpg96h8w/view",
   bookingProcess: "https://www.canva.com/design/DAGf6S94bdU/cxDPTkLwzZVR8TM0JcHXxw/view",
   paymentChannels: "https://www.canva.com/design/DAGf6cocW_A/b1tGFzpZ-c4i7ny92O_hPg/view",
