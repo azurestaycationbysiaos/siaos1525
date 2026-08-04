@@ -30,7 +30,7 @@ const SAMPLES = [
   },
  {
   title: "Will You Be My Girlfriend Set Ups",
-  body: "Transform your staycation into a memorable moment with our romantic full-room decorations made for that special "Will you be my girlfriend?" ask.",
+  body: "Transform your staycation into a memorable moment with our romantic full-room decorations made for that special \"Will you be my girlfriend?\" ask.",
   img: "/images/sample-girlfriend.jpg",
   href: CANVA_LINKS.girlfriendPortfolio,
   aspect: "aspect-[3/4]",
