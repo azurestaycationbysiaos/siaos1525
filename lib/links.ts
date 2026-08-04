@@ -20,7 +20,7 @@ export const CANVA_LINKS = {
   bookingProcess: "https://www.canva.com/design/DAGf6S94bdU/cxDPTkLwzZVR8TM0JcHXxw/view",
   paymentChannels: "https://www.canva.com/design/DAGf6cocW_A/b1tGFzpZ-c4i7ny92O_hPg/view",
   termsAndConditions: "https://www.canva.com/design/DAGf6cocW_A/b1tGFzpZ-c4i7ny92O_hPg/view",
-  girlfriendPortfolio: "https://www.canva.com/design/DAHC4jZNoGU/idJMgslL8dTF98erlO3WDg/view",
+  girlfriendPortfolio: "/packages/girlfriend-portfolio",
   happyEverAfterPortfolio: "https://www.canva.com/design/DAGf60egjUA/O6iKyMkYeyHdZgvB7kxe9w/view",
 };
 
