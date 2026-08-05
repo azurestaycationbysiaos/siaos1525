@@ -59,12 +59,12 @@ Planning your next staycation or intimate celebration?
 
 Follow [Azure Staycation by Siaos on Facebook](https://www.facebook.com/p/Azure-Staycation-by-Siaos-61552788271481/) to see our latest updates, guest experiences, and exclusive offers. We regularly share:
 
-* 💍 Wedding proposal setups
-* 🎂 Birthday and anniversary celebrations
-* ⭐ Guest reviews and testimonials
-* 📅 Last-minute availability
-* 🎉 Seasonal promotions
-* 📸 Behind-the-scenes content
-* 🏖️ Staycation tips and travel inspiration
+💍 Wedding proposal setups
+🎂 Birthday and anniversary celebrations
+⭐ Guest reviews and testimonials
+📅 Last-minute availability
+🎉 Seasonal promotions
+📸 Behind-the-scenes content
+🏖️ Staycation tips and travel inspiration
 
 Whether you're planning a romantic getaway, celebrating a special milestone, or simply looking for a relaxing escape in Parañaque, our Facebook page is the best place to stay updated with our latest room setups and announcements.
