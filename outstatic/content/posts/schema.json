@@ -8,6 +8,13 @@
       "required": false,
       "fieldType": "Image",
       "dataType": "image"
+    },
+    "description": {
+      "title": "Description",
+      "description": "",
+      "required": false,
+      "fieldType": "RichText",
+      "dataType": "string"
     }
   }
 }
