@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getDocuments } from "outstatic/server";
+import { getAllPosts } from "../../lib/posts";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
@@ -9,33 +9,8 @@ export const metadata = {
     "Proposal planning tips, timing advice, and real setup ideas from Azure Staycation by Siaos in Parañaque.",
 };
 
-type Post = {
-  title: string;
-  slug: string;
-  description?: string;
-  publishedAt?: string;
-  coverImage?: string;
-};
-
-async function getPosts(): Promise<Post[]> {
-  try {
-    const posts = getDocuments("posts", [
-      "title",
-      "slug",
-      "description",
-      "publishedAt",
-      "coverImage",
-    ]);
-    return posts as unknown as Post[];
-  } catch {
-    // Returns an empty list until the "posts" collection exists in Outstatic —
-    // create your first post from the /outstatic dashboard to populate this page.
-    return [];
-  }
-}
-
 export default async function BlogIndex() {
-  const posts = await getPosts();
+  const posts = getAllPosts();
 
   return (
     <div className="flex flex-col">
@@ -43,11 +18,11 @@ export default async function BlogIndex() {
 
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-10">
         <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-4">
-          Azure Staycation Blog
+          Proposal Tips &amp; Ideas
         </p>
         <h1 className="font-display text-5xl text-ink leading-[1.05] max-w-2xl">
-          Your guide to proposals, birthdays, and celebrations at{" "}
-<em className="italic text-clay-deep">Azure Staycation by Siaos, Azure Urban Resort Residences, Parañaque.</em>
+          Everything we&rsquo;ve learned about pulling off the perfect{" "}
+          <em className="italic text-clay-deep">yes.</em>
         </h1>
       </section>
 
@@ -58,12 +33,11 @@ export default async function BlogIndex() {
               No posts published yet
             </p>
             <p className="text-ink-soft text-sm max-w-md mx-auto">
-              Sign in to{" "}
+              Add a new Markdown file to{" "}
               <code className="bg-ink/5 px-1.5 py-0.5 rounded text-clay-deep">
-                /outstatic
+                outstatic/content/posts
               </code>{" "}
-              and publish your first post — it will appear here automatically,
-              committed straight to your GitHub repo.
+              and it will appear here automatically after your next deploy.
             </p>
           </div>
         ) : (
