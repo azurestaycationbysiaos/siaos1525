@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getDocumentSlugs } from "outstatic/server";
+import { getPostSlugs } from "../lib/posts";
 import { SITE_URL } from "../lib/site";
 
 const STATIC_ROUTES: { path: string; priority: number; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
@@ -33,18 +33,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route.priority,
   }));
 
-  let blogEntries: MetadataRoute.Sitemap = [];
-  try {
-    const slugs = getDocumentSlugs("posts");
-    blogEntries = slugs.map((slug: string) => ({
-      url: `${SITE_URL}/blog/${slug}`,
-      lastModified: now,
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    }));
-  } catch {
-    blogEntries = [];
-  }
+  const blogEntries: MetadataRoute.Sitemap = getPostSlugs().map((slug) => ({
+    url: `${SITE_URL}/blog/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
 
   return [...staticEntries, ...blogEntries];
 }
