@@ -1,41 +1,11 @@
 import { notFound } from "next/navigation";
-import { getDocumentBySlug, getDocumentSlugs } from "outstatic/server";
+import { getPostSlugs, getPostBySlug } from "../../../lib/posts";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import markdownToHtml from "../../../lib/markdownToHtml";
 
-type Post = {
-  title: string;
-  slug: string;
-  description?: string;
-  publishedAt?: string;
-  author?: { name?: string } | string;
-  content?: string;
-};
-
 export async function generateStaticParams() {
-  try {
-    const slugs = getDocumentSlugs("posts");
-    return slugs.map((slug: string) => ({ slug }));
-  } catch {
-    return [];
-  }
-}
-
-async function getPost(slug: string): Promise<Post | null> {
-  try {
-    const post = getDocumentBySlug("posts", slug, [
-      "title",
-      "slug",
-      "description",
-      "publishedAt",
-      "author",
-      "content",
-    ]);
-    return post as unknown as Post;
-  } catch {
-    return null;
-  }
+  return getPostSlugs().map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({
@@ -44,7 +14,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = await getPost(slug);
+  const post = getPostBySlug(slug);
   if (!post) return {};
   return {
     title: `${post.title} — Azure Staycation by Siaos`,
@@ -58,7 +28,7 @@ export default async function BlogPost({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const post = await getPost(slug);
+  const post = getPostBySlug(slug);
 
   if (!post) {
     notFound();
