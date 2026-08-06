@@ -112,10 +112,11 @@ Need snacks, drinks, toiletries, or other daily essentials?
 
 Guests can visit the following stores within Azure Urban Resort Residences:
 
-- Stopover Bahamas
-- Lawson Boracay
-- Kechin
-- 7-Eleven Maldives Tower
+- Stopover, Bahamas tower
+- Lawsonm, Boracay tower
+- Kerchin Convenience Store, Maldives tower
+- 7-Eleven, Maldives tower
+- Jonson Mart, Maui tower
 
 These stores make it convenient to purchase everyday necessities without leaving the property.
 
