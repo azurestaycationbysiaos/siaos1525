@@ -31,8 +31,6 @@ The Azure Beach is one of the property's most iconic attractions. With its fine 
 
 The Azure Wave Pool gives guests the experience of enjoying beach-like waves without leaving Metro Manila. It's one of the highlights of staying at Azure Urban Resort Residences.
 
-*Ask your host for the current wave pool schedule before your stay.*
-
 ## Beach Bar
 
 ![Beach Bar at Azure Urban Resort Residences](/images/blog/amenities/azure-beach-bar-azure-urban-resort-residences.webp)
