@@ -31,13 +31,17 @@ The Azure Beach is one of the property's most iconic attractions. With its fine 
 
 The Azure Wave Pool gives guests the experience of enjoying beach-like waves without leaving Metro Manila. It's one of the highlights of staying at Azure Urban Resort Residences.
 
-*Ask your host for the current wave pool schedule before your stay.*
-
 ## Beach Bar
 
 ![Beach Bar at Azure Urban Resort Residences](/images/blog/amenities/azure-beach-bar-azure-urban-resort-residences.webp)
 
 Located beside Azure Beach, the Beach Bar provides a relaxing space where guests can enjoy the resort ambiance while taking a break from swimming or exploring the property.
+
+## The Sands
+
+![The Sands at Azure Urban Resort Residences](/images/blog/amenities/the-sands-azure-urban-resort-residences.webp)
+
+[The Sands](https://www.facebook.com/thesandsbistroph/) is a beachfront-themed bistro and bar located right next to the wave pool, giving guests a relaxed resort-style spot to grab food and drinks. It's open until late in the evening, making it a good choice for guests who want a casual meal or a nightcap without leaving the property.
 
 ## Children's Beach Playground
 
@@ -56,10 +60,6 @@ Guests looking for outdoor activities can enjoy the beach volleyball area, which
 ![Azure Clubhouse at Azure Urban Resort Residences](/images/blog/amenities/azure-clubhouse-azure-urban-resort-residences.webp)
 
 During your stay, guests may access selected areas inside the Azure Clubhouse. These include:
-
-- Café Elegante
-- Lobby Lounge
-- View Deck
 
 ### Café Elegante
 
