@@ -41,7 +41,7 @@ export default async function BlogIndex() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group block bg-cream-card border border-ink/10 overflow-hidden hover:border-clay-deep transition-colors""
+                className="group block bg-cream-card border border-ink/10 overflow-hidden hover:border-clay-deep transition-colors"
               >
                 {post.coverImage ? (
                   <img
