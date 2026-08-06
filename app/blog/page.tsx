@@ -2,20 +2,16 @@ import Link from "next/link";
 import { getAllPosts } from "../../lib/posts";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
 export const metadata = {
   title: "Proposal Tips & Ideas — Azure Staycation by Siaos",
   description:
     "Proposal planning tips, timing advice, and real setup ideas from Azure Staycation by Siaos in Parañaque.",
 };
-
 export default async function BlogIndex() {
   const posts = getAllPosts();
-
   return (
     <div className="flex flex-col">
       <Header />
-
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-10">
         <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-4">
           Proposal Tips &amp; Ideas
@@ -25,7 +21,6 @@ export default async function BlogIndex() {
           <em className="italic text-clay-deep">yes.</em>
         </h1>
       </section>
-
       <section className="mx-auto max-w-6xl px-6 pb-24">
         {posts.length === 0 ? (
           <div className="rounded-2xl border border-dashed border-ink/20 bg-cream-card px-8 py-16 text-center">
@@ -48,7 +43,15 @@ export default async function BlogIndex() {
                 href={`/blog/${post.slug}`}
                 className="group block bg-cream-card border border-ink/10 rounded-2xl overflow-hidden hover:border-clay-deep transition-colors"
               >
-                <div className="aspect-[4/3] bg-gradient-to-br from-sage/30 via-sand to-clay/30" />
+                {post.coverImage ? (
+                  <img
+                    src={post.coverImage}
+                    alt={post.title}
+                    className="aspect-[4/3] w-full object-cover"
+                  />
+                ) : (
+                  <div className="aspect-[4/3] bg-gradient-to-br from-sage/30 via-sand to-clay/30" />
+                )}
                 <div className="p-6">
                   {post.publishedAt && (
                     <p className="text-xs text-ink-soft/70 mb-2">
@@ -73,7 +76,6 @@ export default async function BlogIndex() {
           </div>
         )}
       </section>
-
       <Footer />
     </div>
   );
