@@ -50,7 +50,7 @@ export default async function BlogIndex() {
                     className="aspect-[4/3] w-full object-cover"
                   />
                 ) : (
-                  <div className="aspect-[4/3] bg-gradient-to-br from-sage/30 via-sand to-clay/30" />
+                  <div className="aspect-[3/2] bg-gradient-to-br from-sage/30 via-sand to-clay/30" />
                 )}
                 <div className="p-6">
                   {post.publishedAt && (
