@@ -47,7 +47,7 @@ export default async function BlogIndex() {
                   <img
                     src={post.coverImage}
                     alt={post.title}
-                    className="aspect-[4/3] w-full object-cover"
+                    className="aspect-[3/2] w-full object-cover"
                   />
                 ) : (
                   <div className="aspect-[3/2] bg-gradient-to-br from-sage/30 via-sand to-clay/30" />
