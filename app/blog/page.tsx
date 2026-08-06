@@ -3,9 +3,9 @@ import { getAllPosts } from "../../lib/posts";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 export const metadata = {
-  title: "Proposal Tips & Ideas — Azure Staycation by Siaos",
+  title: "Staycation, Celebration & Proposal Guides — Azure Staycation by Siaos",
   description:
-    "Proposal planning tips, timing advice, and real setup ideas from Azure Staycation by Siaos in Parañaque.",
+    "Everything to know about staying at Azure Urban Resort Residences with Azure Staycation by Siaos — staycation tips, celebration setup ideas, house rules, and proposal planning advice for guests in Parañaque.",
 };
 export default async function BlogIndex() {
   const posts = getAllPosts();
@@ -14,11 +14,11 @@ export default async function BlogIndex() {
       <Header />
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-10">
         <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-4">
-          Proposal Tips &amp; Ideas
+          Staycation & Celebration Guides
         </p>
         <h1 className="font-display text-5xl text-ink leading-[1.05] max-w-2xl">
-          Everything we&rsquo;ve learned about pulling off the perfect{" "}
-          <em className="italic text-clay-deep">yes.</em>
+  Everything you need to know about staying, celebrating, and{" "}
+  <em className="italic text-clay-deep">proposing</em> at Azure.
         </h1>
       </section>
       <section className="mx-auto max-w-6xl px-6 pb-24">
@@ -41,13 +41,13 @@ export default async function BlogIndex() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group block bg-cream-card border border-ink/10 rounded-2xl overflow-hidden hover:border-clay-deep transition-colors"
+                className="group block bg-cream-card border border-ink/10 overflow-hidden hover:border-clay-deep transition-colors"
               >
                 {post.coverImage ? (
                   <img
                     src={post.coverImage}
                     alt={post.title}
-                    className="aspect-[4/3] w-full object-cover"
+                    className="aspect-[3/2] w-full object-cover"
                   />
                 ) : (
                   <div className="aspect-[3/2] bg-gradient-to-br from-sage/30 via-sand to-clay/30" />
