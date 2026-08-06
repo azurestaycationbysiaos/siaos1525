@@ -5,7 +5,7 @@ description: "Every Azure staycation host has their own house rules, but all gue
 slug: "azure-policies-vs-host-house-rules"
 author:
   name: "Azure Staycation by Siaos"
-coverImage: /images/blog/azure-policies-vs-host-house-rules.webp"
+coverImage: /images/blog/azure-policies-vs-host-house-rules.webp
 status: "published"
 ---
 
