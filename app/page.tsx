@@ -310,19 +310,13 @@ export default function Home() {
                 <a href={`mailto:${CONTACT.email}`} className="underline hover:text-gold">
                   {CONTACT.email}
                 </a>
-              </p>
-              <p>
               <p>
                 <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} className="underline hover:text-gold">
                   {CONTACT.phone}
                 </a>
               </p>
               <p>
-               <p>
-                
-                  href={`viber://chat?number=%2B63${CONTACT.viber.replace(/\s/g, "").slice(1)}`}
-                  className="underline hover:text-gold"
-                >
+                <a href={`viber://chat?number=%2B63${CONTACT.viber.replace(/\s/g, "").slice(1)}`} className="underline hover:text-gold">
                   Viber: {CONTACT.viber}
                 </a>
               </p>
