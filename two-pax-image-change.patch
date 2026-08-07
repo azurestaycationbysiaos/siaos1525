@@ -1,0 +1,47 @@
+diff --git a/app/food-offers/page.tsx b/app/food-offers/page.tsx
+index 531a9f0..9573756 100644
+--- a/app/food-offers/page.tsx
++++ b/app/food-offers/page.tsx
+@@ -18,9 +18,9 @@ export const metadata = {
+     images: [
+       {
+         url: "/images/food-offers/food-offers-hero.jpg",
+-        width: 864,
+-        height: 864,
+-        alt: "Elegant plated dinner set up for an Azure Staycation by Siaos celebration",
++        width: 2048,
++        height: 768,
++        alt: "Azure Staycation by Siaos — Food Packages, celebration and proposal setups",
+       },
+     ],
+   },
+@@ -160,17 +160,12 @@ export default function FoodOffersPage() {
+         <div className="relative w-full h-[220px] sm:h-[320px] md:h-[420px]">
+           <Image
+             src="/images/food-offers/food-offers-hero.jpg"
+-            alt="Elegant plated dinner set up for an Azure Staycation by Siaos celebration"
++            alt="Azure Staycation by Siaos — Food Packages, celebration and proposal setups"
+             fill
+             sizes="100vw"
+             className="object-cover"
+             priority
+           />
+-          <div className="absolute inset-0 bg-ink/25 flex items-end justify-center pb-4 sm:pb-6">
+-            <p className="font-display italic text-sand-light text-xl sm:text-2xl md:text-3xl tracking-wide drop-shadow-md text-center px-4">
+-              Food Selection for Your Next Celebration
+-            </p>
+-          </div>
+         </div>
+       </section>
+ 
+@@ -216,8 +211,8 @@ export default function FoodOffersPage() {
+             <div className="rounded-2xl overflow-hidden border border-ink/10">
+               <div className="relative aspect-square">
+                 <Image
+-                  src="/images/food-offers/party-tray-spread-overview.jpg"
+-                  alt="2-pax meal package spread with main entrees, pasta, and rice"
++                  src="/images/food-offers/two-pax-table-setting.jpg"
++                  alt="2-pax romantic dinner table setting with candles, wine glasses, and food trays"
+                   fill
+                   sizes="(max-width: 768px) 100vw, 500px"
+                   className="object-cover"
