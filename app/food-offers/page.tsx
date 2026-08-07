@@ -387,7 +387,9 @@ export default function FoodOffersPage() {
                   className="object-cover"
                 />
               </div>
-            </div
+            </div>
+          </div>
+
           <div>
             <h2 className="font-display text-2xl text-ink mb-3">Toasting Wines</h2>
             <p className="text-ink-soft text-sm leading-relaxed mb-5">
