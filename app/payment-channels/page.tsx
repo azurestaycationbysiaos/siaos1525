@@ -24,19 +24,22 @@ export default function PaymentChannelsPage() {
           Azure Staycation by Siaos
         </p>
         <h1 className="font-display text-4xl text-ink mb-4">Payment Channels</h1>
-        <p className="text-ink-soft leading-relaxed mb-10 max-w-xl">
-          All accounts are under Lyryque Lysl Camylle Siaotong. We do not
-          accept cash payments — please ensure you can transfer online.
-          Scan a QR code below, or send directly to the number listed.
-          If you have any questions, you may contact me through the following communication channels:
-          email: "staycationnearme2023@gmail.com",
-          phone: "0947 504 2783",
-          viber: "0920 970 1226",
-          whatsapp1: "+63 920 970 1226",
-          whatsapp2: "+63 991 925 2497"
-
+        <p className="text-ink-soft leading-relaxed mb-6 max-w-xl">
+  All accounts are under Lyryque Lysl Camylle Siaotong. We do not
+  accept cash payments — please ensure you can transfer online.
+  Scan a QR code below, or send directly to the number listed.
+</p>
+<p className="text-ink-soft leading-relaxed mb-10 max-w-xl">
+  If you have any questions, you may contact me through the following channels:
+</p>
+<ul className="text-ink-soft leading-relaxed mb-10 max-w-xl list-disc list-inside space-y-1">
+  <li>Email: <a href="mailto:staycationnearme2023@gmail.com" className="underline">staycationnearme2023@gmail.com</a></li>
+  <li>Phone: <a href="tel:+639475042783" className="underline">0947 504 2783</a></li>
+  <li>Viber: 0920 970 1226</li>
+  <li>WhatsApp: <a href="https://wa.me/639209701226" className="underline">+63 920 970 1226</a></li>
+  <li>WhatsApp: <a href="https://wa.me/639919252497" className="underline">+63 991 925 2497</a></li>
+</ul>
         </p>
-
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
           {CHANNELS.map((c) => (
             <div key={c.name} className="bg-cream-card border border-ink/10 rounded-2xl p-6 text-center">
