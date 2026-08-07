@@ -203,7 +203,7 @@ export default function Home() {
               diligence. We&rsquo;ve been in the staycation business since 2023.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a
+              
                 href={CANVA_LINKS.legitimacyCheck}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -211,7 +211,7 @@ export default function Home() {
               >
                 Check our legitimacy here
               </a>
-              <a
+              
                 href={SOCIAL_LINKS.closedDealsAlbum}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -243,7 +243,7 @@ export default function Home() {
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {SOCIAL_PROOFS.map((p) => (
-              <a
+              
                 key={p.label}
                 href={p.href}
                 target="_blank"
@@ -277,7 +277,7 @@ export default function Home() {
                 {r.label}
               </Link>
             ) : (
-              <a
+              
                 key={r.label}
                 href={r.href}
                 target="_blank"
@@ -303,11 +303,6 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6 py-24">
           <h2 className="font-display text-3xl mb-2">Feel free to get in touch</h2>
           <p className="text-sand-light/70 mb-8">Azure Staycation by Siaos</p>
-          {/* Contact */}
-      <section id="contact" className="bg-ink text-sand-light">
-        <div className="mx-auto max-w-6xl px-6 py-24">
-          <h2 className="font-display text-3xl mb-2">Feel free to get in touch</h2>
-          <p className="text-sand-light/70 mb-8">Azure Staycation by Siaos</p>
           <div className="grid md:grid-cols-2 gap-8 text-sm text-sand-light/80">
             <div className="space-y-3">
               <p>{CONTACT.addressFull}</p>
@@ -327,31 +322,16 @@ export default function Home() {
                 </a>
               </p>
               <p>
-                
-                  href={`https://wa.me/${CONTACT.whatsapp1.replace(/[\s+]/g, "")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-gold"
-                >
+                <a href={`https://wa.me/${CONTACT.whatsapp1.replace(/[\s+]/g, "")}`} target="_blank" rel="noopener noreferrer" className="underline hover:text-gold">
                   WhatsApp: {CONTACT.whatsapp1}
                 </a>
                 {" · "}
-                
-                  href={`https://wa.me/${CONTACT.whatsapp2.replace(/[\s+]/g, "")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-gold"
-                >
+                <a href={`https://wa.me/${CONTACT.whatsapp2.replace(/[\s+]/g, "")}`} target="_blank" rel="noopener noreferrer" className="underline hover:text-gold">
                   {CONTACT.whatsapp2}
                 </a>
               </p>
               <p>
-                
-                  href={SOCIAL_LINKS.googleMaps}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-gold"
-                >
+                <a href={SOCIAL_LINKS.googleMaps} target="_blank" rel="noopener noreferrer" className="underline hover:text-gold">
                   View on Google Maps
                 </a>
               </p>
