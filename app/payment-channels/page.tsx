@@ -29,7 +29,12 @@ export default function PaymentChannelsPage() {
           accept cash payments — please ensure you can transfer online.
           Scan a QR code below, or send directly to the number listed.
           If you have any questions, you may contact me through the following communication channels:
-  
+          email: "staycationnearme2023@gmail.com",
+          phone: "0947 504 2783",
+          viber: "0920 970 1226",
+          whatsapp1: "+63 920 970 1226",
+          whatsapp2: "+63 991 925 2497"
+
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
