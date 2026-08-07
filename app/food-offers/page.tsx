@@ -371,7 +371,7 @@ export default function FoodOffersPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden border border-ink/10 relative aspect-square">
                 <Image
-                  src="/images/food-offers/celebratory-cake-birthday.jpg"
+                  src="/images/food-offers/cake-anniversary-heart.jpg"
                   alt="Custom birthday cake for an Azure Staycation celebration"
                   fill
                   sizes="(max-width: 768px) 50vw, 240px"
@@ -380,7 +380,7 @@ export default function FoodOffersPage() {
               </div>
               <div className="rounded-2xl overflow-hidden border border-ink/10 relative aspect-square">
                 <Image
-                  src="/images/food-offers/celebratory-cake-giftbox.jpg"
+                  src="/images/food-offers/cake-anniversary-roses.jpg"
                   alt="Custom cake in a gift box for a staycation celebration"
                   fill
                   sizes="(max-width: 768px) 50vw, 240px"
