@@ -318,6 +318,7 @@ export default function Home() {
                 </a>
               </p>
               <p>
+               <p>
                 
                   href={`viber://chat?number=%2B63${CONTACT.viber.replace(/\s/g, "").slice(1)}`}
                   className="underline hover:text-gold"
