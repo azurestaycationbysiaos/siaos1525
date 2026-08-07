@@ -371,8 +371,8 @@ export default function FoodOffersPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden border border-ink/10 relative aspect-square">
                 <Image
-                  src="/images/food-offers/celebratory-cake-birthday.jpg"
-                  alt="Custom birthday cake for an Azure Staycation celebration"
+                  src="/images/food-offers/cake-anniversary-heart.jpg"
+                  alt="Heart-shaped custom anniversary cake for an Azure Staycation celebration"
                   fill
                   sizes="(max-width: 768px) 50vw, 240px"
                   className="object-cover"
@@ -380,15 +380,14 @@ export default function FoodOffersPage() {
               </div>
               <div className="rounded-2xl overflow-hidden border border-ink/10 relative aspect-square">
                 <Image
-                  src="/images/food-offers/celebratory-cake-giftbox.jpg"
-                  alt="Custom cake in a gift box for a staycation celebration"
+                  src="/images/food-offers/cake-anniversary-roses.jpg"
+                  alt="Custom anniversary cake with a rose bouquet for a staycation celebration"
                   fill
                   sizes="(max-width: 768px) 50vw, 240px"
                   className="object-cover"
                 />
               </div>
-            </div>
-          </div>
+            </div
 
           <div>
             <h2 className="font-display text-2xl text-ink mb-3">Toasting Wines</h2>
