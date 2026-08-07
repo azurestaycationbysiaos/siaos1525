@@ -25,9 +25,8 @@ export const CANVA_LINKS = {
 };
 
 export const CONTACT = {
-  addressShort: "15th floor, Santorini Tower, Azure Urban Resort Residences",
-  addressFull:
-    "15th floor Santorini Tower, Km. 16, West Service Road, Bicutan, Parañaque City",
+  addressShort: "...",
+  addressFull: "...",
   email: "staycationnearme2023@gmail.com",
   phone: "0947 504 2783",
   viber: "0920 970 1226",
