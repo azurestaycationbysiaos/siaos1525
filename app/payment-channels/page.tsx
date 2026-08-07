@@ -28,6 +28,8 @@ export default function PaymentChannelsPage() {
           All accounts are under Lyryque Lysl Camylle Siaotong. We do not
           accept cash payments — please ensure you can transfer online.
           Scan a QR code below, or send directly to the number listed.
+          If you have any questions, you may contact me through the following communication channels:
+  
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
