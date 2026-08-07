@@ -310,6 +310,7 @@ export default function Home() {
                 <a href={`mailto:${CONTACT.email}`} className="underline hover:text-gold">
                   {CONTACT.email}
                 </a>
+              </p>
               <p>
                 <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} className="underline hover:text-gold">
                   {CONTACT.phone}
@@ -321,7 +322,7 @@ export default function Home() {
                 </a>
               </p>
               <p>
-                <a
+                
                   href={`https://wa.me/${CONTACT.whatsapp1.replace(/[\s+]/g, "")}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -330,7 +331,7 @@ export default function Home() {
                   WhatsApp: {CONTACT.whatsapp1}
                 </a>
                 {" · "}
-                <a
+                
                   href={`https://wa.me/${CONTACT.whatsapp2.replace(/[\s+]/g, "")}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -340,11 +341,12 @@ export default function Home() {
                 </a>
               </p>
               <p>
-                <a
+                
                   href={SOCIAL_LINKS.googleMaps}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-gold"
+                >
                 >
                   View on Google Maps
                 </a>
