@@ -312,11 +312,13 @@ export default function Home() {
                 </a>
               </p>
               <p>
+              <p>
                 <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} className="underline hover:text-gold">
                   {CONTACT.phone}
-                </p>
+                </a>
+              </p>
               <p>
-                <a
+                
                   href={`viber://chat?number=%2B63${CONTACT.viber.replace(/\s/g, "").slice(1)}`}
                   className="underline hover:text-gold"
                 >
