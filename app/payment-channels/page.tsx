@@ -39,7 +39,6 @@ export default function PaymentChannelsPage() {
   <li>WhatsApp: <a href="https://wa.me/639209701226" className="underline">+63 920 970 1226</a></li>
   <li>WhatsApp: <a href="https://wa.me/639919252497" className="underline">+63 991 925 2497</a></li>
 </ul>
-        </p>
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
           {CHANNELS.map((c) => (
             <div key={c.name} className="bg-cream-card border border-ink/10 rounded-2xl p-6 text-center">
