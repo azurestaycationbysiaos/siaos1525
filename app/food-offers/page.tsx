@@ -76,18 +76,18 @@ const BUNDLES = [
   {
     name: "Crispy Bagnet Kare-Kare and Sisig Bagnet",
     price: "₱2,799",
-    img: "/images/food-offers/bundle-sisig-bagnet.jpg",
+    img: "/images/food-offers/bundle-karekare-sisig.jpg",
   },
   {
     name: "Crispy Bagnet Kare-Kare and Korean Style Chicken or Buttered Chicken",
     price: "₱2,999",
-    img: "/images/food-offers/bundle-korean-chicken.jpg",
+    img: "/images/food-offers/bundle-karekare-chicken.jpg",
     featured: true,
   },
   {
     name: "Crispy Bagnet Kare-Kare and Lumpiang Shanghai",
     price: "₱2,799",
-    img: "/images/food-offers/bundle-lumpiang-shanghai.jpg",
+    img: "/images/food-offers/bundle-lumpia-karekare.jpg",
   },
 ];
 
