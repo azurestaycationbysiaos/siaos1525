@@ -13,6 +13,7 @@ const STATIC_ROUTES: { path: string; priority: number; changeFrequency: Metadata
   { path: "/proposals/signature-proposal-portfolio", priority: 0.7, changeFrequency: "monthly" },
   { path: "/proposals/happy-ever-after-portfolio", priority: 0.7, changeFrequency: "monthly" },
   { path: "/proposals/terms-and-conditions", priority: 0.3, changeFrequency: "yearly" },
+  { path: "/food-offers", priority: 0.8, changeFrequency: "monthly" },
   { path: "/inclusions", priority: 0.6, changeFrequency: "monthly" },
   { path: "/exclusions", priority: 0.5, changeFrequency: "monthly" },
   { path: "/house-rules", priority: 0.5, changeFrequency: "monthly" },

@@ -95,6 +95,12 @@ export default function Home() {
               >
                 Exclusions: Parking fee and Pool access
               </Link>
+              <Link
+                href="/food-offers"
+                className="rounded-full border border-ink/20 px-7 py-3 font-semibold text-ink hover:border-ink transition-colors"
+              >
+                Food offers &amp; catering
+              </Link>
             </div>
           </div>
 
