@@ -303,6 +303,11 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6 py-24">
           <h2 className="font-display text-3xl mb-2">Feel free to get in touch</h2>
           <p className="text-sand-light/70 mb-8">Azure Staycation by Siaos</p>
+          {/* Contact */}
+      <section id="contact" className="bg-ink text-sand-light">
+        <div className="mx-auto max-w-6xl px-6 py-24">
+          <h2 className="font-display text-3xl mb-2">Feel free to get in touch</h2>
+          <p className="text-sand-light/70 mb-8">Azure Staycation by Siaos</p>
           <div className="grid md:grid-cols-2 gap-8 text-sm text-sand-light/80">
             <div className="space-y-3">
               <p>{CONTACT.addressFull}</p>
@@ -346,7 +351,6 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-gold"
-                >
                 >
                   View on Google Maps
                 </a>
