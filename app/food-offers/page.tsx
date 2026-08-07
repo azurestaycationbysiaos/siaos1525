@@ -43,7 +43,7 @@ const TWO_PAX = {
     "Mushroom Carbonara",
     "Pancit Canton",
     "Pancit Guisado",
-    "No Bake BakeMac",
+    "No Bake BakedMac",
     "No Bake Lasagna",
   ],
 };
