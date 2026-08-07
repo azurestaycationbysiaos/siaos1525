@@ -166,6 +166,11 @@ export default function FoodOffersPage() {
             className="object-cover"
             priority
           />
+          <div className="absolute inset-0 bg-ink/20 flex items-end justify-center pb-4 sm:pb-6">
+            <p className="font-display italic text-sand-light text-xl sm:text-2xl md:text-3xl tracking-wide drop-shadow-md text-center px-4">
+              Complete Your Staycation + Celebration with Our Food Offers
+            </p>
+          </div>
         </div>
       </section>
 
