@@ -63,7 +63,7 @@ export default function TermsPage() {
             <p>
               For inquiries or concerns, please contact Azure Staycation by
               Siaos at{" "}
-              <a href="tel:+639209701226" className="text-clay-deep underline">
+              <a href="tel:+639475042783" className="text-clay-deep underline">
                 +63 920 970 1226
               </a>
               .

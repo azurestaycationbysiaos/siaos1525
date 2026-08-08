@@ -1,11 +1,14 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { getPostSlugs, getPostBySlug } from "../../../lib/posts";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import markdownToHtml from "../../../lib/markdownToHtml";
+
 export async function generateStaticParams() {
   return getPostSlugs().map((slug) => ({ slug }));
 }
+
 export async function generateMetadata({
   params,
 }: {
@@ -19,6 +22,7 @@ export async function generateMetadata({
     description: post.description,
   };
 }
+
 export default async function BlogPost({
   params,
 }: {
@@ -50,11 +54,16 @@ export default async function BlogPost({
           {post.title}
         </h1>
         {post.coverImage && (
-          <img
-            src={post.coverImage}
-            alt={post.title}
-            className="w-full rounded-lg mb-8"
-          />
+          <div className="relative w-full aspect-[1200/630] rounded-lg overflow-hidden mb-8 bg-cream-card">
+            <Image
+              src={post.coverImage}
+              alt={post.title}
+              fill
+              sizes="(max-width: 768px) 100vw, 672px"
+              className="object-contain"
+              priority
+            />
+          </div>
         )}
         <div
           className="prose-content font-body text-ink-soft leading-relaxed [&>p]:mb-5 [&>h2]:font-display [&>h2]:text-2xl [&>h2]:text-ink [&>h2]:mt-10 [&>h2]:mb-4 [&>h3]:font-display [&>h3]:text-xl [&>h3]:text-ink [&>h3]:mt-8 [&>h3]:mb-3 [&>ul]:list-disc [&>ul]:pl-5 [&>ul]:mb-5 [&_a]:text-clay-deep [&_a]:underline"

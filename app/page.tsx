@@ -95,12 +95,6 @@ export default function Home() {
               >
                 Exclusions: Parking fee and Pool access
               </Link>
-              <Link
-                href="/food-offers"
-                className="rounded-full border border-ink/20 px-7 py-3 font-semibold text-ink hover:border-ink transition-colors"
-              >
-                Food offers &amp; catering
-              </Link>
             </div>
           </div>
 
@@ -315,45 +309,23 @@ export default function Home() {
                 <a href={`tel:${CONTACT.phone.replace(/\s/g, "")}`} className="underline hover:text-gold">
                   {CONTACT.phone}
                 </a>
-                {" · "}
-                <a href={`tel:${CONTACT.phone2.replace(/\s/g, "")}`} className="underline hover:text-gold">
-                  {CONTACT.phone2}
-                </a>
               </p>
               <p>
-                <a
-                  href={`viber://chat?number=%2B63${CONTACT.viber.replace(/\s/g, "").slice(1)}`}
-                  className="underline hover:text-gold"
-                >
+                <a href={`viber://chat?number=%2B63${CONTACT.viber.replace(/\s/g, "").slice(1)}`} className="underline hover:text-gold">
                   Viber: {CONTACT.viber}
                 </a>
               </p>
               <p>
-                <a
-                  href={`https://wa.me/${CONTACT.whatsapp1.replace(/[\s+]/g, "")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-gold"
-                >
+                <a href={`https://wa.me/${CONTACT.whatsapp1.replace(/[\s+]/g, "")}`} target="_blank" rel="noopener noreferrer" className="underline hover:text-gold">
                   WhatsApp: {CONTACT.whatsapp1}
                 </a>
                 {" · "}
-                <a
-                  href={`https://wa.me/${CONTACT.whatsapp2.replace(/[\s+]/g, "")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-gold"
-                >
+                <a href={`https://wa.me/${CONTACT.whatsapp2.replace(/[\s+]/g, "")}`} target="_blank" rel="noopener noreferrer" className="underline hover:text-gold">
                   {CONTACT.whatsapp2}
                 </a>
               </p>
               <p>
-                <a
-                  href={SOCIAL_LINKS.googleMaps}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="underline hover:text-gold"
-                >
+                <a href={SOCIAL_LINKS.googleMaps} target="_blank" rel="noopener noreferrer" className="underline hover:text-gold">
                   View on Google Maps
                 </a>
               </p>

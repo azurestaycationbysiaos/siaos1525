@@ -6,12 +6,12 @@ import { SITE_URL } from "../../lib/site";
 import { CONTACT } from "../../lib/links";
 
 export const metadata = {
-  title: "Food Offers & Catering — Party Trays, Bagnet, Meal Packages | Azure Staycation by Siaos",
+  title: "Food Offers for your Azure Staycation— Party Trays, Bagnet, Meal Packages | Azure Staycation by Siaos",
   description:
     "Add food to your Azure Staycation celebration: 2-pax meal packages from ₱1,899, bagnet & party trays from ₱1,200, food bundles from ₱2,799, plus custom cakes and toasting wines.",
   alternates: { canonical: `${SITE_URL}/food-offers` },
   openGraph: {
-    title: "Food Offers & Catering — Azure Staycation by Siaos",
+    title: "Food Offers for your next Staycation— Azure Staycation by Siaos",
     description:
       "2-pax meal packages, bagnet & party trays, food bundles, custom cakes, and toasting wines for your Azure Staycation celebration.",
     url: `${SITE_URL}/food-offers`,
@@ -178,7 +178,7 @@ export default function FoodOffersPage() {
         <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-3">
           Azure Staycation by Siaos
         </p>
-        <h1 className="font-display text-4xl md:text-5xl text-ink mb-4">Food Offers &amp; Catering</h1>
+        <h1 className="font-display text-4xl md:text-5xl text-ink mb-4">Food Offers for your next Staycation</h1>
         <p className="text-ink-soft leading-relaxed mb-6 max-w-2xl">
           Skip the restaurant wait times and split bills that never quite add
           up. Add a meal package, party tray, or bundle to your staycation
@@ -371,8 +371,8 @@ export default function FoodOffersPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden border border-ink/10 relative aspect-square">
                 <Image
-                  src="/images/food-offers/celebratory-cake-birthday.jpg"
-                  alt="Custom birthday cake for an Azure Staycation celebration"
+                  src="/images/food-offers/cake-anniversary-heart.jpg"
+                  alt="Heart-shaped custom anniversary cake for an Azure Staycation celebration"
                   fill
                   sizes="(max-width: 768px) 50vw, 240px"
                   className="object-cover"
@@ -380,8 +380,8 @@ export default function FoodOffersPage() {
               </div>
               <div className="rounded-2xl overflow-hidden border border-ink/10 relative aspect-square">
                 <Image
-                  src="/images/food-offers/celebratory-cake-giftbox.jpg"
-                  alt="Custom cake in a gift box for a staycation celebration"
+                  src="/images/food-offers/cake-anniversary-roses.jpg"
+                  alt="Custom anniversary cake with a rose bouquet for a staycation celebration"
                   fill
                   sizes="(max-width: 768px) 50vw, 240px"
                   className="object-cover"

@@ -10,7 +10,6 @@ export const SOCIAL_LINKS = {
     "https://www.facebook.com/media/set/?set=a.122152646294092942&type=3",
   googleMaps: "https://maps.app.goo.gl/8C2w1ajVUULNnc7v6",
 };
-
 export const CANVA_LINKS = {
   inclusionsAndPhotos: "https://www.canva.com/design/DAGf55gKsa4/CaLJ99pYuHM6SgSjscS7hw/view",
   exclusions: "https://www.canva.com/design/DAHDJcAsfiQ/KiyRC8dpi6-i8EVAGJ6c0w/view",
@@ -23,17 +22,13 @@ export const CANVA_LINKS = {
   girlfriendPortfolio: "/packages/girlfriend-portfolio",
   happyEverAfterPortfolio: "https://www.canva.com/design/DAGf60egjUA/O6iKyMkYeyHdZgvB7kxe9w/view",
 };
-
 export const CONTACT = {
-  addressShort: "15th floor, Santorini Tower, Azure Urban Resort Residences",
-  addressFull:
-    "15th floor Santorini Tower, Km. 16, West Service Road, Bicutan, Parañaque City",
+  addressFull: "15th Floor, Santorini Tower, Azure Urban Resort Residences, Parañaque",
   email: "staycationnearme2023@gmail.com",
-  phone: "0920 970 1226",
-  phone2: "0962 523 2140",
-  viber: "0920 970 1226",
-  whatsapp1: "+63 920 970 1226",
-  whatsapp2: "+63 991 925 2497",
+  phone: "+639475042783",
+  viber: "+639209701226",
+  whatsapp1: "+639209701226",
+  whatsapp2: "+639919252497",
   calendarEmbedSrc:
     "https://calendar.google.com/calendar/embed?src=staycationnearme2023%40gmail.com&ctz=Asia%2FManila",
 };
