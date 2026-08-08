@@ -21,7 +21,7 @@ Azure Urban Resort Residences sits along the West Service Road in Bicutan, Para�
 
 **General address reference:** Azure Urban Resort Residences, West Service Road, Bicutan, Parañaque City, Metro Manila. Each tower (Santorini, Rio, Bahamas, and others) has its own building entrance, so it's worth confirming the exact tower with your host before heading over.
 
-![Map showing how to get to Azure Urban Resort Residences from NAIA — by taxi, private car, or public transport](/images/blog/azure-location-guidehow-to-get-to-azure-urban-resort-residences-from-naia.webp)
+![Map showing how to get to Azure Urban Resort Residences from NAIA — by taxi, private car, or public transport](/images/blog/azure-location-guide/how-to-get-to-azure-urban-resort-residences-from-naia.webp)
 
 ## How to Get to Azure From NAIA
 
