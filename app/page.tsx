@@ -211,7 +211,7 @@ export default function Home() {
               >
                 Check our legitimacy here
               </a>
-              
+              <a
                 href={SOCIAL_LINKS.closedDealsAlbum}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -242,6 +242,7 @@ export default function Home() {
             <h2 className="font-display text-3xl text-ink">Other Social Proofs</h2>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <a
             {SOCIAL_PROOFS.map((p) => (
               
                 key={p.label}
@@ -271,13 +272,13 @@ export default function Home() {
             r.internal ? (
               <Link
                 key={r.label}
-                href={r.href}
+             href={r.href}
                 className="rounded-2xl border border-ink/10 bg-cream-card px-6 py-10 text-base font-semibold text-ink hover:border-clay-deep hover:text-clay-deep hover:shadow-md transition-all"
               >
                 {r.label}
               </Link>
             ) : (
-              
+              <a
                 key={r.label}
                 href={r.href}
                 target="_blank"
