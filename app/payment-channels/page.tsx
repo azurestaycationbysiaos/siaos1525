@@ -9,10 +9,10 @@ export const metadata = {
 };
 
 const CHANNELS = [
-  { name: "GCash", number: "0920 970 1226", qr: "/images/payment/qr-gcash.png" },
-  { name: "Maya", number: "0920 970 1226", qr: "/images/payment/qr-maya.png" },
-  { name: "Vybe", number: "0920 970 1226", qr: "/images/payment/qr-vybe.png" },
-  { name: "BPI", number: "8159416654", qr: "/images/payment/qr-bpi.png" },
+  { name: "GCash", number: "0920 970 1226", qr: "/images/payment/qr-gcash.jpg" },
+  { name: "Maya", number: "0920 970 1226", qr: "/images/payment/qr-maya.jpg" },
+  { name: "Vybe", number: "0920 970 1226", qr: "/images/payment/qr-vybe.jpg" },
+  { name: "BPI", number: "8159416654", qr: "/images/payment/qr-bpi.jpg" },
 ];
 
 export default function PaymentChannelsPage() {
@@ -41,12 +41,10 @@ export default function PaymentChannelsPage() {
         </ul>
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
           {CHANNELS.map((c) => (
-            <div key={c.name} className="bg-cream-card border border-ink/10 rounded-2xl p-6 text-center">
-              <h2 className="font-display text-xl text-ink mb-3">{c.name}</h2>
-              <div className="relative aspect-square w-40 mx-auto mb-3 rounded-lg overflow-hidden border border-ink/10">
-                <Image src={c.qr} alt={`${c.name} QR code`} fill sizes="160px" className="object-contain bg-white" />
-              </div>
-              <p className="text-sm text-ink-soft">{c.number}</p>
+            <div key={c.name}>
+             <div className="relative aspect-square w-64 mx-auto rounded-lg overflow-hidden">
+  <Image src={c.qr} alt={`${c.name} QR code`} fill sizes="256px" className="object-contain bg-white" />
+</div>
             </div>
           ))}
         </div>

@@ -111,8 +111,8 @@ export default function HouseRulesPage() {
             staycationnearme2023@gmail.com
           </a>{" "}
           or{" "}
-          <a href="tel:+639209701226" className="text-clay-deep underline">
-            +63 920 970 1226
+          <a href="tel:+639475042783" className="text-clay-deep underline">
+            +639475042783
           </a>
           .
         </p>
