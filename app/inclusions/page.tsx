@@ -129,7 +129,7 @@ export default function InclusionsPage() {
             staycationnearme2023@gmail.com
           </a>{" "}
           or{" "}
-          <a href="tel:+639475042783" className="text-clay-deep underline">
+          <a href="tel:+63947 504 2783" className="text-clay-deep underline">
             +63 920 970 1226
           </a>
           .
