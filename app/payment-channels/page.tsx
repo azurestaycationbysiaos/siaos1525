@@ -43,7 +43,9 @@ export default function PaymentChannelsPage() {
           {CHANNELS.map((c) => (
             <div key={c.name} className="bg-cream-card border border-ink/10 rounded-2xl p-6 text-center">
               <h2 className="font-display text-xl text-ink mb-3">{c.name}</h2>
-              <div className="relative aspect-square w-40 mx-auto mb-3 rounded-lg overflow-hidden border border-ink/10">
+              <div className="relative aspect-square w-40 mx-auto mb-3 rounded-lg overflow-hidden">
+  <Image src={c.qr} alt={`${c.name} QR code`} fill sizes="160px" className="object-contain bg-white" />
+</div>
                 <Image src={c.qr} alt={`${c.name} QR code`} fill sizes="160px" className="object-contain bg-white" />
               </div>
               <p className="text-sm text-ink-soft">{c.number}</p>
