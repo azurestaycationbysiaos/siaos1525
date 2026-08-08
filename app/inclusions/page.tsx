@@ -130,7 +130,7 @@ export default function InclusionsPage() {
           </a>{" "}
           or{" "}
           <a href="tel:+63947 504 2783" className="text-clay-deep underline">
-            +63 920 970 1226
+            +63947 504 2783
           </a>
           .
         </p>
