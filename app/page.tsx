@@ -100,8 +100,6 @@ export default function Home() {
   Exclusions: Parking fee and Pool access
 </Link>      
             </div>
-          </div>
-
           <div className="relative">
             <div className="relative aspect-square rounded-2xl overflow-hidden border border-ink/10">
               <Image
