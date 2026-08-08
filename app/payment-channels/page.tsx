@@ -7,6 +7,7 @@ export const metadata = {
   description:
     "Accepted payment methods for Azure Staycation by Siaos: GCash, Maya, Vybe, and BPI bank transfer.",
 };
+
 const CHANNELS = [
   { name: "GCash", number: "0920 970 1226", qr: "/images/payment/qr-gcash.jpg" },
   { name: "Maya", number: "0920 970 1226", qr: "/images/payment/qr-maya.jpg" },
@@ -43,8 +44,6 @@ export default function PaymentChannelsPage() {
             <div key={c.name} className="bg-cream-card border border-ink/10 rounded-2xl p-6 text-center">
               <h2 className="font-display text-xl text-ink mb-3">{c.name}</h2>
               <div className="relative aspect-square w-40 mx-auto mb-3 rounded-lg overflow-hidden">
-  <Image src={c.qr} alt={`${c.name} QR code`} fill sizes="160px" className="object-contain bg-white" />
-</div>
                 <Image src={c.qr} alt={`${c.name} QR code`} fill sizes="160px" className="object-contain bg-white" />
               </div>
               <p className="text-sm text-ink-soft">{c.number}</p>
