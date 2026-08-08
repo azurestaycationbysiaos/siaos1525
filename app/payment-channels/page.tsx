@@ -40,14 +40,14 @@ export default function PaymentChannelsPage() {
           <li>WhatsApp: <a href="https://wa.me/639919252497" className="underline">+63 991 925 2497</a></li>
         </ul>
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
-          {CHANNELS.map((c) => (
-            <div key={c.name} className="bg-cream-card border border-ink/10 rounded-2xl p-6 text-center">
-              <h2 className="font-display text-xl text-ink mb-3">{c.name}</h2>
-              <div className="relative aspect-square w-40 mx-auto mb-3 rounded-lg overflow-hidden">
-                <Image src={c.qr} alt={`${c.name} QR code`} fill sizes="160px" className="object-contain bg-white" />
-              </div>
-              <p className="text-sm text-ink-soft">{c.number}</p>
-            </div>
+  {CHANNELS.map((c) => (
+    <div key={c.name}>
+      <div className="relative aspect-square w-40 mx-auto rounded-lg overflow-hidden">
+        <Image src={c.qr} alt={`${c.name} QR code`} fill sizes="160px" className="object-contain bg-white" />
+      </div>
+    </div>
+  ))}
+</div>
           ))}
         </div>
         <p className="text-sm text-ink-soft mt-2 pt-8 border-t border-ink/10">
