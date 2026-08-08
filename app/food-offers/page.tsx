@@ -445,7 +445,7 @@ export default function FoodOffersPage() {
             {CONTACT.email}
           </a>{" "}
           or{" "}
-          <a href="tel:+639209701226" className="text-clay-deep underline">
+          <a href="tel:+63947 504 2783" className="text-clay-deep underline">
             {CONTACT.phone}
           </a>
           .
