@@ -6,7 +6,7 @@ import { SITE_URL } from "../../lib/site";
 import { CONTACT } from "../../lib/links";
 
 export const metadata = {
-  title: "Food Offers for your next Staycation— Party Trays, Bagnet, Meal Packages | Azure Staycation by Siaos",
+  title: "Food Offers for your Azure Staycation— Party Trays, Bagnet, Meal Packages | Azure Staycation by Siaos",
   description:
     "Add food to your Azure Staycation celebration: 2-pax meal packages from ₱1,899, bagnet & party trays from ₱1,200, food bundles from ₱2,799, plus custom cakes and toasting wines.",
   alternates: { canonical: `${SITE_URL}/food-offers` },
@@ -178,7 +178,7 @@ export default function FoodOffersPage() {
         <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-3">
           Azure Staycation by Siaos
         </p>
-        <h1 className="font-display text-4xl md:text-5xl text-ink mb-4">Food Offers &amp; Catering</h1>
+        <h1 className="font-display text-4xl md:text-5xl text-ink mb-4">Food Offers for your next Staycation</h1>
         <p className="text-ink-soft leading-relaxed mb-6 max-w-2xl">
           Skip the restaurant wait times and split bills that never quite add
           up. Add a meal package, party tray, or bundle to your staycation
