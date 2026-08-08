@@ -93,13 +93,11 @@ export default function Home() {
                 href="/exclusions"
                 className="rounded-full border border-ink/20 px-7 py-3 font-semibold text-ink hover:border-ink transition-colors"
               >
-                <Link
-  href="/exclusions"
-  className="rounded-full border border-ink/20 px-7 py-3 font-semibold text-ink hover:border-ink transition-colors"
->
-  Exclusions: Parking fee and Pool access
-</Link>      
+                Exclusions: Parking fee and Pool access
+              </Link>
             </div>
+          </div>
+
           <div className="relative">
             <div className="relative aspect-square rounded-2xl overflow-hidden border border-ink/10">
               <Image
