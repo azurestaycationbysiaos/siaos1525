@@ -203,7 +203,7 @@ export default function Home() {
               diligence. We&rsquo;ve been in the staycation business since 2023.
             </p>
             <div className="flex flex-wrap gap-3">
-              
+              <a
                 href={CANVA_LINKS.legitimacyCheck}
                 target="_blank"
                 rel="noopener noreferrer"
