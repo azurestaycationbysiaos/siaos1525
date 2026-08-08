@@ -2,11 +2,13 @@ import Link from "next/link";
 import { getAllPosts } from "../../lib/posts";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+
 export const metadata = {
   title: "Staycation, Celebration & Proposal Guides — Azure Staycation by Siaos",
   description:
     "Everything to know about staying at Azure Urban Resort Residences with Azure Staycation by Siaos — staycation tips, celebration setup ideas, house rules, and proposal planning advice for guests in Parañaque.",
 };
+
 export default async function BlogIndex() {
   const posts = getAllPosts();
   return (
@@ -47,7 +49,7 @@ export default async function BlogIndex() {
                   <img
                     src={post.coverImage}
                     alt={post.title}
-                    className="aspect-[3/2] w-full object-cover"
+                    className="aspect-[3/2] w-full object-contain bg-sand-light"
                   />
                 ) : (
                   <div className="aspect-[3/2] bg-gradient-to-br from-sage/30 via-sand to-clay/30" />
