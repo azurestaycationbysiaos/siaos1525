@@ -21,7 +21,7 @@ Azure Urban Resort Residences sits along the West Service Road in Bicutan, Para�
 
 **General address reference:** Azure Urban Resort Residences, West Service Road, Bicutan, Parañaque City, Metro Manila. Each tower (Santorini, Rio, Bahamas, and others) has its own building entrance, so it's worth confirming the exact tower with your host before heading over.
 
-![Map showing how to get to Azure Urban Resort Residences from NAIA — by taxi, private car, or public transport](/images/blog/azure-location-guide/how-to-get-to-azure-from-naia.webp)
+![Map showing how to get to Azure Urban Resort Residences from NAIA — by taxi, private car, or public transport](/images/blog/azure-location-guidehow-to-get-to-azure-urban-resort-residences-from-naia.webp)
 
 ## How to Get to Azure From NAIA
 
@@ -37,7 +37,7 @@ Because of this proximity, Azure is a popular layover or pre-flight staycation o
 
 Yes. [Azure Urban Resort Residences](https://www.azure.com.ph/) is officially located in Bicutan, Parañaque City. It sits close to the Parañaque-Taguig boundary, which is why some directories mistakenly list it under Taguig. If you're navigating by map app, search "Azure Urban Resort Residences, Parañaque" for the most accurate pin.
 
-![Map of landmarks near Azure Urban Resort Residences, including SM Bicutan, NAIA, Entertainment City, and Alabang Town Center](/images/blog/azure-location-guide/nearby-landmarks-map.webp)
+![Map of landmarks near Azure Urban Resort Residences, including SM Bicutan, NAIA, Entertainment City, and Alabang Town Center](/images/blog/azure-location-guide/azure-urban-resort-residences-nearby-landmarks-map.webp)
 
 ## What's Near Azure Urban Resort Residences?
 
@@ -54,13 +54,13 @@ This mix of airport access, malls, and entertainment districts is a big part of 
 
 *Disclaimer: Travel times above are estimates only. We suggest SLEX or Skyway for the fastest route, but traffic, weather, and holidays are beyond our control and may affect actual travel time.*
 
-![Azure Urban Resort Residences man-made beach, wave pool, lagoon pool, and clubhouse amenities](/images/blog/azure-location-guide/beach-and-amenities.webp)
+![Azure Urban Resort Residences man-made beach, wave pool, lagoon pool, and clubhouse amenities](/images/blog/azure-location-guide/azure-urban-resort-residences-beach-and-amenities.webp)
 
 ## Azure's Man-Made Beach and Amenities
 
 The centerpiece of Azure is its man-made beach and wave pool, which produces beach-style waves at scheduled intervals throughout the day. Beyond the beach, the development includes a lagoon pool, an infinity lap pool, a kids' pool area, a basketball court, and clubhouse facilities with dining and lounge spaces. Some amenities, like the lap pool and clubhouse, are reserved for condo owners and long-term residents, while the beach and wave pool are generally accessible to staycation guests for a separate fee set by building management, not by individual unit owners.
 
-![Azure Staycation by Siaos celebration setups — proposals, birthdays, and anniversaries, trusted with intimate events since 2023](/images/blog/azure-location-guide/intimate-events-since-2023.webp)
+![Azure Staycation by Siaos celebration setups — proposals, birthdays, and anniversaries, trusted with intimate events since 2023](/images/blog/azure-location-guide/azure-staycation-by-siaos-intimate-events-since-2023.webp)
 
 ## Booking a Staycation at Azure
 
