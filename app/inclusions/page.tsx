@@ -90,9 +90,15 @@ export default function InclusionsPage() {
           Azure Staycation by Siaos
         </p>
         <h1 className="font-display text-4xl text-ink mb-4">Room Inclusions &amp; Photos</h1>
-        <p className="text-ink-soft leading-relaxed mb-12 max-w-2xl">
+        <p className="text-ink-soft leading-relaxed mb-2 max-w-2xl">
           Everything below is included in your one-bedroom staycation unit at
           Azure Urban Resort Residences, perfect for up to 4 guests.
+        </p>
+        <p className="text-ink-soft leading-relaxed mb-2 max-w-2xl">
+          15th floor, Santorini Tower, Azure Urban Resort Residences, Barangay Marcelo Green, Km. 16, West Service Road, Bicutan, Paranaque City
+        </p>
+        <p className="text-ink-soft leading-relaxed mb-12 max-w-2xl">
+          City and Sunset View
         </p>
 
         <div className="grid sm:grid-cols-2 gap-x-10 gap-y-10 mb-20">
