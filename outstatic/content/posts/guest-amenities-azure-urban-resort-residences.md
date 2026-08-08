@@ -85,8 +85,8 @@ Need cash during your stay?
 
 Azure Urban Resort Residences has two convenient ATM locations:
 
-- One ATM inside the Azure Clubhouse
-- One ATM located between Positano Tower and Miami Tower
+- ATM inside the Azure Clubhouse
+- ATM located between Positano Tower and Miami Tower
 
 Although ATMs are available, we recommend bringing enough cash before arriving, especially during weekends, holidays, or peak travel periods.
 
@@ -113,7 +113,7 @@ Need snacks, drinks, toiletries, or other daily essentials?
 Guests can visit the following stores within Azure Urban Resort Residences:
 
 - Stopover, Bahamas tower
-- Lawsonm, Boracay tower
+- Lawson, Boracay tower
 - Kerchin Convenience Store, Maldives tower
 - 7-Eleven, Maldives tower
 - Jonson Mart, Maui tower
