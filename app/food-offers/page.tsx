@@ -6,7 +6,7 @@ import { SITE_URL } from "../../lib/site";
 import { CONTACT } from "../../lib/links";
 
 export const metadata = {
-  title: "Food Offers & Catering — Party Trays, Bagnet, Meal Packages | Azure Staycation by Siaos",
+  title: "Food Offers for your next Staycation— Party Trays, Bagnet, Meal Packages | Azure Staycation by Siaos",
   description:
     "Add food to your Azure Staycation celebration: 2-pax meal packages from ₱1,899, bagnet & party trays from ₱1,200, food bundles from ₱2,799, plus custom cakes and toasting wines.",
   alternates: { canonical: `${SITE_URL}/food-offers` },
