@@ -242,17 +242,17 @@ export default function Home() {
             <h2 className="font-display text-3xl text-ink">Other Social Proofs</h2>
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-            <a
             {SOCIAL_PROOFS.map((p) => (
-              
-                key={p.label}
-                href={p.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-xl bg-sand-light border border-ink/10 px-5 py-4 text-sm font-semibold text-ink hover:border-clay-deep hover:text-clay-deep transition-colors text-center"
-              >
-                {p.label}
-              </a>
+  
+    key={p.label}
+    href={p.href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-xl bg-sand-light border border-ink/10 px-5 py-4 text-sm font-semibold text-ink hover:border-clay-deep hover:text-clay-deep transition-colors text-center"
+  >
+    {p.label}
+  </a>
+))}
             ))}
           </div>
         </div>
