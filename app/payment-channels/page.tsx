@@ -7,7 +7,6 @@ export const metadata = {
   description:
     "Accepted payment methods for Azure Staycation by Siaos: GCash, Maya, Vybe, and BPI bank transfer.",
 };
-
 const CHANNELS = [
   { name: "GCash", number: "0920 970 1226", qr: "/images/payment/qr-gcash.jpg" },
   { name: "Maya", number: "0920 970 1226", qr: "/images/payment/qr-maya.jpg" },
