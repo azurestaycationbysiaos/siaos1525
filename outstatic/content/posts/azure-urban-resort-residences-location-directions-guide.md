@@ -54,11 +54,11 @@ This mix of airport access, malls, and entertainment districts is a big part of 
 
 *Disclaimer: Travel times above are estimates only. We suggest SLEX or Skyway for the fastest route, but traffic, weather, and holidays are beyond our control and may affect actual travel time.*
 
-![Azure Urban Resort Residences man-made beach, wave pool, lagoon pool, and clubhouse amenities](/images/blog/azure-location-guide/azure-urban-resort-residences-beach-and-amenities.webp)
+![Azure Urban Resort Residences man-made beach, wave pool, and clubhouse amenities](/images/blog/azure-location-guide/azure-urban-resort-residences-beach-and-amenities.webp)
 
 ## Azure's Man-Made Beach and Amenities
 
-The centerpiece of Azure is its man-made beach and wave pool, which produces beach-style waves at scheduled intervals throughout the day. Beyond the beach, the development includes a lagoon pool, an infinity lap pool, a kids' pool area, a basketball court, and clubhouse facilities with dining and lounge spaces. Some amenities, like the lap pool and clubhouse, are reserved for condo owners and long-term residents, while the beach and wave pool are generally accessible to staycation guests for a separate fee set by building management, not by individual unit owners.
+The centerpiece of Azure is its man-made beach and wave pool, which produces beach-style waves at scheduled intervals throughout the day. Beyond the beach, the development includes a lagoon pool, an infinity lap pool, a kids' pool area, a basketball court, and clubhouse facilities with dining and lounge spaces. **Some amenities, like the lap pool, basketball court and amenities inside the clubhouse, are reserved for condo owners and long-term residents,** while the beach and wave pool are generally accessible to staycation guests for a separate fee set by building management, not by individual unit owners.
 
 ![Azure Staycation by Siaos celebration setups — proposals, birthdays, and anniversaries, trusted with intimate events since 2023](/images/blog/azure-location-guide/azure-staycation-by-siaos-intimate-events-since-2023.webp)
 
@@ -104,7 +104,7 @@ No. Since units are individually owned, each one has different décor, inclusion
 
 ### Does Azure have a wave pool?
 
-Yes. Azure is known for its man-made beach with a wave machine that generates beach-style waves at scheduled times throughout the day, along with a separate lagoon pool and kids' pool.
+Yes. Azure is known for its man-made beach with a wave machine that generates beach-style waves at scheduled times throughout the day.
 
 ### Can I have a [wedding proposal at](https://www.airbnb.com/h/signatureproposal) Azure?
 
