@@ -93,7 +93,12 @@ export default function Home() {
                 href="/exclusions"
                 className="rounded-full border border-ink/20 px-7 py-3 font-semibold text-ink hover:border-ink transition-colors"
               >
-                Exclusions: Parking fee and Pool access
+                <Link
+  href="/exclusions"
+  className="rounded-full border border-ink/20 px-7 py-3 font-semibold text-ink hover:border-ink transition-colors"
+>
+  Exclusions: Parking fee and Pool access
+</Link>
              
             </div>
           </div>
