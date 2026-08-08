@@ -17,8 +17,8 @@ export default async function BlogIndex() {
           Staycation & Celebration Guides
         </p>
         <h1 className="font-display text-5xl text-ink leading-[1.05] max-w-2xl">
-  Everything you need to know about staying, celebrating, and{" "}
-  <em className="italic text-clay-deep">proposing</em> at Azure.
+  Your Complete Guide to Staycations, Celebrations, and {" "}
+  <em className="italic text-clay-deep">Marriage Proposals</em> at at Azure Urban Resort Residences.
         </h1>
       </section>
       <section className="mx-auto max-w-6xl px-6 pb-24">
