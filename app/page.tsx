@@ -243,7 +243,7 @@ export default function Home() {
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {SOCIAL_PROOFS.map((p) => (
-  
+   <a
     key={p.label}
     href={p.href}
     target="_blank"
