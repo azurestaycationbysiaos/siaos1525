@@ -54,18 +54,18 @@ export default async function BlogPost({
           {post.title}
         </h1>
         {post.coverImage && (
-          <div className="relative w-full aspect-[1200/630] rounded-lg overflow-hidden mb-8 bg-cream-card">
-            <Image
-              src={post.coverImage}
-              alt={post.title}
-              fill
-              sizes="(max-width: 768px) 100vw, 672px"
-              className="object-cover"
-              priority
-            />
-          </div>
-        )}
-        <div
+  <div className="w-full rounded-lg overflow-hidden mb-8">
+    <Image
+      src={post.coverImage}
+      alt={post.title}
+      width={1200}
+      height={630}
+      sizes="(max-width: 768px) 100vw, 672px"
+      className="w-full h-auto"
+      priority
+    />
+  </div>
+)}
           className="prose-content font-body text-ink-soft leading-relaxed [&>p]:mb-5 [&>h2]:font-display [&>h2]:text-2xl [&>h2]:text-ink [&>h2]:mt-10 [&>h2]:mb-4 [&>h3]:font-display [&>h3]:text-xl [&>h3]:text-ink [&>h3]:mt-8 [&>h3]:mb-3 [&>ul]:list-disc [&>ul]:pl-5 [&>ul]:mb-5 [&_a]:text-clay-deep [&_a]:underline"
           dangerouslySetInnerHTML={{ __html: contentHtml }}
         />
