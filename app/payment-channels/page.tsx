@@ -9,10 +9,10 @@ export const metadata = {
 };
 
 const CHANNELS = [
-  { name: "GCash", number: "0920 970 1226", qr: "/images/payment/qr-1.jpg" },
-  { name: "Maya", number: "0920 970 1226", qr: "/images/payment/qr-2.jpg" },
-  { name: "Vybe", number: "0920 970 1226", qr: "/images/payment/qr-3.jpg" },
-  { name: "BPI", number: "8159416654", qr: "/images/payment/qr-4.jpg" },
+  { name: "GCash", number: "0920 970 1226", qr: "/images/payment/qr-gcash.png" },
+  { name: "Maya", number: "0920 970 1226", qr: "/images/payment/qr-maya.png" },
+  { name: "Vybe", number: "0920 970 1226", qr: "/images/payment/qr-vybe.png" },
+  { name: "BPI", number: "8159416654", qr: "/images/payment/qr-bpi.png" },
 ];
 
 export default function PaymentChannelsPage() {
@@ -25,20 +25,20 @@ export default function PaymentChannelsPage() {
         </p>
         <h1 className="font-display text-4xl text-ink mb-4">Payment Channels</h1>
         <p className="text-ink-soft leading-relaxed mb-6 max-w-xl">
-  All accounts are under Lyryque Lysl Camylle Siaotong. We do not
-  accept cash payments — please ensure you can transfer online.
-  Scan a QR code below, or send directly to the number listed.
-</p>
-<p className="text-ink-soft leading-relaxed mb-10 max-w-xl">
-  If you have any questions, you may contact me through the following channels:
-</p>
-<ul className="text-ink-soft leading-relaxed mb-10 max-w-xl list-disc list-inside space-y-1">
-  <li>Email: <a href="mailto:staycationnearme2023@gmail.com" className="underline">staycationnearme2023@gmail.com</a></li>
-  <li>Phone: <a href="tel:+639475042783" className="underline">0947 504 2783</a></li>
-  <li>Viber: 0920 970 1226</li>
-  <li>WhatsApp: <a href="https://wa.me/639209701226" className="underline">+63 920 970 1226</a></li>
-  <li>WhatsApp: <a href="https://wa.me/639919252497" className="underline">+63 991 925 2497</a></li>
-</ul>
+          All accounts are under Lyryque Lysl Camylle Siaotong. We do not
+          accept cash payments — please ensure you can transfer online.
+          Scan a QR code below, or send directly to the number listed.
+        </p>
+        <p className="text-ink-soft leading-relaxed mb-10 max-w-xl">
+          If you have any questions, you may contact me through the following channels:
+        </p>
+        <ul className="text-ink-soft leading-relaxed mb-10 max-w-xl list-disc list-inside space-y-1">
+          <li>Email: <a href="mailto:staycationnearme2023@gmail.com" className="underline">staycationnearme2023@gmail.com</a></li>
+          <li>Phone: <a href="tel:+639475042783" className="underline">0947 504 2783</a></li>
+          <li>Viber: 0920 970 1226</li>
+          <li>WhatsApp: <a href="https://wa.me/639209701226" className="underline">+63 920 970 1226</a></li>
+          <li>WhatsApp: <a href="https://wa.me/639919252497" className="underline">+63 991 925 2497</a></li>
+        </ul>
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
           {CHANNELS.map((c) => (
             <div key={c.name} className="bg-cream-card border border-ink/10 rounded-2xl p-6 text-center">
@@ -50,7 +50,6 @@ export default function PaymentChannelsPage() {
             </div>
           ))}
         </div>
-
         <p className="text-sm text-ink-soft mt-2 pt-8 border-t border-ink/10">
           Please also review our{" "}
           <a href="/house-rules" className="text-clay-deep underline">
