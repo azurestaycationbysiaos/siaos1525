@@ -362,12 +362,12 @@ export default function FoodOffersPage() {
         <section className="mb-20 grid md:grid-cols-2 gap-10">
           <div>
             <h2 className="font-display text-2xl text-ink mb-3">Celebratory Cakes</h2>
-            <p className="text-ink-soft text-sm leading-relaxed mb-5">
-              Celebrate your intimate staycation event with a cake ordered
-              through GrabFood depending on your budget, or order a custom
-              cake made just for you. Share your peg in advance and
-              we&rsquo;ll confirm availability and pricing.
-            </p>
+<p className="text-ink-soft text-sm leading-relaxed mb-5 md:min-h-[88px]">
+  Celebrate your intimate staycation event with a cake ordered
+  through GrabFood depending on your budget, or order a custom
+  cake made just for you. Share your peg in advance and
+  we&rsquo;ll confirm availability and pricing.
+</p>
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden border border-ink/10 relative aspect-square">
                 <Image
@@ -392,11 +392,11 @@ export default function FoodOffersPage() {
 
           <div>
             <h2 className="font-display text-2xl text-ink mb-3">Toasting Wines</h2>
-            <p className="text-ink-soft text-sm leading-relaxed mb-5">
-              Add a special touch to your intimate staycation celebration
-              with a bottle of toasting wine. Simply let us know in advance
-              and we&rsquo;ll confirm the available options and pricing.
-            </p>
+<p className="text-ink-soft text-sm leading-relaxed mb-5 md:min-h-[88px]">
+  Add a special touch to your intimate staycation celebration
+  with a bottle of toasting wine. Simply let us know in advance
+  and we&rsquo;ll confirm the available options and pricing.
+</p>
             <div className="grid grid-cols-2 gap-4">
               <div className="rounded-2xl overflow-hidden border border-ink/10 relative aspect-square">
                 <Image
