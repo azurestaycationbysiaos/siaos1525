@@ -5,7 +5,7 @@ description: "A complete guide to Azure Urban Resort Residences' location in Par
 slug: "azure-urban-resort-residences-location-directions-guide"
 author:
   name: "Azure Staycation by Siaos"
-coverImage: "/images/blog/azure-location-guide/cover.webp"
+coverImage: "/images/blog/azure-location-guide.webp"
 status: "published"
 ---
 
