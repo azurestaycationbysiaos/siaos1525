@@ -106,9 +106,9 @@ No. Since units are individually owned, each one has different décor, inclusion
 
 Yes. Azure is known for its man-made beach with a wave machine that generates beach-style waves at scheduled times throughout the day.
 
-### Can I have a [wedding proposal at](https://www.airbnb.com/h/signatureproposal) Azure?
+### Can I have a [wedding proposal](https://www.airbnb.com/h/signatureproposal) at Azure?
 
-Yes. Several staycation hosts, including [Azure Staycation by](https://www.airbnb.com/h/proposalsbyazurestaycationbysiaos) Siaos, offer proposal-specific packages with full-room decor, flowers, and even videography to capture the moment.
+Yes. Several staycation hosts, including [Azure Staycation by](https://www.airbnb.com/h/proposalsbyazurestaycationbysiaos) Siaos, offer proposal-specific packages with full-room decor, flowers, and even video recording to capture the moment.
 
 ### Do all amenities require an extra fee?
 
