@@ -64,7 +64,7 @@ export default function TermsPage() {
               For inquiries or concerns, please contact Azure Staycation by
               Siaos at{" "}
               <a href="tel:+639475042783" className="text-clay-deep underline">
-                +63 920 970 1226
+                +639475042783
               </a>
               .
             </p>
