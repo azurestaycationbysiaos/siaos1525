@@ -7,6 +7,12 @@ export const metadata = {
   description:
     "Everything included in your stay at Azure Staycation by Siaos — entertainment, sleeping essentials, kitchen and dining, bathroom amenities, and more.",
 };
+<p className="text-ink-soft leading-relaxed mb-2 max-w-2xl">
+  15th floor, Santorini Tower, Azure Urban Resort Residences, Barangay Marcelo Green, Km. 16, West Service Road, Bicutan, Paranaque City
+</p>
+<p className="text-ink-soft leading-relaxed mb-12 max-w-2xl">
+  City and Sunset View
+</p>
 
 const INCLUSION_GROUPS = [
   {
