@@ -11,7 +11,7 @@ export const metadata = {
     "Add food to your Azure Staycation celebration: 2-pax meal packages from ₱1,899, bagnet & party trays from ₱1,200, food bundles from ₱2,799, plus custom cakes and toasting wines.",
   alternates: { canonical: `${SITE_URL}/food-offers` },
   openGraph: {
-    title: "Food Offers & Catering — Azure Staycation by Siaos",
+    title: "Food Offers for your next Staycation— Azure Staycation by Siaos",
     description:
       "2-pax meal packages, bagnet & party trays, food bundles, custom cakes, and toasting wines for your Azure Staycation celebration.",
     url: `${SITE_URL}/food-offers`,
