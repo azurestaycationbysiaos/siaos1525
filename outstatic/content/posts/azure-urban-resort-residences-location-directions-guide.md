@@ -68,7 +68,7 @@ Azure's units are individually owned, which means the look, size, and inclusions
 
 [Azure Staycation by Siaos](https://azurestaycationbysiaos.com/) operates a boho-themed 1-bedroom unit inside Azure's Santorini Tower, good for up to 4 guests. The unit is set up for occasions like birthdays, anniversaries, proposals, gender reveals, and family getaways, with décor packages ranging from simple one-area setups to full-room styling with bouquets and fresh petals. Proposal packages include an option with full-room decor and a videographer to capture the moment.
 
-If you'd like details on current rates and availability, you can contact us through our [Official Facebook page](https://www.facebook.com/profile.php?id=61552788271481&mibextid=LQQJ4d).
+If you'd like details on current rates and availability, you can contact us through our [Official Facebook page](https://www.facebook.com/profile.php?id=61552788271481&mibextid=LQQJ4d) or message us at +639475042783.
 
 ## Frequently Asked Questions About Azure Urban Resort Residences
 
@@ -78,7 +78,11 @@ Azure Urban Resort Residences is located along the West Service Road in Bicutan,
 
 ### How do I get to Azure from NAIA?
 
-The fastest way is by taxi or Grab, which takes roughly 10 to 20 minutes depending on the terminal and traffic. Public transport options like jeepneys or UV Express bound for Bicutan are also available.
+The most convenient way to get to Azure Urban Resort Residences from NAIA is by taxi or ride-hailing services such as Grab, inDrive, and other available apps. Travel time is typically around 10 to 20 minutes, depending on your NAIA terminal, traffic, and the exact route.
+
+For public transportation, buses, jeepneys, and UV Express routes may be available toward Bicutan and nearby areas. Routes, schedules, and availability may vary depending on the airport terminal and time of day.
+
+Disclaimer: Travel times are estimates only and may vary depending on traffic, time of day, weather, road conditions, and your exact route. Check Google Maps or your preferred navigation app for the latest routes and travel times.
 
 ### Is Azure Urban Resort Residences in Parañaque?
 
@@ -86,7 +90,9 @@ Yes, it's officially part of Parañaque City, specifically the Bicutan area, tho
 
 ### What is near Azure Urban Resort Residences?
 
-SM Bicutan is right next door. NAIA, Entertainment City ([Solaire](https://www.solaireresort.com/), [Okada](https://okadamanila.com/), [City of Dreams](https://www.cityofdreamsmanila.com/en)), Newport World Resorts, and Mall of Asia are all within a 10 to 30 minute drive.
+SM Bicutan is right next door. NAIA, Entertainment City—including Solaire, Okada Manila, and City of Dreams Manila—Newport World Resorts, and Mall of Asia are generally within a 10- to 30-minute drive via SLEX or Skyway, depending on traffic conditions, your exact route, and time of day.
+
+Disclaimer: Travel times are estimates and may vary significantly depending on traffic, road conditions, weather, road closures, and other factors. Please check Google Maps or your preferred navigation app for real-time travel times before heading out.
 
 ### Can tourists book a staycation at Azure?
 
