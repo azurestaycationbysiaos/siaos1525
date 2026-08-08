@@ -243,16 +243,15 @@ export default function Home() {
           </div>
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             {SOCIAL_PROOFS.map((p) => (
-   <a
-    key={p.label}
-    href={p.href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="rounded-xl bg-sand-light border border-ink/10 px-5 py-4 text-sm font-semibold text-ink hover:border-clay-deep hover:text-clay-deep transition-colors text-center"
-  >
-    {p.label}
-  </a>
-))}
+              <a
+                key={p.label}
+                href={p.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-xl bg-sand-light border border-ink/10 px-5 py-4 text-sm font-semibold text-ink hover:border-clay-deep hover:text-clay-deep transition-colors text-center"
+              >
+                {p.label}
+              </a>
             ))}
           </div>
         </div>
@@ -272,7 +271,7 @@ export default function Home() {
             r.internal ? (
               <Link
                 key={r.label}
-             href={r.href}
+                href={r.href}
                 className="rounded-2xl border border-ink/10 bg-cream-card px-6 py-10 text-base font-semibold text-ink hover:border-clay-deep hover:text-clay-deep hover:shadow-md transition-all"
               >
                 {r.label}
