@@ -66,11 +66,7 @@ export default async function BlogPost({
     />
   </div>
 )}
+        <div
           className="prose-content font-body text-ink-soft leading-relaxed [&>p]:mb-5 [&>h2]:font-display [&>h2]:text-2xl [&>h2]:text-ink [&>h2]:mt-10 [&>h2]:mb-4 [&>h3]:font-display [&>h3]:text-xl [&>h3]:text-ink [&>h3]:mt-8 [&>h3]:mb-3 [&>ul]:list-disc [&>ul]:pl-5 [&>ul]:mb-5 [&_a]:text-clay-deep [&_a]:underline"
           dangerouslySetInnerHTML={{ __html: contentHtml }}
         />
-      </article>
-      <Footer />
-    </div>
-  );
-}
