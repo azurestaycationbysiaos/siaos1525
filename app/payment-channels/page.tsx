@@ -42,9 +42,9 @@ export default function PaymentChannelsPage() {
         <div className="grid sm:grid-cols-2 gap-6 mb-12">
           {CHANNELS.map((c) => (
             <div key={c.name}>
-              <div className="relative aspect-square w-40 mx-auto rounded-lg overflow-hidden">
-                <Image src={c.qr} alt={`${c.name} QR code`} fill sizes="160px" className="object-contain bg-white" />
-              </div>
+             <div className="relative aspect-square w-64 mx-auto rounded-lg overflow-hidden">
+  <Image src={c.qr} alt={`${c.name} QR code`} fill sizes="256px" className="object-contain bg-white" />
+</div>
             </div>
           ))}
         </div>
