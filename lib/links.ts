@@ -25,10 +25,10 @@ export const CANVA_LINKS = {
 export const CONTACT = {
   addressFull: "15th Floor, Santorini Tower, Azure Urban Resort Residences, Parañaque",
   email: "staycationnearme2023@gmail.com",
-  phone: "0947 504 2783",
-  viber: "0920 970 1226",
-  whatsapp1: "+63 920 970 1226",
-  whatsapp2: "+63 991 925 2497",
+  phone: "+639475042783",
+  viber: "+639209701226",
+  whatsapp1: "+639209701226",
+  whatsapp2: "+639919252497",
   calendarEmbedSrc:
     "https://calendar.google.com/calendar/embed?src=staycationnearme2023%40gmail.com&ctz=Asia%2FManila",
 };
