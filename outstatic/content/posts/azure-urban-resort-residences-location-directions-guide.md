@@ -21,7 +21,7 @@ Azure Urban Resort Residences sits along the West Service Road in Bicutan, Para�
 
 **General address reference:** Azure Urban Resort Residences, West Service Road, Bicutan, Parañaque City, Metro Manila. Each tower (Santorini, Rio, Bahamas, and others) has its own building entrance, so it's worth confirming the exact tower with your host before heading over.
 
-![Map showing how to get to Azure Urban Resort Residences from NAIA — by taxi, private car, or public transport](/images/blog/azure-location-guidehow-to-get-to-azure-urban-resort-residences-from-naia.webp)
+![Map showing how to get to Azure Urban Resort Residences from NAIA — by taxi, private car, or public transport](/images/blog/azure-location-guide/how-to-get-to-azure-urban-resort-residences-from-naia.webp)
 
 ## How to Get to Azure From NAIA
 
@@ -54,11 +54,11 @@ This mix of airport access, malls, and entertainment districts is a big part of 
 
 *Disclaimer: Travel times above are estimates only. We suggest SLEX or Skyway for the fastest route, but traffic, weather, and holidays are beyond our control and may affect actual travel time.*
 
-![Azure Urban Resort Residences man-made beach, wave pool, lagoon pool, and clubhouse amenities](/images/blog/azure-location-guide/azure-urban-resort-residences-beach-and-amenities.webp)
+![Azure Urban Resort Residences man-made beach, wave pool, and clubhouse amenities](/images/blog/azure-location-guide/azure-urban-resort-residences-beach-and-amenities.webp)
 
 ## Azure's Man-Made Beach and Amenities
 
-The centerpiece of Azure is its man-made beach and wave pool, which produces beach-style waves at scheduled intervals throughout the day. Beyond the beach, the development includes a lagoon pool, an infinity lap pool, a kids' pool area, a basketball court, and clubhouse facilities with dining and lounge spaces. Some amenities, like the lap pool and clubhouse, are reserved for condo owners and long-term residents, while the beach and wave pool are generally accessible to staycation guests for a separate fee set by building management, not by individual unit owners.
+The centerpiece of Azure is its man-made beach and wave pool, which produces beach-style waves at scheduled intervals throughout the day. Beyond the beach, the development includes a lagoon pool, an infinity lap pool, a kids' pool area, a basketball court, and clubhouse facilities with dining and lounge spaces. **Some amenities, like the lap pool, basketball court and amenities inside the clubhouse, are reserved for condo owners and long-term residents,** while the beach and wave pool are generally accessible to staycation guests for a separate fee set by building management, not by individual unit owners.
 
 ![Azure Staycation by Siaos celebration setups — proposals, birthdays, and anniversaries, trusted with intimate events since 2023](/images/blog/azure-location-guide/azure-staycation-by-siaos-intimate-events-since-2023.webp)
 
@@ -68,7 +68,7 @@ Azure's units are individually owned, which means the look, size, and inclusions
 
 [Azure Staycation by Siaos](https://azurestaycationbysiaos.com/) operates a boho-themed 1-bedroom unit inside Azure's Santorini Tower, good for up to 4 guests. The unit is set up for occasions like birthdays, anniversaries, proposals, gender reveals, and family getaways, with décor packages ranging from simple one-area setups to full-room styling with bouquets and fresh petals. Proposal packages include an option with full-room decor and a videographer to capture the moment.
 
-If you'd like details on current rates and availability, you can contact us through our [Official Facebook page](https://www.facebook.com/profile.php?id=61552788271481&mibextid=LQQJ4d).
+If you'd like details on current rates and availability, you can contact us through our [Official Facebook page](https://www.facebook.com/profile.php?id=61552788271481&mibextid=LQQJ4d) or message us at +639475042783.
 
 ## Frequently Asked Questions About Azure Urban Resort Residences
 
@@ -78,7 +78,11 @@ Azure Urban Resort Residences is located along the West Service Road in Bicutan,
 
 ### How do I get to Azure from NAIA?
 
-The fastest way is by taxi or Grab, which takes roughly 10 to 20 minutes depending on the terminal and traffic. Public transport options like jeepneys or UV Express bound for Bicutan are also available.
+The most convenient way to get to Azure Urban Resort Residences from NAIA is by taxi or ride-hailing services such as Grab, inDrive, and other available apps. Travel time is typically around 10 to 20 minutes, depending on your NAIA terminal, traffic, and the exact route.
+
+For public transportation, buses, jeepneys, and UV Express routes may be available toward Bicutan and nearby areas. Routes, schedules, and availability may vary depending on the airport terminal and time of day.
+
+Disclaimer: Travel times are estimates only and may vary depending on traffic, time of day, weather, road conditions, and your exact route. Check Google Maps or your preferred navigation app for the latest routes and travel times.
 
 ### Is Azure Urban Resort Residences in Parañaque?
 
@@ -86,7 +90,9 @@ Yes, it's officially part of Parañaque City, specifically the Bicutan area, tho
 
 ### What is near Azure Urban Resort Residences?
 
-SM Bicutan is right next door. NAIA, Entertainment City ([Solaire](https://www.solaireresort.com/), [Okada](https://okadamanila.com/), [City of Dreams](https://www.cityofdreamsmanila.com/en)), Newport World Resorts, and Mall of Asia are all within a 10 to 30 minute drive.
+SM Bicutan is right next door. NAIA, Entertainment City—including Solaire, Okada Manila, and City of Dreams Manila—Newport World Resorts, and Mall of Asia are generally within a 10- to 30-minute drive via SLEX or Skyway, depending on traffic conditions, your exact route, and time of day.
+
+Disclaimer: Travel times are estimates and may vary significantly depending on traffic, road conditions, weather, road closures, and other factors. Please check Google Maps or your preferred navigation app for real-time travel times before heading out.
 
 ### Can tourists book a staycation at Azure?
 
@@ -98,11 +104,11 @@ No. Since units are individually owned, each one has different décor, inclusion
 
 ### Does Azure have a wave pool?
 
-Yes. Azure is known for its man-made beach with a wave machine that generates beach-style waves at scheduled times throughout the day, along with a separate lagoon pool and kids' pool.
+Yes. Azure is known for its man-made beach with a wave machine that generates beach-style waves at scheduled times throughout the day.
 
-### Can I have a [wedding proposal at](https://www.airbnb.com/h/signatureproposal) Azure?
+### Can I have a [wedding proposal](https://www.airbnb.com/h/signatureproposal) at Azure?
 
-Yes. Several staycation hosts, including [Azure Staycation by](https://www.airbnb.com/h/proposalsbyazurestaycationbysiaos) Siaos, offer proposal-specific packages with full-room decor, flowers, and even videography to capture the moment.
+Yes. Several staycation hosts, including [Azure Staycation by](https://www.airbnb.com/h/proposalsbyazurestaycationbysiaos) Siaos, offer proposal-specific packages with full-room decor, flowers, and even video recording to capture the moment.
 
 ### Do all amenities require an extra fee?
 
