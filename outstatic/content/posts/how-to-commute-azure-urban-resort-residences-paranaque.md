@@ -11,9 +11,9 @@ status: "published"
 
 [Azure Urban Resort Residences](https://www.azure.com.ph/location/) is located along SLEX West Service Road corner D. Soledad Avenue in Bicutan, Parañaque City, beside SM City Bicutan. For commuters, the easiest landmarks to remember are SM City Bicutan, the Bicutan Exit, SLEX West Service Road, and D. Soledad Avenue.
 
-![Azure Urban Resort Residences near SM City Bicutan and the SLEX Bicutan Exit](/images/commute-guide-to-azure.webp)
-
 Azure Urban Resort Residences is in Bicutan, Parañaque City, beside SM City Bicutan and near the Bicutan SLEX Exit. The most practical public-transport route from Makati is usually MRT-3 to Ayala Station, transfer to One Ayala, then take a bus toward Bicutan. From Alabang, guests can use buses or jeepneys toward Bicutan. From NAIA, Grab or taxi is generally the easiest option. PNR should not be relied on, since Metro Manila PNR commuter operations are currently suspended for railway construction.
+
+![Image showing SM City Bicutan landmark near Azure Urban Resort Residences](/images/blog/commute-guide/sm-bicutan-near-azure.webp)
 
 ## Quick Answer: What Is the Easiest Way to Get to Azure?
 
@@ -22,8 +22,6 @@ For most guests coming from Metro Manila, one of the easiest public-transport ro
 If you are coming from Alabang, look for buses or jeepneys going toward Bicutan. If you are arriving at NAIA with luggage, Grab or taxi is usually the simplest option.
 
 **Important:** PNR Metro Manila commuter service is not currently a practical route to Azure. Avoid older online guides that still recommend taking PNR to Bicutan or Sucat.
-
-![Image showing SM City Bicutan landmark near Azure Urban Resort Residences](/images/blog/commute-guide/sm-bicutan-near-azure.webp)
 
 ![Bus from One Ayala to Bicutan](/images/blog/commute-guide/one-ayala-terminal.webp)
 
