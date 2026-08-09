@@ -169,6 +169,7 @@ A staycation proposal doesn't have to look exactly the same for every couple. De
 - Music
 - Photos and videos
 - An overnight stay
+  
 **Optional:**
 - Dinner or food
 - Cake or dessert
