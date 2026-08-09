@@ -34,12 +34,7 @@ export default function LocationPage() {
         <RouteMap />
 
         <p className="text-sm text-ink-soft mt-6">
-          
-            href="https://maps.app.goo.gl/8C2w1ajVUULNnc7v6"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-clay-deep underline"
-          >
+          <a href="https://maps.app.goo.gl/8C2w1ajVUULNnc7v6" target="_blank" rel="noopener noreferrer" className="text-clay-deep underline">
             Open in Google Maps
           </a>
         </p>
