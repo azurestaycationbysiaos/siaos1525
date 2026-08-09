@@ -12,6 +12,8 @@
     "next": "16.2.12",
     "next-themes": "^0.4.6",
     "gray-matter": "^4.0.3",
+    "leaflet": "^1.9.4",
+    "leaflet-ant-path": "^1.4.0",
     "react": "19.2.4",
     "react-dom": "19.2.4",
     "remark": "^15.0.1",
