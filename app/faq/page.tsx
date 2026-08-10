@@ -70,7 +70,7 @@ const FAQS: {
   },
   {
     q: "What's included in the staycation?",
-    a: "Every stay includes the 1-bedroom unit, a fully equipped kitchen, Netflix and Disney+ access, a projector, PS4 with games, Platinum karaoke with 2 microphones, and card and board games. Parking fees and wave pool access are not included and are paid separately at the building.",
+    a: "Every stay includes the 1-bedroom unit, a fully equipped kitchen, Netflix access, a projector, PS4 with games, Platinum karaoke with 2 microphones, and card and board games. Parking fees and wave pool access are not included and are paid separately at the building.",
   },
   {
     q: "What is not included in the staycation price?",
