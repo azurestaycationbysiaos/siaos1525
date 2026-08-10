@@ -65,10 +65,6 @@ const FAQS: {
     a: "The 1-bedroom unit comfortably fits up to 4 guests.",
   },
   {
-    q: "How much is a wedding proposal package?",
-    a: "The Signature Proposal Set Up is ₱10,999 and the Happily Ever After Set Up is ₱14,999. Both are full-room decorated and include the staycation unit.",
-  },
-  {
     q: "What's included in the staycation?",
     a: "Every stay includes the 1-bedroom unit, a fully equipped kitchen, Netflix access, a projector, PS4 with games, Platinum karaoke with 2 microphones, and card and board games. Parking fees and wave pool access are not included and are paid separately at the building.",
   },
