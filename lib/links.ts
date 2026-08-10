@@ -8,6 +8,8 @@ export const SOCIAL_LINKS = {
   tiktokOwner: "https://www.tiktok.com/@llcds1226?_t=8l3GeXmPCWA&_r=1",
   closedDealsAlbum:
     "https://www.facebook.com/media/set/?set=a.122152646294092942&type=3",
+  facebookReviews:
+    "https://www.facebook.com/profile.php?id=61552788271481&sk=reviews",
   googleMaps: "https://maps.app.goo.gl/8C2w1ajVUULNnc7v6",
 };
 export const CANVA_LINKS = {
