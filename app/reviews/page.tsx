@@ -154,7 +154,7 @@ export default function ReviewsPage() {
             Read reviews on Google
           </a>
           <a
-            href={SOCIAL_LINKS.facebookPage}
+            href={SOCIAL_LINKS.facebookReviews}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full border border-ink/20 px-6 py-3 text-sm font-semibold hover:border-ink transition-colors"
