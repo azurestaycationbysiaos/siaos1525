@@ -45,12 +45,12 @@ export default function ExclusionsPage() {
           below before you book.
         </p>
 
-        {/* Hero: Wave Pool Guide */}
+        {/* Hero: Azure does not offer free pool access */}
         <div className="rounded-2xl overflow-hidden border border-ink/10 mb-4">
           <div className="relative aspect-square">
             <Image
-              src="/images/exclusion-wave-pool-guide.jpg"
-              alt="Azure Wave Pool Guide — ₱250 entrance fee per head per shift"
+              src="/images/exclusion-no-free-pool-access.jpg"
+              alt="Azure does not offer free pool access — pool access is subject to the applicable Wave Pool fee"
               fill
               sizes="(max-width: 768px) 100vw, 800px"
               className="object-cover"
@@ -132,6 +132,18 @@ export default function ExclusionsPage() {
                   </span>
                 ))}
               </div>
+            </div>
+          </div>
+
+          <div className="rounded-2xl overflow-hidden border border-ink/10">
+            <div className="relative aspect-square">
+              <Image
+                src="/images/exclusion-wave-pool-guide.jpg"
+                alt="Azure Wave Pool Guide — ₱250 entrance fee per head per shift"
+                fill
+                sizes="(max-width: 768px) 100vw, 800px"
+                className="object-cover"
+              />
             </div>
           </div>
         </section>
