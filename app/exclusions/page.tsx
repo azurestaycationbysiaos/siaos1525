@@ -38,7 +38,7 @@ export default function ExclusionsPage() {
         <h1 className="font-display text-4xl text-ink mb-4">
           Exclusions: Parking Fee &amp; Pool Access
         </h1>
-        <p className="text-ink-soft leading-relaxed mb-4 max-w-2xl">
+        <p className="text-ink-soft leading-relaxed mt-6 max-w-2xl">
           Azure does not offer free pool access — wave pool entry and parking
           are both paid separately from your staycation booking, straight to
           Azure&rsquo;s own cashier and parking staff. Please read the details
@@ -49,7 +49,7 @@ export default function ExclusionsPage() {
         <div className="rounded-2xl overflow-hidden border border-ink/10 mb-4">
           <div className="relative aspect-square">
             <Image
-              src="/images/exclusion-no-free-pool-access.jpg"
+              src="/images/azure-does-not-offer-free-pool-access.webp"
               alt="Azure does not offer free pool access — pool access is subject to the applicable Wave Pool fee"
               fill
               sizes="(max-width: 768px) 100vw, 800px"
