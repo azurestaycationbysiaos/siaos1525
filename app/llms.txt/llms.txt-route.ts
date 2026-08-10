@@ -21,6 +21,7 @@ Contact: ${CONTACT.email} | ${CONTACT.phone} | ${CONTACT.addressFull}
 - [Room Decorations](${SITE_URL}/packages): Themed room decoration packages — single area, full room, bridal shower, pregnancy/gender reveal.
 - [Proposal Packages](${SITE_URL}/proposals): Signature and Happily Ever After wedding proposal setups, with pricing.
 - [Food Offers & Catering](${SITE_URL}/food-offers): 2-pax meal packages, bagnet and party trays, food bundles, custom cakes, and toasting wines, with pricing.
+- [FAQ](${SITE_URL}/faq): Direct answers to common questions — legitimacy, location, pricing, guest limits, booking, and payment.
 - [Room Inclusions](${SITE_URL}/inclusions): What's included in every stay.
 - [Exclusions](${SITE_URL}/exclusions): What is not included (parking, pool access fees).
 - [Booking Process](${SITE_URL}/booking-process): How reservations, guest registration, and check-in work.
