@@ -2,7 +2,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { SITE_URL, SITE_NAME } from "../../lib/site";
-import { CONTACT } from "../../lib/links";
+import { CONTACT, CANVA_LINKS } from "../../lib/links";
 
 export const metadata = {
   title: "Frequently Asked Questions — Azure Staycation by Siaos",
@@ -14,10 +14,31 @@ export const metadata = {
 // statements on purpose — this is the format AI answer engines (and
 // Google's FAQ rich results) extract most reliably, and it doubles as the
 // FAQPage JSON-LD content below.
-const FAQS = [
+const FAQS: {
+  q: string;
+  a: string;
+  aNode?: React.ReactNode;
+}[] = [
   {
     q: "Is Azure Staycation by Siaos legit?",
-    a: "Yes. Azure Staycation by Siaos has operated at Azure Urban Resort Residences, Parañaque since 2023, with verified Facebook, Instagram, and TikTok pages, closed-deal proof, and guest reviews. The owner, Lyryque Lysl Camylle Siaotong, shares social proof and verification checks directly on the site's legitimacy page.",
+    a: "Yes. Azure Staycation by Siaos has operated at Azure Urban Resort Residences, Parañaque since 2023, with verified Facebook, Instagram, and TikTok pages, closed-deal proof, and guest reviews. The owner, Lyryque Lysl Camylle Siaotong, shares social proof and verification checks directly on Facebook.",
+    aNode: (
+      <>
+        Yes. Azure Staycation by Siaos has operated at Azure Urban Resort
+        Residences, Parañaque since 2023, with verified Facebook, Instagram,
+        and TikTok pages, closed-deal proof, and guest reviews. The owner,
+        Lyryque Lysl Camylle Siaotong, shares social proof and{" "}
+        <a
+          href={CANVA_LINKS.legitimacyCheck}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-clay-deep underline"
+        >
+          verification checks
+        </a>{" "}
+        directly on Facebook.
+      </>
+    ),
   },
   {
     q: "Where is Azure Staycation by Siaos located?",
@@ -85,7 +106,7 @@ export default function FaqPage() {
                 {f.q}
                 <span className="shrink-0 text-clay-deep group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <p className="text-ink-soft text-sm leading-relaxed mt-3 pr-8">{f.a}</p>
+              <p className="text-ink-soft text-sm leading-relaxed mt-3 pr-8">{f.aNode ?? f.a}</p>
             </details>
           ))}
         </div>
