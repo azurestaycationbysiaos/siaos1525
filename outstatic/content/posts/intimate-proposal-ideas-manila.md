@@ -44,7 +44,7 @@ You can decorate the room with flowers, balloons, lights, photos, candles, or a 
 
 This is one of the simplest private proposal ideas in Manila because you don't have to worry about strangers watching or interrupting the moment.
 
-![Private room proposal decoration with roses and fairy lights for an intimate Manila proposal](/images/blogintimate-proposal/wedding-proposal-in-manila.webp)
+![Private room proposal decoration with roses and fairy lights for an intimate Manila proposal](/images/blog/intimate-proposal/wedding-proposal-in-manila.webp)
 
 ### 2. Surprise Proposal During a Staycation
 
@@ -154,7 +154,7 @@ Instead of treating the proposal as a large event, the idea is simple: use a pri
 
 The staycation setting also gives you something important after the proposal: time together. You can celebrate privately, take photos, order food, watch a movie, play games, or simply enjoy the fact that you are now engaged.
 
-![Romantic staycation proposal setup with rose petals, candles, and a personalized message](/images/blod/intimate-proposal/staycation-proposal-in-manila.webp)
+![Romantic staycation proposal setup with rose petals, candles, and a personalized message](/images/blog/intimate-proposal/staycation-proposal-in-manila.webp)
 
 ## What Can You Include in a Staycation Proposal?
 
@@ -169,6 +169,7 @@ A staycation proposal doesn't have to look exactly the same for every couple. De
 - Music
 - Photos and videos
 - An overnight stay
+  
 **Optional:**
 - Dinner or food
 - Cake or dessert
@@ -236,7 +237,7 @@ It may not be the best option if your partner dreams of a public proposal, a lar
 
 The best proposal isn't necessarily the biggest one. It's the one that feels right for the two of you.
 
-![Couple celebrating after a private proposal at an Azure Urban Resort Residences staycation](/images/blogs/azure-urban-resort-wedding-proposal.webp)
+![Couple celebrating after a private proposal at an Azure Urban Resort Residences staycation](/images/blog/intimate-proposal/azure-urban-resort-wedding-proposal.webp)
 
 ## Plan an Intimate Proposal at Azure Urban Resort Residences
 
