@@ -49,7 +49,7 @@ export default function ExclusionsPage() {
         <div className="rounded-2xl overflow-hidden border border-ink/10 mb-4">
           <div className="relative aspect-square">
             <Image
-              src="/images/exclusion-no-free-pool-access.jpg"
+              src="/images/azure-does-not-offer-free-pool-access.webp"
               alt="Azure does not offer free pool access — pool access is subject to the applicable Wave Pool fee"
               fill
               sizes="(max-width: 768px) 100vw, 800px"
