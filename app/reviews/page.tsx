@@ -34,7 +34,7 @@ const REVIEWS = [
   },
   {
     src: "/images/reviews/review-c.jpg",
-    author: "Hayato Soma",
+    author: "Verified guest",
     occasion: "Wedding proposal",
     quote: "Thank you Azure Staycation by Siaos. Highly recommended!",
     rating: 5,
@@ -52,7 +52,7 @@ const REVIEWS = [
   },
   {
     src: "/images/reviews/review-e.jpg",
-    author: "Camille (guest)",
+    author: "Verified guest",
     occasion: "Birthday celebration",
     quote:
       "Hello ma'am Camille, thank you so much po sa pag-save ng life ko kahapon \u2014 life-threatening na po pala allergy ko. Super thankful po ako kase di niyo pinabayaan guest niyo. God bless po sa business niyo and more power.",

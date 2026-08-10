@@ -73,7 +73,7 @@ const GALLERY = [
   { img: "/images/amenity-kitchen.jpg", label: "Kitchen area with home-like convenience" },
   { img: "/images/amenity-projector.jpg", label: "Projector and portable karaoke" },
   { img: "/images/amenity-karaoke.jpg", label: "Platinum karaoke with 2 microphones" },
-  { img: "/images/amenity-netflix.jpg", label: "Netflix and Disney+ access" },
+  { img: "/images/amenity-netflix.jpg", label: "Netflix access" },
   { img: "/images/amenity-ps4console.jpg", label: "PS4 console for entertainment" },
   { img: "/images/amenity-ps4games.jpg", label: "PS4 games for kids and kids at heart" },
   { img: "/images/amenity-cards.jpg", label: "Card and board games" },

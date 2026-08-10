@@ -2,7 +2,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { SITE_URL, SITE_NAME } from "../../lib/site";
-import { CONTACT } from "../../lib/links";
+import { CONTACT, CANVA_LINKS, SOCIAL_LINKS } from "../../lib/links";
 
 export const metadata = {
   title: "Frequently Asked Questions — Azure Staycation by Siaos",
@@ -14,14 +14,51 @@ export const metadata = {
 // statements on purpose — this is the format AI answer engines (and
 // Google's FAQ rich results) extract most reliably, and it doubles as the
 // FAQPage JSON-LD content below.
-const FAQS = [
+const FAQS: {
+  q: string;
+  a: string;
+  aNode?: React.ReactNode;
+}[] = [
   {
     q: "Is Azure Staycation by Siaos legit?",
-    a: "Yes. Azure Staycation by Siaos has operated at Azure Urban Resort Residences, Parañaque since 2023, with verified Facebook, Instagram, and TikTok pages, closed-deal proof, and guest reviews. The owner, Lyryque Lysl Camylle Siaotong, shares social proof and verification checks directly on the site's legitimacy page.",
+    a: "Yes. Azure Staycation by Siaos has operated at Azure Urban Resort Residences, Parañaque since 2023, with verified Facebook, Instagram, and TikTok pages, closed-deal proof, and guest reviews. The owner, Lyryque Lysl Camylle Siaotong, shares social proof and verification checks directly on Facebook.",
+    aNode: (
+      <>
+        Yes. Azure Staycation by Siaos has operated at Azure Urban Resort
+        Residences, Parañaque since 2023, with verified Facebook, Instagram,
+        and TikTok pages, closed-deal proof, and guest reviews. The owner,
+        Lyryque Lysl Camylle Siaotong, shares social proof and{" "}
+        <a
+          href={CANVA_LINKS.legitimacyCheck}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-clay-deep underline"
+        >
+          verification checks
+        </a>{" "}
+        directly on Facebook.
+      </>
+    ),
   },
   {
     q: "Where is Azure Staycation by Siaos located?",
     a: "The unit is on the 15th Floor, Santorini Tower, Azure Urban Resort Residences, Parañaque — right at the SLEX Bicutan exit, about 1 minute from SM Bicutan and around 20–35 minutes from NAIA terminals.",
+    aNode: (
+      <>
+        The unit is on the{" "}
+        <a
+          href={SOCIAL_LINKS.googleMaps}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-clay-deep underline"
+        >
+          15th Floor, Santorini Tower, Azure Urban Resort Residences,
+          Parañaque
+        </a>{" "}
+        — right at the SLEX Bicutan exit, about 1 minute from SM Bicutan and
+        around 20–35 minutes from NAIA terminals.
+      </>
+    ),
   },
   {
     q: "How many guests can stay in the unit?",
@@ -29,7 +66,7 @@ const FAQS = [
   },
   {
     q: "What's included in the staycation?",
-    a: "Every stay includes the 1-bedroom unit, a fully equipped kitchen, Netflix and Disney+ access, a projector, PS4 with games, Platinum karaoke with 2 microphones, and card and board games. Parking fees and wave pool access are not included and are paid separately at the building.",
+    a: "Every stay includes the 1-bedroom unit, a fully equipped kitchen, Netflix access, a projector, PS4 with games, Platinum karaoke with 2 microphones, and card and board games. Parking fees and wave pool access are not included and are paid separately at the building.",
   },
   {
     q: "What is not included in the staycation price?",
@@ -38,6 +75,17 @@ const FAQS = [
   {
     q: "Can I add food to my booking?",
     a: "Yes. Food add-ons include a 2-pax meal package from ₱1,899, bagnet and party trays from ₱1,200, food bundles from ₱2,799, plus custom cakes and toasting wines. Full options are on the Food Offers page.",
+    aNode: (
+      <>
+        Yes. Food add-ons include a 2-pax meal package from ₱1,899, bagnet
+        and party trays from ₱1,200, food bundles from ₱2,799, plus custom
+        cakes and toasting wines. Full options are on the{" "}
+        <Link href="/food-offers" className="text-clay-deep underline">
+          Food Offers page
+        </Link>
+        .
+      </>
+    ),
   },
   {
     q: "How do I book a date?",
@@ -85,7 +133,7 @@ export default function FaqPage() {
                 {f.q}
                 <span className="shrink-0 text-clay-deep group-open:rotate-45 transition-transform">+</span>
               </summary>
-              <p className="text-ink-soft text-sm leading-relaxed mt-3 pr-8">{f.a}</p>
+              <p className="text-ink-soft text-sm leading-relaxed mt-3 pr-8">{f.aNode ?? f.a}</p>
             </details>
           ))}
         </div>
