@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TikTokEmbed from "../components/TikTokEmbed";
 import { SOCIAL_LINKS } from "../../lib/links";
+import { SITE_URL } from "../../lib/site";
 
 export const metadata = {
   title: "Proposal Packages — Signature & Happily Ever After Setups | Azure Staycation by Siaos",
@@ -30,6 +31,28 @@ const PACKAGES = [
     featured: true,
   },
 ];
+
+// ---- JSON-LD -------------------------------------------------------------
+// Product + Offer schema so search engines and AI answer engines can read
+// exact package prices directly, instead of inferring them from prose.
+function buildProposalProductsJsonLd() {
+  return PACKAGES.map((pkg) => ({
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: pkg.name,
+    description: pkg.body,
+    image: `${SITE_URL}${pkg.img}`,
+    url: `${SITE_URL}/proposals`,
+    brand: { "@type": "Brand", name: "Azure Staycation by Siaos" },
+    offers: {
+      "@type": "Offer",
+      price: pkg.price.replace(/[^\d]/g, ""),
+      priceCurrency: "PHP",
+      availability: "https://schema.org/InStock",
+      url: `${SITE_URL}/proposals`,
+    },
+  }));
+}
 
 export default function ProposalsPage() {
   return (
@@ -286,6 +309,15 @@ export default function ProposalsPage() {
       </section>
 
       <Footer />
+
+      {buildProposalProductsJsonLd().map((product, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(product) }}
+        />
+      ))}
     </div>
   );
 }
