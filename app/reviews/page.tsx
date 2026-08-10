@@ -34,7 +34,7 @@ const REVIEWS = [
   },
   {
     src: "/images/reviews/review-c.jpg",
-    author: "Verified guest",
+    author: "Hayato Soma",
     occasion: "Wedding proposal",
     quote: "Thank you Azure Staycation by Siaos. Highly recommended!",
     rating: 5,
@@ -52,7 +52,7 @@ const REVIEWS = [
   },
   {
     src: "/images/reviews/review-e.jpg",
-    author: "Verified guest",
+    author: "Camille (guest)",
     occasion: "Birthday celebration",
     quote:
       "Hello ma'am Camille, thank you so much po sa pag-save ng life ko kahapon \u2014 life-threatening na po pala allergy ko. Super thankful po ako kase di niyo pinabayaan guest niyo. God bless po sa business niyo and more power.",
@@ -116,7 +116,7 @@ export default function ReviewsPage() {
               key={r.src}
               className="overflow-hidden rounded-2xl border border-ink/10 flex flex-col"
             >
-              <div style={{ height: "320px" }}>
+              <div className="aspect-square">
                 <img
                   src={r.src}
                   alt={`Guest review \u2014 ${r.occasion}`}
@@ -154,7 +154,7 @@ export default function ReviewsPage() {
             Read reviews on Google
           </a>
           <a
-            href={SOCIAL_LINKS.facebookPage}
+            href={SOCIAL_LINKS.facebookReviews}
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full border border-ink/20 px-6 py-3 text-sm font-semibold hover:border-ink transition-colors"
