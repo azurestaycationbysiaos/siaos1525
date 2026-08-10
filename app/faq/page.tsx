@@ -2,7 +2,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { SITE_URL, SITE_NAME } from "../../lib/site";
-import { CONTACT, CANVA_LINKS } from "../../lib/links";
+import { CONTACT, CANVA_LINKS, SOCIAL_LINKS } from "../../lib/links";
 
 export const metadata = {
   title: "Frequently Asked Questions — Azure Staycation by Siaos",
@@ -43,6 +43,22 @@ const FAQS: {
   {
     q: "Where is Azure Staycation by Siaos located?",
     a: "The unit is on the 15th Floor, Santorini Tower, Azure Urban Resort Residences, Parañaque — right at the SLEX Bicutan exit, about 1 minute from SM Bicutan and around 20–35 minutes from NAIA terminals.",
+    aNode: (
+      <>
+        The unit is on the{" "}
+        <a
+          href={SOCIAL_LINKS.googleMaps}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-clay-deep underline"
+        >
+          15th Floor, Santorini Tower, Azure Urban Resort Residences,
+          Parañaque
+        </a>{" "}
+        — right at the SLEX Bicutan exit, about 1 minute from SM Bicutan and
+        around 20–35 minutes from NAIA terminals.
+      </>
+    ),
   },
   {
     q: "How many guests can stay in the unit?",
