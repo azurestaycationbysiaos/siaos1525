@@ -49,6 +49,10 @@ const FAQS: {
     a: "The 1-bedroom unit comfortably fits up to 4 guests.",
   },
   {
+    q: "How much is a wedding proposal package?",
+    a: "The Signature Proposal Set Up is ₱10,999 and the Happily Ever After Set Up is ₱14,999. Both are full-room decorated and include the staycation unit.",
+  },
+  {
     q: "What's included in the staycation?",
     a: "Every stay includes the 1-bedroom unit, a fully equipped kitchen, Netflix and Disney+ access, a projector, PS4 with games, Platinum karaoke with 2 microphones, and card and board games. Parking fees and wave pool access are not included and are paid separately at the building.",
   },
@@ -59,6 +63,17 @@ const FAQS: {
   {
     q: "Can I add food to my booking?",
     a: "Yes. Food add-ons include a 2-pax meal package from ₱1,899, bagnet and party trays from ₱1,200, food bundles from ₱2,799, plus custom cakes and toasting wines. Full options are on the Food Offers page.",
+    aNode: (
+      <>
+        Yes. Food add-ons include a 2-pax meal package from ₱1,899, bagnet
+        and party trays from ₱1,200, food bundles from ₱2,799, plus custom
+        cakes and toasting wines. Full options are on the{" "}
+        <Link href="/food-offers" className="text-clay-deep underline">
+          Food Offers page
+        </Link>
+        .
+      </>
+    ),
   },
   {
     q: "How do I book a date?",
