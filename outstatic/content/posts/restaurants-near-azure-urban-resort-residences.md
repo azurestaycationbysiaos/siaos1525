@@ -49,7 +49,7 @@ Café and food option in the Azure retail area. [Facebook](https://www.facebook.
 
 ![Café Elegante, Azure Urban Resort Residences](/images/blog/restaurants-near-azure/café-elegante-azure.webp)
 
-Café option at the Paris Hilton Beach Club area inside Azure. [Google Maps](https://www.google.com/maps/search/?api=1&query=Skyfort+Cafe+Paris+Hilton+Beach+Club+Azure+Paranaque)
+Café option inside Azure Clubhouse. [Google Maps](https://www.google.com/maps/search/?api=1&query=Skyfort+Cafe+Paris+Hilton+Beach+Club+Azure+Paranaque)
 
 ### Beryl Restaurant
 
