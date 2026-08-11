@@ -16,7 +16,7 @@ const PACKAGES = [
   {
     name: "Signature Proposal Set Up",
     price: "₱10,999",
-    body: "Delight your partner with our signature wedding proposal setup, designed for an unforgettable \u201cYes!\u201d moment in an elegant, fully decorated room.",
+    body: "Delight your partner with our signature wedding proposal setup at Azure Urban Resort Residences, designed for an unforgettable \u201cYes!\u201d moment in an elegant, fully decorated room in Manila.",
     img: "/images/proposal-signature.jpg",
     portfolio: "/proposals/signature-proposal-portfolio",
     portfolioExternal: false,
@@ -24,7 +24,7 @@ const PACKAGES = [
   {
     name: "Happily Ever After Set Up",
     price: "₱14,999",
-    body: "Experience the ultimate proposal setup with our full-room decorations, designed to create the perfect \u201chappily ever after\u201d moment for the love of your life.",
+    body: "Experience the ultimate staycation proposal with our full-room decorations at Azure Urban Resort Residences, designed to create the perfect \u201chappily ever after\u201d moment for the love of your life.",
     img: "/images/proposal-happyeverafter.jpg",
     portfolio: "/proposals/happy-ever-after-portfolio",
     portfolioExternal: false,
@@ -65,12 +65,18 @@ export default function ProposalsPage() {
         </p>
         <h1 className="font-display text-5xl text-ink leading-[1.05] max-w-2xl">
           Intimate Wedding Proposal<br />
-          <em className="italic text-clay-deep">Packages in Manila</em>
+          <em className="italic text-clay-deep">in Manila</em>
+          <span className="block not-italic font-sans uppercase tracking-[0.2em] text-sm font-semibold text-clay-deep mt-3">
+            Packages
+          </span>
         </h1>
         <p className="text-ink-soft max-w-xl mt-6">
-          Planning a wedding proposal in Manila? Our proposal setup is based
-          in Parañaque, Metro Manila, just minutes from NAIA and SM Bicutan —
-          an easy, private spot to pull off your surprise.
+          Azure Staycation by Siaos is a wedding proposal and staycation
+          proposal provider based at Azure Urban Resort Residences in
+          Parañaque, Metro Manila — just minutes from NAIA and SM Bicutan.
+          Whether you&rsquo;re planning a surprise proposal in Manila or a
+          full staycation proposal setup, our proposal packages give you a
+          private, ready-to-go space to pull it off.
         </p>
       </section>
 
