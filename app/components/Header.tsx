@@ -7,6 +7,7 @@ import TopBanner from "./TopBanner";
 const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/location", label: "Location" },
+  { href: "/amenities", label: "Amenities" },
   { href: "/packages", label: "Room Decorations" },
   { href: "/proposals", label: "Proposal Packages" },
   { href: "/food-offers", label: "Food Offers" },
