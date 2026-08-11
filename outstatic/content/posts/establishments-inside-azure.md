@@ -45,6 +45,8 @@ Everyday essentials, snacks, drinks, and convenient access. [Google Maps](https:
 
 ### Jonson Mart
 
+![Jonson Mart at Maui Tower, Azure Urban Resort Residences](/images/blog/establishments-inside-azure-parañaque/jonson-mart-maui-tower-azure.webp)
+
 Listed inside Azure as a grocery/retail option. [Google Maps](https://www.google.com/maps/search/?api=1&query=Jonson+Mart+Azure+Urban+Resort+Residences+Paranaque)
 
 ## Pet Hotel Near Azure: Dainty Paws Azure
