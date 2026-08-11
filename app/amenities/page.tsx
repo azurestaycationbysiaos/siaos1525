@@ -109,7 +109,7 @@ export default function AmenitiesPage() {
           {AMENITY_SECTIONS.map((a) => (
             <div key={a.title} className="rounded-2xl overflow-hidden border border-ink/10 bg-cream-card">
               <div className="relative aspect-[4/3]">
-                <Image src={a.img} alt={a.title} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" />
+                <Image src={a.img} alt={a.title} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-contain bg-sand-light" />
               </div>
               <div className="p-5">
                 <h3 className="font-display text-lg text-ink mb-2">{a.title}</h3>
@@ -128,7 +128,7 @@ export default function AmenitiesPage() {
           {CLUBHOUSE_SECTIONS.map((c) => (
             <div key={c.title} className="rounded-2xl overflow-hidden border border-ink/10 bg-cream-card">
               <div className="relative aspect-square">
-                <Image src={c.img} alt={c.title} fill sizes="(max-width: 640px) 100vw, 33vw" className="object-cover" />
+                <Image src={c.img} alt={c.title} fill sizes="(max-width: 640px) 100vw, 33vw" className="object-contain bg-sand-light" />
               </div>
               <div className="p-4">
                 <h3 className="font-display text-base text-ink mb-1.5">{c.title}</h3>
@@ -148,7 +148,7 @@ export default function AmenitiesPage() {
           {RESTAURANTS_INSIDE_AZURE.map((r) => (
             <div key={r.name} className="rounded-xl overflow-hidden border border-ink/10 bg-cream-card">
               <div className="relative aspect-square">
-                <Image src={r.img} alt={r.name} fill sizes="(max-width: 640px) 50vw, 25vw" className="object-cover" />
+                <Image src={r.img} alt={r.name} fill sizes="(max-width: 640px) 50vw, 25vw" className="object-contain bg-sand-light" />
               </div>
               <div className="p-3">
                 <h3 className="font-display text-sm text-ink mb-1">{r.name}</h3>
