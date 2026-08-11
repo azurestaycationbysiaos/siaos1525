@@ -1,11 +1,11 @@
 ---
-title: "Establisments Convenience Stores, Pet Hotel, Massage & Laundry"
+title: "Establishments Inside Azure Parañaque: Convenience Stores, Pet Hotel, Massage & Laundry"
 publishedAt: "2026-08-11"
 description: "Staying at Azure Urban Resort Residences? Find convenience stores, pet boarding, massage services, and laundry options inside and near Azure in Bicutan, Parañaque."
 slug: "establishments-inside-azure"
 author:
   name: "Azure Staycation by Siaos"
-coverImage: "/images/blog/establisments-inside-azure.webp"
+coverImage: "/images/blog/establishments-inside-azure.webp"
 status: "published"
 ---
 
@@ -21,7 +21,7 @@ Several convenience and retail establishments are located within or around Azure
 
 ### 7-Eleven — Maldives Tower
 
-![7-Eleven convenience store at Maldives Tower, Azure Urban Resort Residences](/images/blog/establishments-inside-azure-parañaque7-eleven-maldives-tower-azure.webp)
+![7-Eleven convenience store at Maldives Tower, Azure Urban Resort Residences](/images/blog/establishments-inside-azure-parañaque/7-eleven-maldives-tower-azure.webp)
 
 Everyday essentials, snacks and drinks, toiletries and personal care, open 24/7. [Google Maps](https://www.google.com/maps/search/?api=1&query=7-Eleven+Maldives+Tower+Azure+Paranaque)
 
@@ -44,6 +44,8 @@ Everyday essentials, snacks and drinks, toiletries and personal care, open 24/7.
 Everyday essentials, snacks, drinks, and convenient access. [Google Maps](https://www.google.com/maps/search/?api=1&query=Kerchin+Convenience+Store+Maldives+Tower+Azure+Paranaque)
 
 ### Jonson Mart
+
+![Jonson Mart at Maui Tower, Azure Urban Resort Residences](/images/blog/establishments-inside-azure-parañaque/jonson-mart-maui-tower-azure.webp)
 
 Listed inside Azure as a grocery/retail option. [Google Maps](https://www.google.com/maps/search/?api=1&query=Jonson+Mart+Azure+Urban+Resort+Residences+Paranaque)
 
