@@ -63,9 +63,9 @@ export default function ProposalsPage() {
         <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-4">
           Trusted with Intimate Events since 2023
         </p>
-        <h1 className="font-display text-5xl text-ink leading-[1.05] max-w-2xl">
-          Intimate Wedding Proposal<br />
-          <em className="italic text-clay-deep">in Manila</em>
+        <h1 className="font-display text-6xl text-ink leading-[1.05] max-w-2xl">
+          Intimate Wedding<br />
+          <em className="italic text-clay-deep">Proposal in Manila</em>
           <span className="block not-italic font-sans uppercase tracking-[0.2em] text-sm font-semibold text-clay-deep mt-3">
             Packages
           </span>
