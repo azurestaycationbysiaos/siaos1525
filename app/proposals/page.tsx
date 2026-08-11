@@ -7,9 +7,9 @@ import { SOCIAL_LINKS } from "../../lib/links";
 import { SITE_URL } from "../../lib/site";
 
 export const metadata = {
-  title: "Proposal Packages — Signature & Happily Ever After Setups | Azure Staycation by Siaos",
+  title: "Wedding Proposal Packages in Manila (Parañaque) | Azure Staycation by Siaos",
   description:
-    "Marriage proposal staycation packages in Parañaque. Signature Proposal Setup at ₱10,999 and Happily Ever After Setup at ₱14,999 — full-room decorated, proposal-tested.",
+    "Wedding proposal setup and packages in Manila, Metro Manila (Parañaque). Signature Proposal Setup at ₱10,999 and Happily Ever After Setup at ₱14,999 — full-room decorated, proposal-tested.",
 };
 
 const PACKAGES = [
@@ -64,9 +64,14 @@ export default function ProposalsPage() {
           Trusted with Intimate Events since 2023
         </p>
         <h1 className="font-display text-5xl text-ink leading-[1.05] max-w-2xl">
-          Intimate Wedding<br />
-          <em className="italic text-clay-deep">Proposal Packages</em>
+          Intimate Wedding Proposal<br />
+          <em className="italic text-clay-deep">Packages in Manila</em>
         </h1>
+        <p className="text-ink-soft max-w-xl mt-6">
+          Planning a wedding proposal in Manila? Our proposal setup is based
+          in Parañaque, Metro Manila, just minutes from NAIA and SM Bicutan —
+          an easy, private spot to pull off your surprise.
+        </p>
       </section>
 
       {/* Packages */}
