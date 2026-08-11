@@ -21,7 +21,7 @@ Several convenience and retail establishments are located within or around Azure
 
 ### 7-Eleven — Maldives Tower
 
-![7-Eleven convenience store at Maldives Tower, Azure Urban Resort Residences](/images/blog/establishments-inside-azure-parañaque7-eleven-maldives-tower-azure.webp)
+![7-Eleven convenience store at Maldives Tower, Azure Urban Resort Residences](/images/blog/establishments-inside-azure-parañaque/7-eleven-maldives-tower-azure.webp)
 
 Everyday essentials, snacks and drinks, toiletries and personal care, open 24/7. [Google Maps](https://www.google.com/maps/search/?api=1&query=7-Eleven+Maldives+Tower+Azure+Paranaque)
 
