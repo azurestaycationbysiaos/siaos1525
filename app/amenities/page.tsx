@@ -124,6 +124,17 @@ export default function AmenitiesPage() {
           Guests may access selected areas inside the Azure Clubhouse on the
           ground floor:
         </p>
+        <div className="rounded-2xl overflow-hidden border border-ink/10 bg-cream-card mb-8">
+          <div className="relative aspect-[16/9]">
+            <Image
+              src="/images/blog/amenities/azure-clubhouse-azure-urban-resort-residences.webp"
+              alt="Azure Clubhouse"
+              fill
+              sizes="(max-width: 768px) 100vw, 800px"
+              className="object-contain bg-sand-light"
+            />
+          </div>
+        </div>
         <div className="grid sm:grid-cols-3 gap-6 mb-16">
           {CLUBHOUSE_SECTIONS.map((c) => (
             <div key={c.title} className="rounded-2xl overflow-hidden border border-ink/10 bg-cream-card">
