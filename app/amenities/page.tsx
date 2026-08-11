@@ -108,7 +108,7 @@ export default function AmenitiesPage() {
         <div className="grid sm:grid-cols-2 gap-8 mb-16">
           {AMENITY_SECTIONS.map((a) => (
             <div key={a.title} className="rounded-2xl overflow-hidden border border-ink/10 bg-cream-card">
-              <div className="relative aspect-[4/3]">
+              <div className="relative aspect-[3/2]">
                 <Image src={a.img} alt={a.title} fill sizes="(max-width: 640px) 100vw, 50vw" className="object-cover" />
               </div>
               <div className="p-5">
@@ -124,10 +124,21 @@ export default function AmenitiesPage() {
           Guests may access selected areas inside the Azure Clubhouse on the
           ground floor:
         </p>
+        <div className="rounded-2xl overflow-hidden border border-ink/10 bg-cream-card mb-8">
+          <div className="relative aspect-[3/2]">
+            <Image
+              src="/images/blog/amenities/azure-clubhouse-azure-urban-resort-residences.webp"
+              alt="Azure Clubhouse"
+              fill
+              sizes="(max-width: 768px) 100vw, 800px"
+              className="object-cover"
+            />
+          </div>
+        </div>
         <div className="grid sm:grid-cols-3 gap-6 mb-16">
           {CLUBHOUSE_SECTIONS.map((c) => (
             <div key={c.title} className="rounded-2xl overflow-hidden border border-ink/10 bg-cream-card">
-              <div className="relative aspect-square">
+              <div className="relative aspect-[3/2]">
                 <Image src={c.img} alt={c.title} fill sizes="(max-width: 640px) 100vw, 33vw" className="object-cover" />
               </div>
               <div className="p-4">
@@ -147,7 +158,7 @@ export default function AmenitiesPage() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
           {RESTAURANTS_INSIDE_AZURE.map((r) => (
             <div key={r.name} className="rounded-xl overflow-hidden border border-ink/10 bg-cream-card">
-              <div className="relative aspect-square">
+              <div className="relative aspect-[3/2]">
                 <Image src={r.img} alt={r.name} fill sizes="(max-width: 640px) 50vw, 25vw" className="object-cover" />
               </div>
               <div className="p-3">

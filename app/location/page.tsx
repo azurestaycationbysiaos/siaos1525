@@ -12,23 +12,38 @@ export const metadata = {
 };
 
 const NEARBY = [
-  { place: "SM Bicutan shopping mall", distance: "700 m", time: "1 minute" },
-  { place: "South Luzon Expressway (SLEX)", distance: "—", time: "1 minute" },
-  { place: "Laguna Lakeshore Expressway (C6)", distance: "2.9 km", time: "6 minutes" },
-  { place: "Bicutan Market", distance: "1 km", time: "—" },
-  { place: "Parañaque Doctors Hospital", distance: "2.4 km", time: "10 minutes" },
-  { place: "Ayala Malls South Park", distance: "3 km", time: "—" },
-  { place: "Parañaque City Hall", distance: "4 km", time: "—" },
-  { place: "Alabang Town Center", distance: "5 km", time: "—" },
-  { place: "Asian Hospital, Alabang", distance: "9.9 km", time: "15 minutes" },
-  { place: "Festival Mall, Alabang", distance: "8.6 km", time: "15 minutes" },
-  { place: "PITX (Parañaque Integrated Terminal Exchange)", distance: "—", time: "—" },
-  { place: "SM Mall of Asia", distance: "—", time: "—" },
+  { place: "SM Bicutan Shopping Mall", distance: "800 m - 1km", time: "6 - 8 minutes" }, 
+
+  { place: "SLEX Bicutan Exit Southbound", distance: "1.1 km", time: "7 minutes" }, 
+
+  { place: "Bicutan Market", distance: "1.1 km", time: "7 minutes" },
+
+  { place: "Parañaque Doctors Hospital", distance: "2.4 km", time: "13 minutes" }, 
+
+  { place: "Festival Mall, Alabang", distance: "9.8 km", time: "21 minutes" }, 
+
+  { place: "Asian Hospital, Alabang", distance: "9.9 km", time: "23 minutes" }, 
+
+  { place: "Parañaque City Hall", distance: "5 km", time: "23 minutes" }, 
+
+  { place: "Ayala Malls South Park", distance: "8.5 km", time: "24 minutes" }, 
+
+  { place: "Alabang Town Center", distance: "12.2 km", time: "30 minutes" }, 
+  
+  { place: "One Ayala Terminal", distance: "9.8 km", time: "31 minutes" },
+  
+  { place: "SM Mall of Asia", distance: "12 km", time: "35 minutes" }, 
+
   { place: "NAIA Terminal 3", distance: "11 km", time: "20–25 minutes" },
+
   { place: "NAIA Terminal 4", distance: "11 km", time: "20–25 minutes" },
+
   { place: "NAIA Terminal 1", distance: "13 km", time: "30–35 minutes" },
+
   { place: "NAIA Terminal 2", distance: "13 km", time: "30–35 minutes" },
-  { place: "Makati CBD", distance: "9.6 km", time: "30 minutes" },
+
+  { place: "Parañaque Integrated Terminal Exchange", distance: "15.9 km", time: "37 minutes" },
+  
 ];
 
 export default function LocationPage() {
