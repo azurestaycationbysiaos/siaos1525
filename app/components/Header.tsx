@@ -23,17 +23,17 @@ export default function Header() {
     <>
       <TopBanner />
       <header className="sticky top-0 z-40 bg-sand-light/90 backdrop-blur border-b border-ink/10">
-        <nav className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
+        <nav className="mx-auto max-w-7xl pl-4 pr-6 py-4 flex items-center justify-between gap-6">
           <Link
             href="/"
-            className="font-display text-lg tracking-wide text-ink"
+            className="font-display text-lg tracking-wide text-ink shrink-0 whitespace-nowrap"
             onClick={() => setOpen(false)}
           >
             Azure Staycation <span className="italic text-clay-deep">by Siaos</span>
           </Link>
 
           {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-6 text-sm font-medium text-ink-soft">
+          <div className="hidden md:flex items-center gap-5 text-sm font-medium text-ink-soft whitespace-nowrap">
             {NAV_LINKS.map((link) => (
               <Link key={link.href} href={link.href} className="hover:text-clay-deep transition-colors">
                 {link.label}
