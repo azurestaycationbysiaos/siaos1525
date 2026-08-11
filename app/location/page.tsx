@@ -20,18 +20,18 @@ const NEARBY = [
 
   { place: "Parañaque Doctors Hospital", distance: "2.4 km", time: "13 minutes" }, 
 
-  { place: "Ayala Malls South Park", distance: "8.5 km", time: "24 minutes" }, 
-
-  { place: "Parañaque City Hall", distance: "5 km", time: "23 minutes" }, 
-
-  { place: "Alabang Town Center", distance: "12.2 km", time: "30 minutes" }, 
+  { place: "Festival Mall, Alabang", distance: "9.8 km", time: "21 minutes" }, 
 
   { place: "Asian Hospital, Alabang", distance: "9.9 km", time: "23 minutes" }, 
 
-  { place: "Festival Mall, Alabang", distance: "9.8 km", time: "21 minutes" }, 
+  { place: "Parañaque City Hall", distance: "5 km", time: "23 minutes" }, 
 
-  { place: "PITX (Parañaque Integrated Terminal Exchange)", distance: "15.9 km", time: "37 minutes" },
+  { place: "Ayala Malls South Park", distance: "8.5 km", time: "24 minutes" }, 
 
+  { place: "Alabang Town Center", distance: "12.2 km", time: "30 minutes" }, 
+  
+  { place: "One Ayala Terminal", distance: "9.8 km", time: "31 minutes" } 
+  
   { place: "SM Mall of Asia", distance: "12 km", time: "35 minutes" }, 
 
   { place: "NAIA Terminal 3", distance: "11 km", time: "20–25 minutes" },
@@ -42,7 +42,8 @@ const NEARBY = [
 
   { place: "NAIA Terminal 2", distance: "13 km", time: "30–35 minutes" },
 
-  { place: "One Ayala Terminal", distance: "9.8 km", time: "31 minutes" } 
+  { place: "Parañaque Integrated Terminal Exchange", distance: "15.9 km", time: "37 minutes" },
+  
 ];
 
 export default function LocationPage() {
