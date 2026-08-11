@@ -15,11 +15,19 @@ const NEARBY = [
   { place: "SM Bicutan shopping mall", distance: "700 m", time: "1 minute" },
   { place: "South Luzon Expressway (SLEX)", distance: "—", time: "1 minute" },
   { place: "Laguna Lakeshore Expressway (C6)", distance: "2.9 km", time: "6 minutes" },
+  { place: "Bicutan Market", distance: "1 km", time: "—" },
   { place: "Parañaque Doctors Hospital", distance: "2.4 km", time: "10 minutes" },
+  { place: "Ayala Malls South Park", distance: "3 km", time: "—" },
+  { place: "Parañaque City Hall", distance: "4 km", time: "—" },
+  { place: "Alabang Town Center", distance: "5 km", time: "—" },
   { place: "Asian Hospital, Alabang", distance: "9.9 km", time: "15 minutes" },
   { place: "Festival Mall, Alabang", distance: "8.6 km", time: "15 minutes" },
-  { place: "NAIA Terminals 3 and 4", distance: "11 km", time: "20–25 minutes" },
-  { place: "NAIA Terminals 1 and 2", distance: "13 km", time: "30–35 minutes" },
+  { place: "PITX (Parañaque Integrated Terminal Exchange)", distance: "—", time: "—" },
+  { place: "SM Mall of Asia", distance: "—", time: "—" },
+  { place: "NAIA Terminal 3", distance: "11 km", time: "20–25 minutes" },
+  { place: "NAIA Terminal 4", distance: "11 km", time: "20–25 minutes" },
+  { place: "NAIA Terminal 1", distance: "13 km", time: "30–35 minutes" },
+  { place: "NAIA Terminal 2", distance: "13 km", time: "30–35 minutes" },
   { place: "Makati CBD", distance: "9.6 km", time: "30 minutes" },
 ];
 
@@ -38,10 +46,10 @@ export default function LocationPage() {
           Location &amp; Directions
         </h1>
         <p className="text-ink-soft leading-relaxed mb-10 max-w-2xl">
-          Right at the Bicutan exit of SLEX and Skyway, Azure Urban Resort
-          Residences puts you minutes from SM Bicutan, major hospitals, and
-          both NAIA terminals — with the convenience of Makati CBD about
-          half an hour away.
+          Right at the Bicutan exit of SLEX and Skyway, just off Doña
+          Soledad Avenue, Azure Urban Resort Residences puts you minutes
+          from SM Bicutan, major hospitals, and both NAIA terminals — with
+          the convenience of Makati CBD about half an hour away.
         </p>
 
         {/* Their specific unit, second */}
