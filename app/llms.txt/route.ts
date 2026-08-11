@@ -49,7 +49,7 @@ Contact: ${CONTACT.email} | ${CONTACT.phone} | ${CONTACT.addressFull}
 - [Payment Channels](${SITE_URL}/payment-channels): Accepted payment methods.
 - [House Rules](${SITE_URL}/house-rules): Guest rules for the unit.
 - [Guest Reviews](${SITE_URL}/reviews): Real guest reviews.
-- [Blog](${SITE_URL}/blog): Proposal planning tips and ideas.
+- [Blog](${SITE_URL}/blog): Guides on Azure Urban Resort Residences — a comprehensive guide to the property in Parañaque (location, directions, and what it is), commuting, nearby restaurants, guest amenities, house rules and property policies, avoiding staycation scams, setting up celebrations for occasions beyond proposals (birthdays, anniversaries, welcome home, and more), and proposal planning ideas.
 
 ## Portfolio galleries (real client photos)
 

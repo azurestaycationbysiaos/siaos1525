@@ -14,7 +14,7 @@ const AMENITIES = [
   { img: "/images/amenity-ps4games.jpg", label: "PS4 games for kids and kids at heart" },
   { img: "/images/amenity-ps4console.jpg", label: "PS4 console for entertainment" },
   { img: "/images/amenity-karaoke.jpg", label: "Platinum karaoke with 2 microphones" },
-  { img: "/images/amenity-netflix.jpg", label: "Netflix and Disney+ access" },
+  { img: "/images/amenity-netflix.jpg", label: "Netflix and basic Youtube access" },
   { img: "/images/amenity-cards.jpg", label: "Card and board games" },
 ];
 
