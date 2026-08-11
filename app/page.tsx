@@ -215,13 +215,13 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-ink/10 bg-cream-card">
+          <div className="relative aspect-square rounded-2xl overflow-hidden border border-ink/10">
             <Image
               src="/images/legitimacy-1.jpg"
               alt="Azure Staycation by Siaos owner"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-contain"
+              className="object-cover"
             />
           </div>
         </div>
