@@ -1,5 +1,5 @@
 ---
-title: "Establisments Convenience Stores, Pet Hotel, Massage & Laundry"
+title: "Establishments Inside Azure Parañaque: Convenience Stores, Pet Hotel, Massage & Laundry"
 publishedAt: "2026-08-11"
 description: "Staying at Azure Urban Resort Residences? Find convenience stores, pet boarding, massage services, and laundry options inside and near Azure in Bicutan, Parañaque."
 slug: "establishments-inside-azure"
