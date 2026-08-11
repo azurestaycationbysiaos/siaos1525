@@ -30,7 +30,7 @@ const NEARBY = [
 
   { place: "Alabang Town Center", distance: "12.2 km", time: "30 minutes" }, 
   
-  { place: "One Ayala Terminal", distance: "9.8 km", time: "31 minutes" } 
+  { place: "One Ayala Terminal", distance: "9.8 km", time: "31 minutes" },
   
   { place: "SM Mall of Asia", distance: "12 km", time: "35 minutes" }, 
 
