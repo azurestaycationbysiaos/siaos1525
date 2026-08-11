@@ -5,7 +5,7 @@ description: "Staying at Azure Urban Resort Residences? Find convenience stores,
 slug: "establishments-inside-azure"
 author:
   name: "Azure Staycation by Siaos"
-coverImage: "/images/blog/establisments-inside-azure.webp"
+coverImage: "/images/blog/establishments-inside-azure.webp"
 status: "published"
 ---
 
