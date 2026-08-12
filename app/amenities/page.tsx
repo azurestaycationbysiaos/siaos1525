@@ -81,11 +81,11 @@ const RESTAURANTS_INSIDE_AZURE = [
 ];
 
 const CONVENIENCE_STORES_INSIDE_AZURE = [
-  { name: "7-Eleven", img: "/images/blog/establishments-inside-azure-parañaque/7-eleven-maldives-tower-azure.webp", description: "Maldives Tower" },
-  { name: "Lawson", img: "/images/blog/establishments-inside-azure-parañaque/lawson-convenience-store-boracay-tower-azure.webp", description: "Boracay Tower" },
-  { name: "Stopover Convenience", img: "/images/blog/establishments-inside-azure-parañaque/stopover-convenience-bahamas-tower-azure.webp", description: "Bahamas Tower" },
-  { name: "KERCHIN Convenience Store", img: "/images/blog/establishments-inside-azure-parañaque/kerchin-convenience-store-maldives-tower-azure.webp", description: "Maldives Tower"},
-  { name: "Jonson Mart", img: "/images/blog/establishments-inside-azure-parañaque/jonson-mart-maui-tower-azure.webp", description: "Maui Tower"},
+  { name: "7-Eleven", img: "/images/blog/establishments-inside-azure-parañaque/7-eleven-maldives-tower-azure.webp", description: "Maldives Tower. Everyday essentials, snacks and drinks, toiletries and personal care, open 24/7." },
+  { name: "Lawson", img: "/images/blog/establishments-inside-azure-parañaque/lawson-convenience-store-boracay-tower-azure.webp", description: "Boracay Tower. Everyday essentials, snacks and drinks, toiletries and personal care, open 24/7." },
+  { name: "Stopover Convenience", img: "/images/blog/establishments-inside-azure-parañaque/stopover-convenience-bahamas-tower-azure.webp", description: "Bahamas Tower. Everyday essentials, snacks and drinks, toiletries and personal care, open 24/7." },
+  { name: "KERCHIN Convenience Store", img: "/images/blog/establishments-inside-azure-parañaque/kerchin-convenience-store-maldives-tower-azure.webp", description: "Maldives Tower. Everyday essentials, snacks, drinks, and convenient access." },
+  { name: "Jonson Mart", img: "/images/blog/establishments-inside-azure-parañaque/jonson-mart-maui-tower-azure.webp", description: "Maui Tower. Grocery and retail option." },
 ];
 
 export default function AmenitiesPage() {
@@ -163,7 +163,7 @@ export default function AmenitiesPage() {
           property. Tenants and hours can change — check current listings
           before heading out.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
           {RESTAURANTS_INSIDE_AZURE.map((r) => (
             <div key={r.name} className="rounded-xl overflow-hidden border border-ink/10 bg-cream-card">
               <div className="relative aspect-[3/2]">
@@ -182,7 +182,7 @@ export default function AmenitiesPage() {
           Everyday essentials without leaving the property. Tenants and
           hours can change — check current listings before heading out.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-16">
           {CONVENIENCE_STORES_INSIDE_AZURE.map((s) => (
             <div key={s.name} className="rounded-xl overflow-hidden border border-ink/10 bg-cream-card">
               <div className="relative aspect-[3/2]">
