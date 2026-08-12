@@ -41,15 +41,15 @@ Donuts, coffee and quick snacks near the Azure area, right off West Service Road
 
 Flavored fries and a quick snack near the Azure gate and Bahamas Tower area. [Google Maps](https://www.google.com/maps/search/?api=1&query=Potato+Corner+Azure+Bahamas+Tower+Paranaque)
 
-### Bakery Near Lawson — Boracay Tower Area
-
-A convenient bakery within the Azure community near the Lawson convenience store in the Boracay Tower area.
-
 ### Don Benito Cassava Cake & Pichi Pichi
 
 ![Don Benito Cassava Cake and Pichi Pichi Filipino kakanin shop near Azure Urban Resort Residences, Bicutan](/images/blog/places-to-eat-near-azure/don-benito-cassava-bicutan.webp)
 
 A great spot for classic Filipino kakanin, especially cassava cake and pichi-pichi — perfect for a quick merienda or something to bring back to your Azure staycation. [Google Maps](https://www.google.com/maps/search/?api=1&query=Don+Benito+Cassava+Cake+Pichi+Pichi+Bicutan)
+
+### Bakery Near Lawson — Boracay Tower Area
+
+A convenient bakery within the Azure community near the Lawson convenience store in the Boracay Tower area.
 
 ## Budget & Casual Food at SM City Bicutan
 
@@ -94,9 +94,9 @@ Something small between meals. For flavored fries near the gate itself, see Pota
 
 ## Food Hall & Newer Food Options
 
-![SM Food Hall Bicutan interior on Level 3, New Wing, near Azure Urban Resort Residences](/images/blog/places-to-eat-near-azure/sm-bicutan-food-hall.webp)
-
 **SM Food Hall — Bicutan** — A food hall on Level 3, New Wing, with multiple food choices under one roof. [Google Maps](https://www.google.com/maps/search/?api=1&query=SM+Food+Hall+Bicutan+Level+3)
+
+![SM Food Hall Bicutan interior on Level 3, New Wing, near Azure Urban Resort Residences](/images/blog/places-to-eat-near-azure/sm-bicutan-food-hall.webp)
 
 ## Final Thoughts
 
