@@ -163,7 +163,7 @@ export default function AmenitiesPage() {
           property. Tenants and hours can change — check current listings
           before heading out.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-16">
           {RESTAURANTS_INSIDE_AZURE.map((r) => (
             <div key={r.name} className="rounded-xl overflow-hidden border border-ink/10 bg-cream-card">
               <div className="relative aspect-[3/2]">
