@@ -81,11 +81,11 @@ const RESTAURANTS_INSIDE_AZURE = [
 ];
 
 const CONVENIENCE_STORES_INSIDE_AZURE = [
-  { name: "7-Eleven", img: "/images/blog/establishments-inside-azure-parañaque/7-eleven-maldives-tower-azure.webp", description: "Maldives Tower. Everyday essentials, snacks and drinks, toiletries and personal care, open 24/7." },
-  { name: "Lawson", img: "/images/blog/establishments-inside-azure-parañaque/lawson-convenience-store-boracay-tower-azure.webp", description: "Boracay Tower. Everyday essentials, snacks and drinks, toiletries and personal care, open 24/7." },
-  { name: "Stopover Convenience", img: "/images/blog/establishments-inside-azure-parañaque/stopover-convenience-bahamas-tower-azure.webp", description: "Bahamas Tower. Everyday essentials, snacks and drinks, toiletries and personal care, open 24/7." },
-  { name: "KERCHIN Convenience Store", img: "/images/blog/establishments-inside-azure-parañaque/kerchin-convenience-store-maldives-tower-azure.webp", description: "Maldives Tower. Everyday essentials, snacks, drinks, and convenient access." },
-  { name: "Jonson Mart", img: "/images/blog/establishments-inside-azure-parañaque/jonson-mart-maui-tower-azure.webp", description: "Maui Tower. Grocery and retail option." },
+  { name: "7-Eleven", img: "/images/blog/establishments-inside-azure-parañaque/7-eleven-maldives-tower-azure.webp", description: "Maldives Tower" },
+  { name: "Lawson", img: "/images/blog/establishments-inside-azure-parañaque/lawson-convenience-store-boracay-tower-azure.webp", description: "Boracay Tower" },
+  { name: "Stopover Convenience", img: "/images/blog/establishments-inside-azure-parañaque/stopover-convenience-bahamas-tower-azure.webp", description: "Bahamas Tower" },
+  { name: "KERCHIN Convenience Store", img: "/images/blog/establishments-inside-azure-parañaque/kerchin-convenience-store-maldives-tower-azure.webp", description: "Maldives Tower"},
+  { name: "Jonson Mart", img: "/images/blog/establishments-inside-azure-parañaque/jonson-mart-maui-tower-azure.webp", description: "Maui Tower"},
 ];
 
 export default function AmenitiesPage() {
