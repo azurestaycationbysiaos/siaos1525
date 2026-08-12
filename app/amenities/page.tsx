@@ -80,6 +80,14 @@ const RESTAURANTS_INSIDE_AZURE = [
   { name: "Urban Bites Food Hub", img: "/images/blog/restaurants-near-azure/urban-bites-food-hub-azure.webp", description: "Food hub option in the Azure retail area." },
 ];
 
+const CONVENIENCE_STORES_INSIDE_AZURE = [
+  { name: "7-Eleven", img: "/images/blog/establishments-inside-azure-parañaque/7-eleven-maldives-tower-azure.webp", description: "Maldives Tower. Everyday essentials, snacks and drinks, toiletries and personal care, open 24/7." },
+  { name: "Lawson", img: "/images/blog/establishments-inside-azure-parañaque/lawson-convenience-store-boracay-tower-azure.webp", description: "Boracay Tower. Everyday essentials, snacks and drinks, toiletries and personal care, open 24/7." },
+  { name: "Stopover Convenience", img: "/images/blog/establishments-inside-azure-parañaque/stopover-convenience-bahamas-tower-azure.webp", description: "Bahamas Tower. Everyday essentials, snacks and drinks, toiletries and personal care, open 24/7." },
+  { name: "KERCHIN Convenience Store", img: "/images/blog/establishments-inside-azure-parañaque/kerchin-convenience-store-maldives-tower-azure.webp", description: "Maldives Tower. Everyday essentials, snacks, drinks, and convenient access." },
+  { name: "Jonson Mart", img: "/images/blog/establishments-inside-azure-parañaque/jonson-mart-maui-tower-azure.webp", description: "Maui Tower. Grocery and retail option." },
+];
+
 export default function AmenitiesPage() {
   return (
     <div className="flex flex-col">
@@ -164,6 +172,25 @@ export default function AmenitiesPage() {
               <div className="p-3">
                 <h3 className="font-display text-sm text-ink mb-1">{r.name}</h3>
                 <p className="text-ink-soft text-xs leading-relaxed">{r.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <h2 className="font-display text-2xl text-ink mb-2">Convenience Stores Inside Azure</h2>
+        <p className="text-ink-soft leading-relaxed mb-6 max-w-2xl">
+          Everyday essentials without leaving the property. Tenants and
+          hours can change — check current listings before heading out.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16">
+          {CONVENIENCE_STORES_INSIDE_AZURE.map((s) => (
+            <div key={s.name} className="rounded-xl overflow-hidden border border-ink/10 bg-cream-card">
+              <div className="relative aspect-[3/2]">
+                <Image src={s.img} alt={s.name} fill sizes="(max-width: 640px) 50vw, 25vw" className="object-cover" />
+              </div>
+              <div className="p-3">
+                <h3 className="font-display text-sm text-ink mb-1">{s.name}</h3>
+                <p className="text-ink-soft text-xs leading-relaxed">{s.description}</p>
               </div>
             </div>
           ))}
