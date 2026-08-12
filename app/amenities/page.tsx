@@ -85,7 +85,7 @@ const CONVENIENCE_STORES_INSIDE_AZURE = [
   { name: "Stopover Convenience", img: "/images/blog/establishments-inside-azure-parañaque/stopover-convenience-bahamas-tower-azure.webp", description: "Bahamas Tower" },
   { name: "KERCHIN Convenience Store", img: "/images/blog/establishments-inside-azure-parañaque/kerchin-convenience-store-maldives-tower-azure.webp", description: "Maldives Tower" },
   { name: "Jonson Mart", img: "/images/blog/establishments-inside-azure-parañaque/jonson-mart-maui-tower-azure.webp", description: "Maui Tower" },
-
+];
 const FOOD_JUST_OUTSIDE_AZURE = [
   { name: "Andok's Azure Dine-in", img: "/images/blog/places-to-eat-near-azure/andoks-azure-dine-in-near-bahamas-tower.webp", description: "Casual Filipino roast chicken near Bahamas Tower, under 5 minutes on foot." },
   { name: "Andok's — Near Maui Tower", img: "/images/blog/places-to-eat-near-azure/andoks-near-maui-tower-azure.webp", description: "Take-out branch near Maui Tower for chicken and ready-to-eat meals." },
