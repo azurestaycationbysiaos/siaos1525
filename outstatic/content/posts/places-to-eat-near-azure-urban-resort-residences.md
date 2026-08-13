@@ -47,9 +47,9 @@ Flavored fries and a quick snack near the Azure gate and Bahamas Tower area. [Go
 
 A great spot for classic Filipino kakanin, especially cassava cake and pichi-pichi — perfect for a quick merienda or something to bring back to your Azure staycation. [Google Maps](https://www.google.com/maps/search/?api=1&query=Don+Benito+Cassava+Cake+Pichi+Pichi+Bicutan)
 
-### Bakery Near Lawson — Boracay Tower Area
+### Blessing's Bread - Bakery Near Lawson — Boracay Tower Area
 
-A convenient bakery within the Azure community near the Lawson convenience store in the Boracay Tower area.
+A convenient bakery within the Azure community near the Lawson convenience store in the Boracay Tower area. [Google maps](https://maps.app.goo.gl/utqQRJmrpDyusvMF7)
 
 ## Budget & Casual Food at SM City Bicutan
 
