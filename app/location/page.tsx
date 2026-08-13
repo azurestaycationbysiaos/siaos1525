@@ -88,7 +88,7 @@ export default function LocationPage() {
 
         {/* Convenience list */}
         <h2 className="font-display text-2xl text-ink mb-6 text-center">
-          Convenience Within Minutes
+          Places Near Azure Urban Resort Residences
         </h2>
         <ul className="max-w-xl mx-auto space-y-4 mb-6">
           {NEARBY.map((n) => (
