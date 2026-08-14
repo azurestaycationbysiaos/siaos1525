@@ -6,35 +6,35 @@ import BookingForm from "../components/BookingForm";
 import { CANVA_LINKS } from "../../lib/links";
 
 export const metadata = {
-  title: "Room Decorations | Azure Staycation by Siaos",
+  title: "Staycation Room Decorations | Azure Staycation by Siaos",
   description:
     "Themed staycation room decoration packages for anniversaries, birthdays, welcome home celebrations, bridal showers, and gender reveals in Parañaque.",
 };
 
 const SAMPLES = [
   {
-    title: "Staycation + 1 Area with Decorations",
+    title: "Staycation + One area - Room Decorations",
     body: "Check out our sample setups for a single area, perfect for birthdays, anniversaries, and romantic surprises. Get your inspo for your next special celebration!",
     img: "/images/sample-1area.jpg",
-    href: "/packages/one-area-portfolio",
+    href: "/packages/one-area-decorations",
     internal: true,
     aspect: "aspect-square",
   },
   {
-    title: "Full Room Decorations / Themed Set Ups",
+    title: " Staycation + Full Room Decorations",
     body: "Explore our full-room decoration samples, perfect for birthdays, anniversaries, and special surprises. Transform your staycation into a magical celebration!",
     img: "/images/sample-fullroom.jpg",
-    href: "/packages/full-room-portfolio",
+    href: "/packages/full-room-decorations",
     internal: true,
     aspect: "aspect-square",
   },
 {
-  title: "Will You Be My Girlfriend Set Ups",
+  title: "Girlfriend Proposal",
   body: "Transform your staycation into a memorable moment with our romantic full-room decorations made for that special \"Will you be my girlfriend?\" ask.",
   img: "/images/sample-girlfriend.jpg",
-  href: "/packages/girlfriend-portfolio",
+  href: "/packages/girlfriend-proposal",
   internal: true,
-  aspect: "aspect-[3/4]",
+  aspect: "aspect-[9/16]",
 },
   {
     title: "Bridal Shower Set Ups",
