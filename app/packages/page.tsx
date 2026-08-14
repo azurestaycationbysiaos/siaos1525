@@ -13,18 +13,18 @@ export const metadata = {
 
 const SAMPLES = [
   {
-    title: "Staycation + 1 Area with Decorations",
+    title: "Staycation + One area - Room Decorations",
     body: "Check out our sample setups for a single area, perfect for birthdays, anniversaries, and romantic surprises. Get your inspo for your next special celebration!",
     img: "/images/sample-1area.jpg",
-    href: "/packages/one-area-portfolio",
+    href: "/packages/one-area-decorations",
     internal: true,
     aspect: "aspect-square",
   },
   {
-    title: "Full Room Decorations / Themed Set Ups",
+    title: " Staycation + Full Room Decorations",
     body: "Explore our full-room decoration samples, perfect for birthdays, anniversaries, and special surprises. Transform your staycation into a magical celebration!",
     img: "/images/sample-fullroom.jpg",
-    href: "/packages/full-room-portfolio",
+    href: "/packages/full-room-decorations",
     internal: true,
     aspect: "aspect-square",
   },
