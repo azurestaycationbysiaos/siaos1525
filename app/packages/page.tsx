@@ -86,7 +86,13 @@ export default function PackagesPage() {
             }`}
           >
             <div className={`relative ${s.aspect} rounded-2xl overflow-hidden border border-ink/10 bg-cream-card`}>
-              <Image src={s.img} alt={s.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+              <Image
+                src={s.img}
+                alt={s.title}
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className={s.title === "Girlfriend Proposal" ? "object-contain" : "object-cover"}
+              />
             </div>
             <div>
               <h2 className="font-display text-2xl text-ink mb-3">{s.title}</h2>
@@ -99,7 +105,7 @@ export default function PackagesPage() {
                   View our portfolio here
                 </Link>
               ) : (
-                <a
+                
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
