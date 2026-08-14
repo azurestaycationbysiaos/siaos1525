@@ -6,7 +6,7 @@ import BookingForm from "../components/BookingForm";
 import { CANVA_LINKS } from "../../lib/links";
 
 export const metadata = {
-  title: "Room Decorations | Azure Staycation by Siaos",
+  title: "Staycation Room Decorations | Azure Staycation by Siaos",
   description:
     "Themed staycation room decoration packages for anniversaries, birthdays, welcome home celebrations, bridal showers, and gender reveals in Parañaque.",
 };
