@@ -34,7 +34,7 @@ const SAMPLES = [
   img: "/images/sample-girlfriend.jpg",
   href: "/packages/girlfriend-proposal",
   internal: true,
-  aspect: "aspect-[3/4]",
+  aspect: "aspect-[4/5]",
 },
   {
     title: "Bridal Shower Set Ups",
