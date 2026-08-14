@@ -29,10 +29,10 @@ const SAMPLES = [
     aspect: "aspect-square",
   },
 {
-  title: "Will You Be My Girlfriend Set Ups",
+  title: "Girlfriend Proposal",
   body: "Transform your staycation into a memorable moment with our romantic full-room decorations made for that special \"Will you be my girlfriend?\" ask.",
   img: "/images/sample-girlfriend.jpg",
-  href: "/packages/girlfriend-portfolio",
+  href: "/packages/girlfriend-proposal",
   internal: true,
   aspect: "aspect-[3/4]",
 },
