@@ -28,13 +28,13 @@ const SAMPLES = [
     internal: true,
     aspect: "aspect-square",
   },
-{
+ {
   title: "Girlfriend Proposal",
   body: "Transform your staycation into a memorable moment with our romantic full-room decorations made for that special \"Will you be my girlfriend?\" ask.",
   img: "/images/sample-girlfriend.jpg",
   href: "/packages/girlfriend-proposal",
   internal: true,
-  aspect: "aspect-[9/16]",
+  aspect: "aspect-[3/4]",
 },
   {
     title: "Bridal Shower Set Ups",
