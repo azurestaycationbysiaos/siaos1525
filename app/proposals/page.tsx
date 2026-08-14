@@ -7,7 +7,7 @@ import { SOCIAL_LINKS } from "../../lib/links";
 import { SITE_URL } from "../../lib/site";
 
 export const metadata = {
-  title: "Wedding Proposal Packages in Manila (Parañaque) | Azure Staycation by Siaos",
+  title: "Wedding Proposal Packages in Manila | Azure Staycation by Siaos",
   description:
     "Wedding proposal setup and packages in Manila, Metro Manila (Parañaque). Signature Proposal Setup at ₱10,999 and Happily Ever After Setup at ₱14,999 — full-room decorated, proposal-tested.",
 };

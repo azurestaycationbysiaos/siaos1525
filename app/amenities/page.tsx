@@ -79,13 +79,19 @@ const RESTAURANTS_INSIDE_AZURE = [
   { name: "Beryl Restaurant", img: "/images/blog/restaurants-near-azure/beryl-restaurant-azure.webp", description: "Sit-down restaurant option associated with Azure Residences." },
   { name: "Urban Bites Food Hub", img: "/images/blog/restaurants-near-azure/urban-bites-food-hub-azure.webp", description: "Food hub option in the Azure retail area." },
 ];
-
 const CONVENIENCE_STORES_INSIDE_AZURE = [
   { name: "7-Eleven", img: "/images/blog/establishments-inside-azure-parañaque/7-eleven-maldives-tower-azure.webp", description: "Maldives Tower" },
   { name: "Lawson", img: "/images/blog/establishments-inside-azure-parañaque/lawson-convenience-store-boracay-tower-azure.webp", description: "Boracay Tower" },
   { name: "Stopover Convenience", img: "/images/blog/establishments-inside-azure-parañaque/stopover-convenience-bahamas-tower-azure.webp", description: "Bahamas Tower" },
   { name: "KERCHIN Convenience Store", img: "/images/blog/establishments-inside-azure-parañaque/kerchin-convenience-store-maldives-tower-azure.webp", description: "Maldives Tower" },
   { name: "Jonson Mart", img: "/images/blog/establishments-inside-azure-parañaque/jonson-mart-maui-tower-azure.webp", description: "Maui Tower" },
+];
+const FOOD_JUST_OUTSIDE_AZURE = [
+  { name: "Andok's Azure Dine-in", img: "/images/blog/places-to-eat-near-azure/andoks-azure-dine-in-near-bahamas-tower.webp", description: "Casual Filipino roast chicken near Bahamas Tower, under 5 minutes on foot." },
+  { name: "Andok's — Near Maui Tower", img: "/images/blog/places-to-eat-near-azure/andoks-near-maui-tower-azure.webp", description: "Take-out branch near Maui Tower for chicken and ready-to-eat meals." },
+  { name: "Dunkin' — West Service Road", img: "/images/blog/places-to-eat-near-azure/dunkin-near-azure-west-service-road.webp", description: "Donuts, coffee and quick snacks off West Service Road." },
+  { name: "Potato Corner — Azure", img: "/images/blog/places-to-eat-near-azure/potato-corner-azure-bahamas-tower.webp", description: "Flavored fries near the Azure gate and Bahamas Tower area." },
+  { name: "Don Benito Cassava Cake & Pichi Pichi", img: "/images/blog/places-to-eat-near-azure/don-benito-cassava-bicutan.webp", description: "Classic Filipino kakanin — cassava cake and pichi-pichi." },
 ];
 
 export default function AmenitiesPage() {
@@ -176,8 +182,7 @@ export default function AmenitiesPage() {
             </div>
           ))}
         </div>
-
-        <h2 className="font-display text-2xl text-ink mb-2">Convenience Stores Inside Azure</h2>
+<h2 className="font-display text-2xl text-ink mb-2">Convenience Stores Inside Azure</h2>
         <p className="text-ink-soft leading-relaxed mb-6 max-w-2xl">
           Everyday essentials without leaving the property. Tenants and
           hours can change — check current listings before heading out.
@@ -191,6 +196,26 @@ export default function AmenitiesPage() {
               <div className="p-3">
                 <h3 className="font-display text-sm text-ink mb-1">{s.name}</h3>
                 <p className="text-ink-soft text-xs leading-relaxed">{s.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+ 
+        <h2 className="font-display text-2xl text-ink mb-2">Food Options Just Outside Azure</h2>
+        <p className="text-ink-soft leading-relaxed mb-6 max-w-2xl">
+          A few reliable spots within a five-minute walk of the gate, for
+          when leaving the property is simpler than heading into SM City
+          Bicutan.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-16">
+          {FOOD_JUST_OUTSIDE_AZURE.map((f) => (
+            <div key={f.name} className="rounded-xl overflow-hidden border border-ink/10 bg-cream-card">
+              <div className="relative aspect-[3/2]">
+                <Image src={f.img} alt={f.name} fill sizes="(max-width: 640px) 50vw, 20vw" className="object-cover" />
+              </div>
+              <div className="p-3">
+                <h3 className="font-display text-sm text-ink mb-1">{f.name}</h3>
+                <p className="text-ink-soft text-xs leading-relaxed">{f.description}</p>
               </div>
             </div>
           ))}
