@@ -5,9 +5,9 @@ import Footer from "../../components/Footer";
 
 export const metadata = {
   title:
-    "Staycation + 1 Area with Decorations — Portfolio | Azure Staycation by Siaos",
+    "Staycation + One Area - Room Decorations | Azure Staycation by Siaos",
   description:
-    "Real photos from our Staycation + 1 Area with Decorations set ups — single-area birthday, anniversary, and romantic surprise decorations from actual client bookings.",
+    "Real photos from our Staycation + One Area Room Decorations — single-area birthday, anniversary, and romantic surprise decorations from actual client bookings.",
 };
 
 const IMAGE_COUNT = 100;
