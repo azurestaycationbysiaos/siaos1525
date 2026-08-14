@@ -86,12 +86,16 @@ export default function PackagesPage() {
             }`}
           >
             <div className={`relative ${s.aspect} rounded-2xl overflow-hidden border border-ink/10 bg-cream-card`}>
-              <Image
-                src={s.img}
-                alt={s.title}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className={s.title === "Girlfriend Proposal" ? "object-contain" : "object-cover"}
+  <Image
+    src={s.img}
+    alt={s.title}
+    fill
+    sizes="(max-width: 768px) 100vw, 50vw"
+    className={
+      s.title === "Girlfriend Proposal"
+        ? "object-contain rounded-2xl"
+        : "object-cover"
+    }
               />
             </div>
             <div>
