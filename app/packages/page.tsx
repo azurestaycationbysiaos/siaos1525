@@ -105,7 +105,7 @@ export default function PackagesPage() {
                   View our portfolio here
                 </Link>
               ) : (
-                
+                <a
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
