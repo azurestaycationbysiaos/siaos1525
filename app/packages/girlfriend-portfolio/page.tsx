@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 export const metadata = {
-  title: "Will You Be My Girlfriend Set Ups — Portfolio | Azure Staycation by Siaos",
+  title: "Girlfriend proposal | Azure Staycation by Siaos",
   description:
     "Real photos from our Will You Be My Girlfriend proposal set ups — romantic surprise decorations from actual client bookings.",
 };
