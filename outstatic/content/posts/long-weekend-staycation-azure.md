@@ -6,7 +6,7 @@ coverImage: "/images/blog/long-weekend-staycation-azure.webp"
 publishedAt: "2026-08-18"
 author: "Azure Staycation by Siaos"
 tags: ["staycation", "azure urban resort residences", "long weekend", "itinerary", "paranaque", "amenities"]
-status: "draft"
+status: "published"
 ---
 
 # The Ultimate Long Weekend Staycation at Azure Urban Resort Residences
