@@ -3,11 +3,12 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import TikTokEmbed from "../components/TikTokEmbed";
+import ProposalInquiryForm from "../components/ProposalInquiryForm";
 import { SOCIAL_LINKS } from "../../lib/links";
 import { SITE_URL } from "../../lib/site";
 
 export const metadata = {
-  title: "Wedding Proposal Packages in Manila | Azure Staycation by Siaos",
+  title: "Wedding Proposal Packages in Manila (Parañaque) | Azure Staycation by Siaos",
   description:
     "Wedding proposal setup and packages in Manila, Metro Manila (Parañaque). Signature Proposal Setup at ₱10,999 and Happily Ever After Setup at ₱14,999 — full-room decorated, proposal-tested.",
 };
@@ -223,99 +224,7 @@ export default function ProposalsPage() {
             </p>
           </div>
 
-          <form className="space-y-4 bg-cream-card border border-ink/10 rounded-2xl p-8">
-            <h3 className="font-display text-xl text-ink mb-2">Send an inquiry</h3>
-            <div>
-              <label htmlFor="name" className="text-sm text-ink-soft">
-                Your name
-              </label>
-              <input
-                id="name"
-                name="name"
-                type="text"
-                required
-                className="mt-1 w-full rounded-lg bg-sand-light border border-ink/20 px-4 py-3 text-ink placeholder:text-ink-soft/40 focus:outline-none focus:border-clay-deep"
-                placeholder="Juan Dela Cruz"
-              />
-            </div>
-            <div className="grid sm:grid-cols-2 gap-4">
-              <div>
-                <label htmlFor="phone" className="text-sm text-ink-soft">
-                  Contact number
-                </label>
-                <input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  required
-                  className="mt-1 w-full rounded-lg bg-sand-light border border-ink/20 px-4 py-3 text-ink placeholder:text-ink-soft/40 focus:outline-none focus:border-clay-deep"
-                  placeholder="09XX XXX XXXX"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="text-sm text-ink-soft">
-                  Email address
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  required
-                  className="mt-1 w-full rounded-lg bg-sand-light border border-ink/20 px-4 py-3 text-ink placeholder:text-ink-soft/40 focus:outline-none focus:border-clay-deep"
-                  placeholder="you@email.com"
-                />
-              </div>
-            </div>
-            <div>
-              <label htmlFor="date" className="text-sm text-ink-soft">
-                Preferred date
-              </label>
-              <input
-                id="date"
-                name="date"
-                type="date"
-                required
-                className="mt-1 w-full rounded-lg bg-sand-light border border-ink/20 px-4 py-3 text-ink focus:outline-none focus:border-clay-deep"
-              />
-            </div>
-            <div>
-              <label htmlFor="package" className="text-sm text-ink-soft">
-                Package
-              </label>
-              <select
-                id="package"
-                name="package"
-                className="mt-1 w-full rounded-lg bg-sand-light border border-ink/20 px-4 py-3 text-ink focus:outline-none focus:border-clay-deep"
-              >
-                <option>Signature Proposal Set Up — ₱10,999</option>
-                <option>Happily Ever After Set Up — ₱14,999</option>
-                <option>Not sure yet</option>
-              </select>
-            </div>
-            <div>
-              <label htmlFor="message" className="text-sm text-ink-soft">
-                Personalize your proposal setup
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows={4}
-                className="mt-1 w-full rounded-lg bg-sand-light border border-ink/20 px-4 py-3 text-ink placeholder:text-ink-soft/40 focus:outline-none focus:border-clay-deep"
-                placeholder="How you met, what she loves, anything we should know"
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full rounded-full bg-clay-deep text-sand-light font-semibold px-6 py-3 hover:bg-ink transition-colors"
-            >
-              Send inquiry
-            </button>
-            <p className="text-xs text-ink-soft/60">
-              This form still needs to be connected to an email service before
-              it goes live — it&rsquo;s wired up visually but not yet sending
-              anywhere.
-            </p>
-          </form>
+          <ProposalInquiryForm />
         </div>
       </section>
 
