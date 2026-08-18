@@ -70,17 +70,21 @@ const FAQS = [
   },
   {
     q: "Is this a legitimate business?",
-    a: "Yes. Please see our Legitimacy Check section on the homepage for the details.",
+    a: "Yes. Please see our Legitimacy Check section on the homepage for details.",
     linkHref: "/#legitimacy-check",
     linkLabel: "Legitimacy Check section",
   },
   {
     q: "Can I bring in food or drinks?",
-    a: "Yes, there is no corkage fee, and you can also do light cooking. You can also order from Grab, FoodPanda, or any food delivery apps or vendors, provided that you pick up the food and drinks in the lobby. You can see the convenience stores and restaurants inside Azure in our blog and amenities page.",
+    a: "Yes, there is no corkage fee, and you can also do light cooking. You can also order from Grab, FoodPanda, or any food delivery apps or vendors, provided that you pick up the food and drinks in the lobby. You can see the convenience stores and restaurants inside Azure in our blog and amenities pages.",
     extraLinks: [
       { href: "/blog", label: "Staycation, Celebration & Proposal Guides" },
       { href: "/amenities", label: "Property Amenities at Azure Urban Resort Residences" },
     ],
+  },
+  {
+    q: "Can I bring my own photographer?",
+    a: "Yes, you may bring your own photographer, provided that they're still within the number of allowable pax — the 1-bedroom unit is good for up to 4 pax. We will also ask for their ID so we can register the photographer as part of the guest list.",
   },
 ];
 
@@ -298,20 +302,23 @@ export default function ProposalsPage() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="mx-auto max-w-4xl px-6 py-20">
-        <h2 className="font-display text-3xl text-ink mb-10 text-center">
-          Frequently Asked Questions
+      <section id="faq" className="mx-auto max-w-6xl px-6 py-20">
+        <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-3">
+          Azure Staycation by Siaos
+        </p>
+        <h2 className="font-display text-4xl text-ink mb-10">
+          Frequently Asked <em className="italic text-clay-deep">Questions</em>
         </h2>
-        <div className="divide-y divide-ink/10 border-y border-ink/10">
+        <div className="divide-y divide-ink/10 border-t border-ink/10">
           {FAQS.map((item) => (
             <details key={item.q} className="group py-6">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-ink">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg text-ink">
                 {item.q}
-                <span className="shrink-0 text-clay-deep transition-transform group-open:rotate-45">
+                <span className="shrink-0 text-ink-soft transition-transform group-open:rotate-45">
                   +
                 </span>
               </summary>
-              <p className="text-ink-soft text-sm leading-relaxed mt-3">
+              <p className="text-ink-soft text-sm leading-relaxed mt-3 max-w-3xl">
                 {item.a}
                 {item.linkHref && (
                   <>
