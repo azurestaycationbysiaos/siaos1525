@@ -15,7 +15,7 @@ A long weekend is the one time you can actually justify doing nothing for four d
 
 ![Azure Beach](/images/blog/long-weekend-azure-staycation/azure-beach.webp)
 
-Quick note before you plan around any of this: [wave pool and beach access are paid separately at Azure's pool cashier with a visitor's pass](https://azurestaycationbysiaos.com/amenities) — it's not automatically included in your staycation rate, so budget for it and confirm current pool schedules with your host before arrival. Outside food isn't allowed inside the Azure Beach and wave pool area itself, so takeout from the retail strip or the gate-side spots below is for your unit — inside the beach area, your options are what's sold on-site, like The Sands and the Beach Bar. Worth knowing too: [the unit itself comes stocked for downtime](https://azurestaycationbysiaos.com/inclusions) — PS4, karaoke, board and card games, a projector, Netflix, a full kitchen, and hot-and-cold bathroom essentials — so the in-between hours aren't dead time, they're just a different part of the itinerary.
+Quick note before you plan around any of this: [wave pool and beach access are paid separately at Azure's pool cashier with a visitor's pass](https://azurestaycationbysiaos.com/amenities) — it's not automatically included in your staycation rate, so budget for it and confirm current pool schedules with your host before arrival. Outside food isn't allowed inside the Azure Beach and wave pool area itself, so takeout from the retail strip or the gate-side spots below is for your unit — inside the beach area, your options are what's sold on-site in The Sands Bistro. Worth knowing too: [the unit itself comes stocked for downtime](https://azurestaycationbysiaos.com/inclusions) — PS4, karaoke, board and card games, a projector, Netflix, a full kitchen, and hot-and-cold bathroom essentials — so the in-between hours aren't dead time, they're just a different part of the itinerary.
 
 For meals in the unit, **Grab** and **Foodpanda** both deliver into the property without any extra hassle. Ordering from a vendor that isn't on either app is fine too — just have it picked up at the lobby, since third-party riders generally aren't allowed straight up to the tower.
 
@@ -55,9 +55,9 @@ If you want to actually leave the property, **SM City Bicutan**, along Doña Sol
 
 #### DAY 2 — SATURDAY EVENING
 
-Any major road can see unforeseen traffic on a long weekend, so the easiest Saturday night is the one that doesn't involve getting back on the road. **Beryl Restaurant** or **Urban Bites Food Hub** cover a proper sit-down dinner without leaving Azure, and the **Beach Bar** beside Azure Beach is right there for a drink afterward.
+Any major road can see unforeseen traffic on a long weekend, so the easiest Saturday night is the one that doesn't involve getting back on the road. **Beryl Restaurant** or **Urban Bites Food Hub** cover a proper sit-down dinner without leaving Azure, and the **The Sands Beach bar** beside Azure Beach is right there for a drink afterward.
 
-![Beach Bar](/images/blog/amenities/azure-beach-bar-azure-urban-resort-residences.webp)
+![Beryl Restaurant](/images/blog/restaurants-near-azure/beryl-restaurant-azure.webp)
 
 If you'd rather step just outside the gate for takeout to enjoy in the unit, **Andok's** near Bahamas Tower is under five minutes on foot for casual roast chicken and rice meals — or have it dropped off at the lobby via Grab or Foodpanda if you'd rather not make the walk twice.
 
