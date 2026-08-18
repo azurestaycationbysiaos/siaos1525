@@ -28,7 +28,7 @@ const FAQS: {
         Residences, Parañaque since 2023, with verified Facebook, Instagram,
         and TikTok pages, closed-deal proof, and guest reviews. The owner,
         Lyryque Lysl Camylle Siaotong, shares social proof and{" "}
-        <a
+        
           href={CANVA_LINKS.legitimacyCheck}
           target="_blank"
           rel="noopener noreferrer"
@@ -46,7 +46,7 @@ const FAQS: {
     aNode: (
       <>
         The unit is on the{" "}
-        <a
+        
           href={SOCIAL_LINKS.googleMaps}
           target="_blank"
           rel="noopener noreferrer"
@@ -68,7 +68,7 @@ const FAQS: {
     q: "What's included in the staycation?",
     a: "Every stay includes the 1-bedroom unit, a fully equipped kitchen, Netflix access, a projector, PS4 with games, Platinum karaoke with 2 microphones, and card and board games. Parking fees and wave pool access are not included and are paid separately at the building.",
   },
-    {
+  {
     q: "What is not included in the staycation price?",
     a: "Parking (motorcycle ₱250–₱280, car ₱300–₱350 depending on duration) and wave pool access (₱250 per head per shift) are excluded and paid directly to Azure Urban Resort Residences, not to Azure Staycation by Siaos. For more information, visit our exclusions page.",
     aNode: (
