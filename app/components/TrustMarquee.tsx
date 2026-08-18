@@ -1,5 +1,5 @@
 const MARQUEE_TEXT =
-  "Trusted with Intimate Events since 2023 \u2022 Hosted over a thousand intimate events \u2022 100+ wedding proposals \u2022 Verified payments \u2022 Legit social proofs and guest reviews";
+  "Trusted with Intimate Events since 2023 \u2022 Hosted over a Thousand Intimate Events \u2022 100+ wedding proposals \u2022 Verified payments \u2022 Legit social proofs and guest reviews";
 
 export default function TrustMarquee() {
   return (
