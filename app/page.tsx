@@ -25,10 +25,10 @@ const SUNSET_VIEWS = [
 ];
 
 const SOCIAL_PROOFS = [
-  { label: "Airbnb Listing", href: SOCIAL_LINKS.airbnb },
+  { label: "Instagram Account", href: SOCIAL_LINKS.instagram },
   { label: "Official Facebook Page", href: SOCIAL_LINKS.facebookPage },
   { label: "Official TikTok Account", href: SOCIAL_LINKS.tiktokOfficial },
-  { label: "Instagram Account", href: SOCIAL_LINKS.instagram },
+  { label: "Airbnb Listing", href: SOCIAL_LINKS.airbnb },
   { label: "Owner's TikTok Account", href: SOCIAL_LINKS.tiktokOwner },
   { label: "Closed Deals Proof", href: SOCIAL_LINKS.closedDealsAlbum },
 ];
