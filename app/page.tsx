@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import TeamSection from "./components/TeamSection";
 import BookingForm from "./components/BookingForm";
+import TrustMarquee from "./components/TrustMarquee";
 import { SOCIAL_LINKS, CANVA_LINKS, CONTACT } from "../lib/links";
 
 const AMENITIES = [
@@ -358,6 +359,7 @@ export default function Home() {
         </div>
       </section>
 
+      <TrustMarquee />
       <Footer />
     </div>
   );
