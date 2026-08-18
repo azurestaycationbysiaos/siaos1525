@@ -278,20 +278,20 @@ export default function ProposalsPage() {
           <div className="flex items-center gap-3 mb-6">
             <h3 className="font-display text-2xl text-ink">More reveals from TikTok</h3>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
-            <div className="rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
+          <div className="flex flex-wrap justify-center gap-5">
+            <div className="w-[300px] rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
               <TikTokEmbed
                 url="https://www.tiktok.com/@azure.staycation2/video/7663277706225716501"
                 videoId="7663277706225716501"
               />
             </div>
-            <div className="rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
+            <div className="w-[300px] rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
               <TikTokEmbed
                 url="https://www.tiktok.com/@azure.staycation2/video/7402220237451578641"
                 videoId="7402220237451578641"
               />
             </div>
-            <div className="rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
+            <div className="w-[300px] rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
               <TikTokEmbed
                 url="https://www.tiktok.com/@azure.staycation2/video/7545708408477879560"
                 videoId="7545708408477879560"
@@ -302,7 +302,7 @@ export default function ProposalsPage() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="mx-auto max-w-6xl px-6 py-20">
+      <section id="faq" className="mx-auto max-w-6xl px-6 py-12 md:py-20">
         <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-3">
           Azure Staycation by Siaos
         </p>
@@ -349,7 +349,7 @@ export default function ProposalsPage() {
       </section>
 
       {/* Tell us your love story + Calendar + Inquiry */}
-      <section id="book" className="mx-auto max-w-6xl px-6 py-24">
+      <section id="book" className="mx-auto max-w-6xl px-6 py-12 md:py-24">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="font-display text-3xl text-ink mb-4">Start Planning Your Proposal</h2>
