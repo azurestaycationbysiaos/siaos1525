@@ -278,7 +278,7 @@ export default function ProposalsPage() {
           <div className="flex items-center gap-3 mb-6">
             <h3 className="font-display text-2xl text-ink">More reveals from TikTok</h3>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-2xl mx-auto sm:mx-0">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
             <div className="rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
               <TikTokEmbed
                 url="https://www.tiktok.com/@azure.staycation2/video/7663277706225716501"
