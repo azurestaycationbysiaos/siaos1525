@@ -1,6 +1,6 @@
 ---
 title: "The Ultimate Long Weekend Staycation at Azure Urban Resort Residences"
-slug: "long-weekend-staycation-azure-urban-resort-residences"
+slug: "long-weekend-staycation-azure"
 description: "A realistic 4-day itinerary for a long weekend staycation at Azure Urban Resort Residences in Parañaque — Azure Beach, the wave pool, in-unit inclusions like karaoke and a full kitchen, Grab and Foodpanda delivery, gate-side food finds, and SM City Bicutan when you actually want to leave, with a reminder that unforeseen traffic is always possible on any major road."
 coverImage: "/images/blog/long-weekend-staycation-azure.webp"
 publishedAt: "2026-08-18"
