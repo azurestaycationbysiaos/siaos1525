@@ -77,8 +77,7 @@ const FAQS: {
         and wave pool access (₱250 per head per shift) are excluded and paid
         directly to Azure Urban Resort Residences, not to Azure Staycation by
               Siaos. For more information, visit our{" "}
--        
-+        
+           <a
           href="https://azurestaycationbysiaos.com/exclusions"
           target="_blank"
           rel="noopener noreferrer"
