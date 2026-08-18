@@ -1,7 +1,7 @@
 ---
 title: "The Ultimate Long Weekend Staycation at Azure Urban Resort Residences"
 slug: "long-weekend-staycation-azure"
-description: "A realistic 4-day itinerary for a long weekend staycation at Azure Urban Resort Residences in Parañaque — Azure Beach, the wave pool, in-unit inclusions like karaoke and a full kitchen, Grab and Foodpanda delivery, gate-side food finds, and SM City Bicutan when you actually want to leave, with a reminder that unforeseen traffic is always possible on any major road."
+description: "A 4-day itinerary for a long weekend staycation at Azure Urban Resort Residences in Parañaque — Azure Beach, the wave pool, in-unit inclusions like karaoke and a full kitchen, Grab and Foodpanda delivery, gate-side food finds, and SM City Bicutan when you actually want to leave."
 coverImage: "/images/blog/long-weekend-staycation-azure.webp"
 publishedAt: "2026-08-18"
 author: "Azure Staycation by Siaos"
@@ -13,7 +13,7 @@ status: "published"
 
 A long weekend is the one time you can actually justify doing nothing for four days straight — and Azure Urban Resort Residences is built for exactly that. This isn't a jam-packed itinerary with something scheduled every hour, and it isn't one that sends you fighting Bicutan traffic to get anywhere either. It's a realistic plan for four days: mostly pool time, everything within the property or a five-minute walk of the gate, and one optional trip to SM City Bicutan if you actually feel like leaving.
 
-![Azure Beach](/images/blog/amenities/azure-beach-azure-urban-resort-residences.webp)
+![Azure Beach](/images/blog/long-weekend-azure-staycation/azure-beach.webp)
 
 Quick note before you plan around any of this: [wave pool and beach access are paid separately at Azure's pool cashier with a visitor's pass](https://azurestaycationbysiaos.com/amenities) — it's not automatically included in your staycation rate, so budget for it and confirm current pool schedules with your host before arrival. Outside food isn't allowed inside the Azure Beach and wave pool area itself, so takeout from the retail strip or the gate-side spots below is for your unit — inside the beach area, your options are what's sold on-site, like The Sands and the Beach Bar. Worth knowing too: [the unit itself comes stocked for downtime](https://azurestaycationbysiaos.com/inclusions) — PS4, karaoke, board and card games, a projector, Netflix, a full kitchen, and hot-and-cold bathroom essentials — so the in-between hours aren't dead time, they're just a different part of the itinerary.
 
@@ -31,11 +31,9 @@ Drop your bags, change, and head straight for **[Azure Beach](https://azurestayc
 
 Skip any big plans for tonight. Dinner is whatever's easiest, and Azure makes "easiest" genuinely good: **The Sands**, the beachfront bistro and bar right next to the wave pool, stays open until late and covers a casual meal or a nightcap right on the sand.
 
-![The Sands](/images/blog/amenities/the-sands-azure-urban-resort-residences.webp)
+![The Sands](/images/blog/long-weekend-azure-staycation/the-sands-azure.webp)
 
 If you'd rather eat in the unit, **SAM'PEDRO Inasal and Cafe** or **La Shish Mediterranean Meals** inside the Azure retail area are both easy take-out — order ahead via Grab or Foodpanda, or walk over yourself — and any of the in-property convenience stores — 7-Eleven (Maldives Tower), Lawson (Boracay Tower), Stopover (Bahamas Tower), KERCHIN (Maldives Tower), or Jonson Mart (Maui Tower) — cover snacks and essentials without a single traffic light. First-night energy is usually low anyway, so a night in is a completely legitimate way to close out Day 1 — [the unit itself is set up for it](https://azurestaycationbysiaos.com/inclusions), with a 40" Google TV and Netflix account, a projector and screen if you'd rather go big-screen, and PS4 with a decent games library if anyone's restless.
-
-![Entertainment area — PS4, karaoke, card and board games](/images/blog/amenity-entertainment.jpg)
 
 #### DAY 2 — SATURDAY MORNING
 
@@ -69,7 +67,7 @@ If you were already at SM City Bicutan this afternoon and don't feel like headin
 
 Long weekends have a way of front-loading all the ambition into day two and running out of steam by day three — plan for that instead of fighting it. Sleep in. When you do get up, grab something from **Dunkin'** on West Service Road (a short walk from the gate) or **Don Benito Cassava Cake & Pichi Pichi** if you're after something more local with your coffee, then head down to Azure Beach.
 
-![Dunkin' — West Service Road](/images/blog/places-to-eat-near-azure/dunkin-near-azure-west-service-road.webp)
+![Dunkin' — West Service Road](/images/blog/long-weekend-azure-staycation/dunkin-near-azure.webp)
 
 #### DAY 3 — SUNDAY AFTERNOON
 
@@ -85,15 +83,13 @@ Get back to Azure Beach in time for a late-afternoon swim — the whole point of
 
 Keep it unstructured. **Potato Corner** near the Bahamas Tower gate area covers a quick snack run for the unit, or order in from one of the in-property restaurants via Grab or Foodpanda — or from anywhere else, as long as it's picked up at the lobby.
 
-![Potato Corner — Azure](/images/blog/places-to-eat-near-azure/potato-corner-azure-bahamas-tower.webp)
+![Potato Corner — Azure](/images/blog/long-weekend-azure-staycation/potato-corner-azure.webp)
 
 This is also the natural night to actually use the unit's karaoke set — Bluetooth or Platinum, both come with two microphones and a song book — or pull out the board and card games if singing isn't anyone's thing. Long weekends tend to have one night where nobody wants to make a decision about anything — this is that night, and that's fine.
 
 #### DAY 4 — MONDAY MORNING
 
 Checkout is usually late morning, so this is a short day and that's the point — one more session at Azure Beach, a slow breakfast, and packing without rushing. The unit's kitchen covers a simple one — rice cooker, multi-cooker, electric kettle, and induction cooker are all included if you'd rather make coffee and something easy than head back out.
-
-![Kitchen area with home-like convenience](/images/blog/amenity-kitchen.jpg)
 
 If you need cash before you go, there's an [ATM inside the Azure Clubhouse and another between Positano and Miami Tower](https://azurestaycationbysiaos.com/amenities) — worth knowing in advance, since it's easy to run short on a long weekend when everyone else is also topping up.
 
