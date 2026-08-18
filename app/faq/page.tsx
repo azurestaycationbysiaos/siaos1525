@@ -68,9 +68,26 @@ const FAQS: {
     q: "What's included in the staycation?",
     a: "Every stay includes the 1-bedroom unit, a fully equipped kitchen, Netflix access, a projector, PS4 with games, Platinum karaoke with 2 microphones, and card and board games. Parking fees and wave pool access are not included and are paid separately at the building.",
   },
-  {
+    {
     q: "What is not included in the staycation price?",
-    a: "Parking (motorcycle ₱250–₱280, car ₱300–₱350 depending on duration) and wave pool access (₱250 per head per shift) are excluded and paid directly to Azure Urban Resort Residences, not to Azure Staycation by Siaos.",
+    a: "Parking (motorcycle ₱250–₱280, car ₱300–₱350 depending on duration) and wave pool access (₱250 per head per shift) are excluded and paid directly to Azure Urban Resort Residences, not to Azure Staycation by Siaos. For more information, visit our exclusions page.",
+    aNode: (
+      <>
+        Parking (motorcycle ₱250–₱280, car ₱300–₱350 depending on duration)
+        and wave pool access (₱250 per head per shift) are excluded and paid
+        directly to Azure Urban Resort Residences, not to Azure Staycation by
+        Siaos. For more information, visit our{" "}
+        
+          href="https://azurestaycationbysiaos.com/exclusions"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-clay-deep underline"
+        >
+          exclusions page
+        </a>
+        .
+      </>
+    ),
   },
   {
     q: "Can I add food to my booking?",
