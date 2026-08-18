@@ -21,6 +21,7 @@ const PACKAGES = [
     img: "/images/proposal-signature.jpg",
     portfolio: "/proposals/signature-proposal-portfolio",
     portfolioExternal: false,
+    airbnb: "https://airbnb.com/h/signatureproposal",
   },
   {
     name: "Happily Ever After Set Up",
@@ -30,6 +31,7 @@ const PACKAGES = [
     portfolio: "/proposals/happy-ever-after-portfolio",
     portfolioExternal: false,
     featured: true,
+    airbnb: "https://airbnb.com/h/proposalsbyazurestaycationbysiaos",
   },
 ];
 
@@ -139,7 +141,23 @@ export default function ProposalsPage() {
                   >
                     Official TikTok account
                   </a>
+                  <a
+                    href={pkg.airbnb}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`rounded-full border px-5 py-3 text-sm font-semibold transition-colors ${
+                      pkg.featured
+                        ? "border-sand-light/30 hover:border-sand-light"
+                        : "border-ink/20 hover:border-ink"
+                    }`}
+                  >
+                    Book on Airbnb
+                  </a>
                 </div>
+                <p className={`text-xs mt-4 ${pkg.featured ? "text-sand-light/50" : "text-ink-soft/70"}`}>
+                  Note: Airbnb prices may be slightly higher due to
+                  Airbnb&rsquo;s commissions, fees, and taxes.
+                </p>
               </div>
             </div>
           ))}
