@@ -12,6 +12,93 @@ export const metadata = {
     "Wedding proposal setup and packages in Manila, Metro Manila (Parañaque). Signature Proposal Setup at ₱10,999 and Happily Ever After Setup at ₱14,999 — full-room decorated, proposal-tested.",
 };
 
+const PROPOSAL_FAQS: {
+  q: string;
+  a: string;
+  aNode?: React.ReactNode;
+}[] = [
+  {
+    q: "How far in advance should I book a proposal setup?",
+    a: "We recommend booking at least 1 month in advance to guarantee your preferred date — especially for OFWs, seafarers, or guests coming from the province. Last-minute bookings can sometimes be accommodated depending on availability.",
+  },
+  {
+    q: "What are the check-in and check-out times?",
+    a: "Standard check-in is 2PM and check-out is 12NN. Flexible check-in/out can be arranged as long as it doesn't clash with the prior or next day's booking.",
+  },
+  {
+    q: "Is a deposit required?",
+    a: "Yes, a 50% reservation fee is required to confirm your booking. The remaining balance is due right after the scheduled delivery and setup.",
+  },
+  {
+    q: "Is the reservation fee refundable?",
+    a: "No, the reservation fee is non-refundable — even if the person being proposed to declines. The full agreed amount still applies since setup and preparation are already committed.",
+  },
+  {
+    q: "Can I reschedule if something comes up?",
+    a: "Yes. Rescheduling is allowed with at least a week's notice before your original date, subject to availability. For medical emergencies or force majeure, rescheduling is available without the week's notice, within the same month.",
+  },
+  {
+    q: "Can I add extra customization beyond what's listed in the packages?",
+    a: "Yes — additional customization can be discussed and arranged via chat, Messenger, or email based on your specific request.",
+  },
+  {
+    q: "Who's responsible if something in the decor gets damaged?",
+    a: "You're responsible for ensuring your guests and any third parties follow the setup's safety guidelines. Damage caused by misuse may incur additional charges.",
+  },
+  {
+    q: "Can I invite a group of people to witness the proposal?",
+    a: "Yes, we can accommodate bigger groups. Note that additional units must be booked to accommodate everyone, since we follow Azure's allowable number of guests per unit.",
+  },
+  {
+    q: "What payment methods do you accept?",
+    a: "GCash, Vybe, and bank transfer through BPI.",
+  },
+  {
+    q: "Is parking available for me and my guests?",
+    a: "Parking is available at Azure Urban Resort Residences but isn't included in the package — motorcycle parking runs ₱250–₱280 and car parking ₱300–₱350 depending on duration, paid directly to the building.",
+    aNode: (
+      <>
+        Parking is available at Azure Urban Resort Residences but isn&rsquo;t
+        included in the package — motorcycle parking runs ₱250–₱280 and car
+        parking ₱300–₱350 depending on duration, paid directly to the
+        building. See the full{" "}
+        <Link href="/faq" className="text-clay-deep underline">
+          FAQ page
+        </Link>{" "}
+        for more on what's included in a stay.
+      </>
+    ),
+  },
+  {
+    q: "Is this a legitimate business?",
+    a: "Yes — see the Legitimacy Check section on our homepage for verification details.",
+    aNode: (
+      <>
+        Yes — see the{" "}
+        <Link href="/#legitimacy" className="text-clay-deep underline">
+          Legitimacy Check section
+        </Link>{" "}
+        on our homepage for verification details.
+      </>
+    ),
+  },
+];
+
+function buildProposalFaqJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: PROPOSAL_FAQS.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.a,
+      },
+    })),
+  };
+}
+
 const PACKAGES = [
   {
     name: "Signature Proposal Set Up",
@@ -319,6 +406,26 @@ export default function ProposalsPage() {
         </div>
       </section>
 
+      <section id="faq" className="mx-auto max-w-3xl px-6 py-20 border-t border-ink/10">
+        <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-3">
+          Common Questions
+        </p>
+        <h2 className="font-display text-4xl text-ink leading-[1.05] max-w-2xl mb-8">
+          Proposal <em className="italic text-clay-deep">FAQs</em>
+        </h2>
+        <div className="divide-y divide-ink/10 border-t border-b border-ink/10">
+          {PROPOSAL_FAQS.map((f) => (
+            <details key={f.q} className="group py-5">
+              <summary className="cursor-pointer list-none flex items-start justify-between gap-4 font-display text-lg text-ink">
+                {f.q}
+                <span className="shrink-0 text-clay-deep group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <p className="text-ink-soft text-sm leading-relaxed mt-3 pr-8">{f.aNode ?? f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
       <Footer />
 
       {buildProposalProductsJsonLd().map((product, i) => (
@@ -329,6 +436,12 @@ export default function ProposalsPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(product) }}
         />
       ))}
+
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildProposalFaqJsonLd()) }}
+      />
     </div>
   );
 }

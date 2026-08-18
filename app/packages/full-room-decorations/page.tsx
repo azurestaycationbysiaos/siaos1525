@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 export const metadata = {
-  title: "Full Room Decorations & Themed Set Ups — Portfolio | Azure Staycation by Siaos",
+  title: " Staycation + Full Room Decorations| Azure Staycation by Siaos",
   description:
     "Real photos from our Full Room Decorations & Themed Set Ups — full-room birthday, anniversary, and celebration decorations from actual client bookings.",
 };
@@ -13,7 +13,7 @@ const IMAGE_COUNT = 109;
 const REMOVED_NUMBERS = [7, 8, 20, 21, 29, 30];
 const IMAGES = Array.from({ length: IMAGE_COUNT }, (_, i) => i + 1)
   .filter((n) => !REMOVED_NUMBERS.includes(n))
-  .map((n) => `/images/packages/full-setups/${String(n).padStart(3, "0")}.jpg`);
+  .map((n) => `/images/packages/full-room-decorations/${String(n).padStart(3, "0")}.jpg`);
 
 export default function FullDecorationsPortfolioPage() {
   return (

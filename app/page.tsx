@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import TeamSection from "./components/TeamSection";
 import BookingForm from "./components/BookingForm";
+import TrustMarquee from "./components/TrustMarquee";
 import { SOCIAL_LINKS, CANVA_LINKS, CONTACT } from "../lib/links";
 
 const AMENITIES = [
@@ -25,9 +26,10 @@ const SUNSET_VIEWS = [
 ];
 
 const SOCIAL_PROOFS = [
+  { label: "Instagram Account", href: SOCIAL_LINKS.instagram },
   { label: "Official Facebook Page", href: SOCIAL_LINKS.facebookPage },
   { label: "Official TikTok Account", href: SOCIAL_LINKS.tiktokOfficial },
-  { label: "Instagram Account", href: SOCIAL_LINKS.instagram },
+  { label: "Airbnb Listing", href: SOCIAL_LINKS.airbnb },
   { label: "Owner's TikTok Account", href: SOCIAL_LINKS.tiktokOwner },
   { label: "Closed Deals Proof", href: SOCIAL_LINKS.closedDealsAlbum },
 ];
@@ -248,6 +250,10 @@ export default function Home() {
               </a>
             ))}
           </div>
+          <p className="text-xs text-ink-soft/70 mt-4">
+            Note: Airbnb prices may be slightly higher due to Airbnb&rsquo;s
+            commissions, fees, and taxes.
+          </p>
         </div>
       </section>
 
@@ -343,12 +349,17 @@ export default function Home() {
                 <a href={SOCIAL_LINKS.tiktokOfficial} target="_blank" rel="noopener noreferrer" className="underline hover:text-gold">
                   TikTok
                 </a>
+                {" · "}
+                <a href={SOCIAL_LINKS.airbnb} target="_blank" rel="noopener noreferrer" className="underline hover:text-gold">
+                  Airbnb
+                </a>
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      <TrustMarquee />
       <Footer />
     </div>
   );

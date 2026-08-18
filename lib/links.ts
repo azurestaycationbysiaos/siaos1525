@@ -11,6 +11,7 @@ export const SOCIAL_LINKS = {
   facebookReviews:
     "https://www.facebook.com/profile.php?id=61552788271481&sk=reviews",
   googleMaps: "https://maps.app.goo.gl/8C2w1ajVUULNnc7v6",
+  airbnb: "https://airbnb.com/h/staycationbysiaos",
 };
 export const CANVA_LINKS = {
   inclusionsAndPhotos: "https://www.canva.com/design/DAGf55gKsa4/CaLJ99pYuHM6SgSjscS7hw/view",
