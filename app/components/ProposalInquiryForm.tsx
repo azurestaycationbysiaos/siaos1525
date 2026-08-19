@@ -118,7 +118,7 @@ export default function ProposalInquiryForm() {
         <select
           id="package"
           name="package"
-          className="mt-1 w-full rounded-lg bg-sand-light border border-ink/20 px-4 py-3 text-ink focus:outline-none focus:border-clay-deep"
+          className="mt-1 w-full rounded-lg bg-sand-light border border-ink/20 pl-4 pr-10 py-3 text-ink focus:outline-none focus:border-clay-deep"
         >
           <option>Signature Proposal Set Up — ₱10,999</option>
           <option>Happily Ever After Set Up — ₱14,999</option>
@@ -153,4 +153,3 @@ export default function ProposalInquiryForm() {
     </form>
   );
 }
-
