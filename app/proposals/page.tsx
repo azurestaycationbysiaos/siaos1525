@@ -279,19 +279,19 @@ export default function ProposalsPage() {
             <h3 className="font-display text-2xl text-ink">More reveals from TikTok</h3>
           </div>
           <div className="flex flex-wrap justify-center gap-5">
-            <div className="w-[300px] rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
+            <div className="w-[340px] max-w-full rounded-2xl border border-ink/10 flex justify-center bg-ink p-2">
               <TikTokEmbed
                 url="https://www.tiktok.com/@azure.staycation2/video/7663277706225716501"
                 videoId="7663277706225716501"
               />
             </div>
-            <div className="w-[300px] rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
+            <div className="w-[340px] max-w-full rounded-2xl border border-ink/10 flex justify-center bg-ink p-2">
               <TikTokEmbed
                 url="https://www.tiktok.com/@azure.staycation2/video/7402220237451578641"
                 videoId="7402220237451578641"
               />
             </div>
-            <div className="w-[300px] rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
+            <div className="w-[340px] max-w-full rounded-2xl border border-ink/10 flex justify-center bg-ink p-2">
               <TikTokEmbed
                 url="https://www.tiktok.com/@azure.staycation2/video/7545708408477879560"
                 videoId="7545708408477879560"
