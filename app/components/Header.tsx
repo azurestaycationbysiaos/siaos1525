@@ -98,7 +98,7 @@ export default function Header() {
         {open &&
           mounted &&
           createPortal(
-            <div className="md:hidden fixed inset-0 z-[999] bg-sand-light px-6 pt-6 pb-6 flex flex-col gap-1 overflow-y-auto">
+            <div className="md:hidden fixed inset-0 z-[2000] bg-sand-light px-6 pt-6 pb-6 flex flex-col gap-1 overflow-y-auto">
               <div className="flex justify-end mb-6">
                 <button
                   type="button"
