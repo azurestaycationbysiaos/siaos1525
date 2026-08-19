@@ -66,8 +66,9 @@ export default function BookingForm({
         >
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
-              <label className="text-sm text-ink-soft">Your name</label>
+              <label htmlFor="bf-name" className="text-sm text-ink-soft">Your name</label>
               <input
+                id="bf-name"
                 type="text"
                 name="name"
                 required
@@ -76,8 +77,9 @@ export default function BookingForm({
               />
             </div>
             <div>
-              <label className="text-sm text-ink-soft">Contact number</label>
+              <label htmlFor="bf-phone" className="text-sm text-ink-soft">Contact number</label>
               <input
+                id="bf-phone"
                 type="tel"
                 name="phone"
                 required
@@ -88,8 +90,9 @@ export default function BookingForm({
           </div>
 
           <div>
-            <label className="text-sm text-ink-soft">Email address</label>
+            <label htmlFor="bf-email" className="text-sm text-ink-soft">Email address</label>
             <input
+              id="bf-email"
               type="email"
               name="email"
               required
@@ -100,8 +103,9 @@ export default function BookingForm({
 
           <div className="grid sm:grid-cols-2 gap-4">
             <div>
-              <label className="text-sm text-ink-soft">Preferred date</label>
+              <label htmlFor="bf-date" className="text-sm text-ink-soft">Preferred date</label>
               <input
+                id="bf-date"
                 type="date"
                 name="preferred_date"
                 required
@@ -109,8 +113,9 @@ export default function BookingForm({
               />
             </div>
             <div>
-              <label className="text-sm text-ink-soft">Number of guests</label>
+              <label htmlFor="bf-guests" className="text-sm text-ink-soft">Number of guests</label>
               <select
+                id="bf-guests"
                 name="guests"
                 className="mt-1 w-full rounded-lg bg-cream-card border border-ink/20 px-4 py-3 text-ink focus:outline-none focus:border-clay-deep"
               >
@@ -123,8 +128,9 @@ export default function BookingForm({
 
           {showDecorTheme && (
             <div>
-              <label className="text-sm text-ink-soft">Decoration theme</label>
+              <label htmlFor="bf-decor" className="text-sm text-ink-soft">Decoration theme</label>
               <select
+                id="bf-decor"
                 name="decoration_theme"
                 className="mt-1 w-full rounded-lg bg-cream-card border border-ink/20 px-4 py-3 text-ink focus:outline-none focus:border-clay-deep"
               >
@@ -139,8 +145,9 @@ export default function BookingForm({
           )}
 
           <div>
-            <label className="text-sm text-ink-soft">{requestLabel}</label>
+            <label htmlFor="bf-message" className="text-sm text-ink-soft">{requestLabel}</label>
             <textarea
+              id="bf-message"
               name="message"
               rows={4}
               className="mt-1 w-full rounded-lg bg-cream-card border border-ink/20 px-4 py-3 text-ink placeholder:text-ink-soft/40 focus:outline-none focus:border-clay-deep"
