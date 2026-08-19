@@ -65,7 +65,7 @@ For a deeper look at planning a private proposal, see our guide on [intimate pro
 - **Decide on an audience** — some girlfriend proposals are intentionally private (just the couple and a videographer), while others invite a small group of friends or family to be revealed after the "yes"
 - **Keep the décor lighter and more personal** — girlfriend proposals often lean into inside jokes, shared photos, or a specific color she loves rather than a generic "Marry Me" setup
 
-Some hosts also offer setups specifically built around this occasion — see the [Will You Be My Girlfriend set-ups portfolio](/packages/girlfriend-portfolio) for examples.
+Some hosts also offer setups specifically built around this occasion — see the [Will You Be My Girlfriend set-ups portfolio](/packages/girlfriend-proposal) for examples.
 
 ## Pregnancy Announcement Ideas
 
