@@ -20,20 +20,40 @@ const NAV_LINKS = [
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [render, setRender] = useState(false);
+  const [enter, setEnter] = useState(false);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
+  // Drive the panel's mount/unmount and its enter transition, so opening
+  // and closing both animate instead of snapping instantly (matches the
+  // fade + slide feel of apple.com's mobile menu).
   useEffect(() => {
     if (open) {
+      setRender(true);
+      const raf1 = requestAnimationFrame(() => {
+        const raf2 = requestAnimationFrame(() => setEnter(true));
+        return () => cancelAnimationFrame(raf2);
+      });
+      return () => cancelAnimationFrame(raf1);
+    } else {
+      setEnter(false);
+      const t = setTimeout(() => setRender(false), 300);
+      return () => clearTimeout(t);
+    }
+  }, [open]);
+
+  useEffect(() => {
+    if (render) {
       const original = document.body.style.overflow;
       document.body.style.overflow = "hidden";
       return () => {
         document.body.style.overflow = original;
       };
     }
-  }, [open]);
+  }, [render]);
 
   return (
     <>
@@ -95,10 +115,14 @@ export default function Header() {
         {/* Mobile menu panel — portaled to <body> so it always renders above
             everything else (e.g. TopBanner), regardless of header's own
             stacking context */}
-        {open &&
+        {render &&
           mounted &&
           createPortal(
-            <div className="md:hidden fixed inset-0 z-[2000] bg-sand-light px-6 pt-6 pb-6 flex flex-col gap-1 overflow-y-auto">
+            <div
+              className={`md:hidden fixed inset-0 z-[2000] bg-sand-light px-6 pt-6 pb-6 flex flex-col gap-1 overflow-y-auto transition-all duration-300 ease-out ${
+                enter ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
+              }`}
+            >
               <div className="flex justify-end mb-6">
                 <button
                   type="button"
