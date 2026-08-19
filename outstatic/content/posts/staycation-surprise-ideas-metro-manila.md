@@ -25,7 +25,7 @@ Birthday staycations are one of the most requested occasions at Azure, for both 
 
 - **Themed room decoration** — balloon arches, personalized banners, and a dessert or cake display set up before the celebrant arrives
 - **Surprise entrance** — coordinating with the host so the room is fully set up and the celebrant is "walked in" by a friend or partner
-- **Small group celebration** — since most units accommodate up to 4 guests, birthday staycations work best for close friends, a partner, or immediate family rather than a large guest list
+- **Small group celebration** — since our units can accommodate up to 4 guests, birthday staycations are ideal for intimate celebrations with close friends, a partner, or immediate family. For larger groups, we also have partner units that can accommodate 6–8 guests, subject to availability.
 - **Add-ons** — some hosts offer [cake, flowers, or light catering](https://azurestaycationbysiaos.com/food-offers) as part of a package, worth asking about upfront if you'd rather not coordinate multiple vendors
 
 ## Anniversary Surprise Ideas
@@ -65,7 +65,7 @@ For a deeper look at planning a private proposal, see our guide on [intimate pro
 - **Decide on an audience** — some girlfriend proposals are intentionally private (just the couple and a videographer), while others invite a small group of friends or family to be revealed after the "yes"
 - **Keep the décor lighter and more personal** — girlfriend proposals often lean into inside jokes, shared photos, or a specific color she loves rather than a generic "Marry Me" setup
 
-Some hosts also offer setups specifically built around this occasion — see the [Will You Be My Girlfriend set-ups portfolio](/packages/girlfriend-portfolio) for examples.
+Some hosts also offer setups specifically built around this occasion — see the [Will You Be My Girlfriend set-ups portfolio](/packages/girlfriend-proposal) for examples.
 
 ## Pregnancy Announcement Ideas
 
@@ -103,13 +103,13 @@ Bridal showers are typically a bride-to-be's day with her closest circle rather 
 
 ## Other Intimate Celebrations Worth Planning as a Staycation
 
+![Welcome home celebration at Azure Urban Resort Residences](/images/blog/staycation-surprise-ideas/welcome-home.webp)
+
 Beyond the occasions above, staycation hosts at Azure regularly accommodate:
 
 - **Welcome-home celebrations** — for a family member or partner arriving from overseas (OFW homecomings are an especially common request)
-  ![Welcome home celebration at Azure Urban Resort Residences](/images/blog/staycation-surprise-ideas/bridal-shower.webp)
   
 - **Baby showers** (small-scale) — for guest lists that fit within the unit's capacity
-  ![Bridal shower at Azure Urban Resort Residences](/images/blog/staycation-surprise-ideas/baby-shower.webp)
   
 - **Graduation celebrations** — a private alternative to a restaurant reservation after a graduation ceremony
   
