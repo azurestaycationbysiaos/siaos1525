@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import TopBanner from "./TopBanner";
 
@@ -18,6 +19,11 @@ const NAV_LINKS = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (open) {
@@ -86,28 +92,45 @@ export default function Header() {
           </div>
         </nav>
 
-        {/* Mobile menu panel */}
-        {open && (
-          <div className="md:hidden fixed inset-0 z-50 bg-sand-light px-6 pt-20 pb-6 flex flex-col gap-1 overflow-y-auto">
-            {NAV_LINKS.map((link) => (
+        {/* Mobile menu panel — portaled to <body> so it always renders above
+            everything else (e.g. TopBanner), regardless of header's own
+            stacking context */}
+        {open &&
+          mounted &&
+          createPortal(
+            <div className="md:hidden fixed inset-0 z-[999] bg-sand-light px-6 pt-6 pb-6 flex flex-col gap-1 overflow-y-auto">
+              <div className="flex justify-end mb-6">
+                <button
+                  type="button"
+                  onClick={() => setOpen(false)}
+                  aria-label="Close menu"
+                  className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-ink/15 text-ink"
+                >
+                  <span className="block h-0.5 w-5 bg-current rotate-45 relative">
+                    <span className="block h-0.5 w-5 bg-current -rotate-90 absolute top-0" />
+                  </span>
+                </button>
+              </div>
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="py-3 text-base font-medium text-ink border-b border-ink/5 last:border-b-0"
+                >
+                  {link.label}
+                </Link>
+              ))}
               <Link
-                key={link.href}
-                href={link.href}
+                href="/proposals#book"
                 onClick={() => setOpen(false)}
-                className="py-3 text-base font-medium text-ink border-b border-ink/5 last:border-b-0"
+                className="mt-4 text-center rounded-full bg-ink text-sand-light px-5 py-3 text-sm font-semibold"
               >
-                {link.label}
+                Book a date
               </Link>
-            ))}
-            <Link
-              href="/proposals#book"
-              onClick={() => setOpen(false)}
-              className="mt-4 text-center rounded-full bg-ink text-sand-light px-5 py-3 text-sm font-semibold"
-            >
-              Book a date
-            </Link>
-          </div>
-        )}
+            </div>,
+            document.body
+          )}
       </header>
     </>
   );
