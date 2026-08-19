@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: siteTitle,
   description: siteDescription,
+  colorScheme: "light",
   openGraph: {
     title: siteTitle,
     description: siteDescription,
