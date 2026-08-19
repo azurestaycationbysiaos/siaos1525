@@ -25,7 +25,7 @@ Birthday staycations are one of the most requested occasions at Azure, for both 
 
 - **Themed room decoration** — balloon arches, personalized banners, and a dessert or cake display set up before the celebrant arrives
 - **Surprise entrance** — coordinating with the host so the room is fully set up and the celebrant is "walked in" by a friend or partner
-- **Small group celebration** — since most units accommodate up to 4 guests, birthday staycations work best for close friends, a partner, or immediate family rather than a large guest list
+- **Small group celebration** — since our units can accommodate up to 4 guests, birthday staycations are ideal for intimate celebrations with close friends, a partner, or immediate family. For larger groups, we also have partner units that can accommodate 6–8 guests, subject to availability.
 - **Add-ons** — some hosts offer [cake, flowers, or light catering](https://azurestaycationbysiaos.com/food-offers) as part of a package, worth asking about upfront if you'd rather not coordinate multiple vendors
 
 ## Anniversary Surprise Ideas
