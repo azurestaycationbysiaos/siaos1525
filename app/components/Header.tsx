@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import TopBanner from "./TopBanner";
 
@@ -18,6 +18,16 @@ const NAV_LINKS = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (open) {
+      const original = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = original;
+      };
+    }
+  }, [open]);
 
   return (
     <>
@@ -55,7 +65,7 @@ export default function Header() {
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
-              className="md:hidden inline-flex flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-full border border-ink/15 text-ink"
+              className="md:hidden relative z-[60] inline-flex flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-full border border-ink/15 text-ink bg-sand-light"
             >
               <span
                 className={`block h-0.5 w-5 bg-current transition-transform ${
@@ -78,7 +88,7 @@ export default function Header() {
 
         {/* Mobile menu panel */}
         {open && (
-          <div className="md:hidden border-t border-ink/10 bg-sand-light px-6 py-4 flex flex-col gap-1">
+          <div className="md:hidden fixed inset-0 z-50 bg-sand-light px-6 pt-20 pb-6 flex flex-col gap-1 overflow-y-auto">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
