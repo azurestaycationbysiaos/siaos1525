@@ -103,15 +103,13 @@ Bridal showers are typically a bride-to-be's day with her closest circle rather 
 
 ## Other Intimate Celebrations Worth Planning as a Staycation
 
+![Welcome home celebration at Azure Urban Resort Residences](/images/blog/staycation-surprise-ideas/welcome-home.webp)
+
 Beyond the occasions above, staycation hosts at Azure regularly accommodate:
 
 - **Welcome-home celebrations** — for a family member or partner arriving from overseas (OFW homecomings are an especially common request)
-
-  ![Welcome home celebration at Azure Urban Resort Residences](/images/blog/staycation-surprise-ideas/welcome-home.webp)
   
 - **Baby showers** (small-scale) — for guest lists that fit within the unit's capacity
-
-  ![Bridal shower at Azure Urban Resort Residences](/images/blog/staycation-surprise-ideas/baby-shower.webp)
   
 - **Graduation celebrations** — a private alternative to a restaurant reservation after a graduation ceremony
   
