@@ -1,7 +1,30 @@
 import type { Metadata } from "next";
+import { Fraunces, Libre_Franklin } from "next/font/google";
 import "./globals.css";
 import { SITE_URL, SITE_NAME } from "../lib/site";
 import StructuredData from "./components/StructuredData";
+
+// Self-hosted via next/font: inlines font-face CSS at build time and
+// serves the font files from our own domain, instead of the old
+// <link rel="stylesheet"> to fonts.googleapis.com, which was a
+// render-blocking external request (~2s of blocking time per
+// PageSpeed Insights). The `variable` names match the custom
+// properties already defined in globals.css, so no other file needs
+// to change.
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const libreFranklin = Libre_Franklin({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-body",
+  display: "swap",
+});
 
 const siteTitle =
   "Azure Staycation by Siaos — Staycation, Celebration & Proposal Packages in Parañaque";
@@ -43,15 +66,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased">
+    <html lang="en" className={`h-full antialiased ${fraunces.variable} ${libreFranklin.variable}`}>
       <head>
         <StructuredData />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Libre+Franklin:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <body className="min-h-full flex flex-col">
         <main className="flex flex-col flex-1">{children}</main>
