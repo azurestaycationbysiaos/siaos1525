@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import TopBanner from "./TopBanner";
 
@@ -18,6 +19,41 @@ const NAV_LINKS = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const [render, setRender] = useState(false);
+  const [enter, setEnter] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Drive the panel's mount/unmount and its enter transition, so opening
+  // and closing both animate instead of snapping instantly (matches the
+  // fade + slide feel of apple.com's mobile menu).
+  useEffect(() => {
+    if (open) {
+      setRender(true);
+      const raf1 = requestAnimationFrame(() => {
+        const raf2 = requestAnimationFrame(() => setEnter(true));
+        return () => cancelAnimationFrame(raf2);
+      });
+      return () => cancelAnimationFrame(raf1);
+    } else {
+      setEnter(false);
+      const t = setTimeout(() => setRender(false), 300);
+      return () => clearTimeout(t);
+    }
+  }, [open]);
+
+  useEffect(() => {
+    if (render) {
+      const original = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => {
+        document.body.style.overflow = original;
+      };
+    }
+  }, [render]);
 
   return (
     <>
@@ -55,7 +91,7 @@ export default function Header() {
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
-              className="md:hidden inline-flex flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-full border border-ink/15 text-ink"
+              className="md:hidden relative z-[60] inline-flex flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-full border border-ink/15 text-ink bg-sand-light"
             >
               <span
                 className={`block h-0.5 w-5 bg-current transition-transform ${
@@ -76,28 +112,49 @@ export default function Header() {
           </div>
         </nav>
 
-        {/* Mobile menu panel */}
-        {open && (
-          <div className="md:hidden border-t border-ink/10 bg-sand-light px-6 py-4 flex flex-col gap-1">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="py-3 text-base font-medium text-ink border-b border-ink/5 last:border-b-0"
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Link
-              href="/proposals#book"
-              onClick={() => setOpen(false)}
-              className="mt-4 text-center rounded-full bg-ink text-sand-light px-5 py-3 text-sm font-semibold"
+        {/* Mobile menu panel — portaled to <body> so it always renders above
+            everything else (e.g. TopBanner), regardless of header's own
+            stacking context */}
+        {render &&
+          mounted &&
+          createPortal(
+            <div
+              className={`md:hidden fixed inset-0 z-[2000] bg-sand-light px-6 pt-6 pb-6 flex flex-col gap-1 overflow-y-auto transition-all duration-300 ease-out ${
+                enter ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
+              }`}
             >
-              Book a date
-            </Link>
-          </div>
-        )}
+              <div className="flex justify-end mb-6">
+                <button
+                  type="button"
+                  onClick={() => setOpen(false)}
+                  aria-label="Close menu"
+                  className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-ink/15 text-ink"
+                >
+                  <span className="block h-0.5 w-5 bg-current rotate-45 relative">
+                    <span className="block h-0.5 w-5 bg-current -rotate-90 absolute top-0" />
+                  </span>
+                </button>
+              </div>
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="py-3 text-base font-medium text-ink border-b border-ink/5 last:border-b-0"
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <Link
+                href="/proposals#book"
+                onClick={() => setOpen(false)}
+                className="mt-4 text-center rounded-full bg-ink text-sand-light px-5 py-3 text-sm font-semibold"
+              >
+                Book a date
+              </Link>
+            </div>,
+            document.body
+          )}
       </header>
     </>
   );

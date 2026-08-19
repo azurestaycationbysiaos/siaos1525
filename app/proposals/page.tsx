@@ -35,6 +35,77 @@ const PACKAGES = [
   },
 ];
 
+const FAQS = [
+  {
+    q: "How far in advance should I book a proposal setup?",
+    a: "We recommend booking at least 1 month in advance to guarantee your preferred date — especially for OFWs, seafarers, or guests coming from the province. Last-minute bookings can sometimes be accommodated depending on availability.",
+  },
+  {
+    q: "What are the check-in and check-out times?",
+    a: "Standard check-in is 2PM and check-out is 12NN. Flexible check-in/out can be arranged as long as it doesn't clash with the prior or next day's booking.",
+  },
+  {
+    q: "Is a deposit required?",
+    a: "Yes, a 50% reservation fee is required to confirm your booking. The remaining balance is due right after the scheduled delivery and setup.",
+  },
+  {
+    q: "Is the reservation fee refundable?",
+    a: "No, the reservation fee is non-refundable — even if the person being proposed to declines. The full agreed amount still applies since setup and preparation are already committed.",
+  },
+  {
+    q: "Can I reschedule if something comes up?",
+    a: "Yes. Rescheduling is allowed with at least a week's notice before your original date, subject to availability. For medical emergencies or force majeure, rescheduling is available without the week's notice, within the same month.",
+  },
+  {
+    q: "Can I add extra customization beyond what's listed in the packages?",
+    a: "Yes — additional customization can be discussed and arranged via chat, Messenger, or email based on your specific request.",
+  },
+  {
+    q: "Who's responsible if something in the decor gets damaged?",
+    a: "You're responsible for ensuring your guests and any third parties follow the setup's safety guidelines. Damage caused by misuse may incur additional charges.",
+  },
+  {
+    q: "Can I invite a group of people to witness the proposal?",
+    a: "Yes, we can accommodate bigger groups. Note that additional units must be booked to accommodate everyone, since we follow Azure's allowable number of guests per unit, so please let us know the exact headcount when you inquire.",
+  },
+  {
+    q: "Is this a legitimate business?",
+    a: "Yes. Please see our Legitimacy Check section on the homepage for details.",
+    linkHref: "/#legitimacy-check",
+    linkLabel: "Legitimacy Check section",
+  },
+  {
+    q: "Can I bring in food or drinks?",
+    a: "Yes, there is no corkage fee, and you can also do light cooking. You can also order from Grab, FoodPanda, or any food delivery apps or vendors, provided that you pick up the food and drinks in the lobby. You can see the convenience stores and restaurants inside Azure in our blog and amenities pages.",
+    extraLinks: [
+      { href: "/blog", label: "Staycation, Celebration & Proposal Guides" },
+      { href: "/amenities", label: "Property Amenities at Azure Urban Resort Residences" },
+    ],
+  },
+  {
+    q: "Can I bring my own photographer?",
+    a: "Yes, you may bring your own photographer, provided that they're still within the number of allowable pax — the 1-bedroom unit is good for up to 4 pax. We will also ask for their ID so we can register the photographer as part of the guest list.",
+  },
+];
+
+// ---- JSON-LD -------------------------------------------------------------
+// FAQ schema so search engines and AI answer engines can read the Q&A
+// content directly, instead of inferring it from prose.
+function buildProposalFaqJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQS.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
+}
+
 // ---- JSON-LD -------------------------------------------------------------
 // Product + Offer schema so search engines and AI answer engines can read
 // exact package prices directly, instead of inferring them from prose.
@@ -207,20 +278,20 @@ export default function ProposalsPage() {
           <div className="flex items-center gap-3 mb-6">
             <h3 className="font-display text-2xl text-ink">More reveals from TikTok</h3>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-2xl mx-auto sm:mx-0">
-            <div className="rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
+          <div className="flex flex-wrap justify-center gap-5">
+            <div className="w-[340px] max-w-full rounded-2xl border border-ink/10 flex justify-center bg-ink p-2">
               <TikTokEmbed
                 url="https://www.tiktok.com/@azure.staycation2/video/7663277706225716501"
                 videoId="7663277706225716501"
               />
             </div>
-            <div className="rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
+            <div className="w-[340px] max-w-full rounded-2xl border border-ink/10 flex justify-center bg-ink p-2">
               <TikTokEmbed
                 url="https://www.tiktok.com/@azure.staycation2/video/7402220237451578641"
                 videoId="7402220237451578641"
               />
             </div>
-            <div className="rounded-2xl overflow-hidden border border-ink/10 flex justify-center bg-ink p-2">
+            <div className="w-[340px] max-w-full rounded-2xl border border-ink/10 flex justify-center bg-ink p-2">
               <TikTokEmbed
                 url="https://www.tiktok.com/@azure.staycation2/video/7545708408477879560"
                 videoId="7545708408477879560"
@@ -230,8 +301,55 @@ export default function ProposalsPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section id="faq" className="mx-auto max-w-6xl px-6 py-12 md:py-20">
+        <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-3">
+          Azure Staycation by Siaos
+        </p>
+        <h2 className="font-display text-4xl text-ink mb-10">
+          Frequently Asked <em className="italic text-clay-deep">Questions</em>
+        </h2>
+        <div className="divide-y divide-ink/10 border-t border-ink/10">
+          {FAQS.map((item) => (
+            <details key={item.q} className="group py-6">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display text-lg text-ink">
+                {item.q}
+                <span className="shrink-0 text-ink-soft transition-transform group-open:rotate-45">
+                  +
+                </span>
+              </summary>
+              <p className="text-ink-soft text-sm leading-relaxed mt-3 max-w-3xl">
+                {item.a}
+                {item.linkHref && (
+                  <>
+                    {" "}
+                    <Link href={item.linkHref} className="text-clay-deep underline">
+                      {item.linkLabel}
+                    </Link>
+                    .
+                  </>
+                )}
+                {item.extraLinks && (
+                  <>
+                    {" "}
+                    {item.extraLinks.map((link, i) => (
+                      <span key={link.href}>
+                        <Link href={link.href} className="text-clay-deep underline">
+                          {link.label}
+                        </Link>
+                        {i < item.extraLinks.length - 1 ? " and " : "."}
+                      </span>
+                    ))}
+                  </>
+                )}
+              </p>
+            </details>
+          ))}
+        </div>
+      </section>
+
       {/* Tell us your love story + Calendar + Inquiry */}
-      <section id="book" className="mx-auto max-w-6xl px-6 py-24">
+      <section id="book" className="mx-auto max-w-6xl px-6 py-12 md:py-24">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="font-display text-3xl text-ink mb-4">Start Planning Your Proposal</h2>
@@ -256,6 +374,12 @@ export default function ProposalsPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(product) }}
         />
       ))}
+
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(buildProposalFaqJsonLd()) }}
+      />
     </div>
   );
 }

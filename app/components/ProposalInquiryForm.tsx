@@ -55,7 +55,7 @@ export default function ProposalInquiryForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="space-y-4 bg-cream-card border border-ink/10 rounded-2xl p-8"
+      className="space-y-4 bg-cream-card border border-ink/10 rounded-2xl p-5 sm:p-8"
     >
       <h3 className="font-display text-xl text-ink mb-2">Send an inquiry</h3>
       <div>
@@ -118,7 +118,7 @@ export default function ProposalInquiryForm() {
         <select
           id="package"
           name="package"
-          className="mt-1 w-full rounded-lg bg-sand-light border border-ink/20 px-4 py-3 text-ink focus:outline-none focus:border-clay-deep"
+          className="mt-1 w-full rounded-lg bg-sand-light border border-ink/20 pl-3 pr-8 py-3 text-sm sm:text-base text-ink focus:outline-none focus:border-clay-deep"
         >
           <option>Signature Proposal Set Up — ₱10,999</option>
           <option>Happily Ever After Set Up — ₱14,999</option>
@@ -153,4 +153,3 @@ export default function ProposalInquiryForm() {
     </form>
   );
 }
-
