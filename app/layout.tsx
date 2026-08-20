@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Fraunces, Libre_Franklin } from "next/font/google";
 import "./globals.css";
 import { SITE_URL, SITE_NAME } from "../lib/site";
@@ -72,6 +73,11 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         <main className="flex flex-col flex-1">{children}</main>
+        <Script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="y+T06e5ScPRgwdaFsH5Xdw"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
