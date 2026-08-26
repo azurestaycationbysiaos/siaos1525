@@ -137,7 +137,7 @@ Right next to the wave pool is **The Sands**, a beachfront bistro and bar where 
 
 ## Before You Head Back to Your Unit
 
-You're free to head down to the wave pool already in your swimwear, no need to change first. The rule only applies on the way back: you must be completely dry before re-entering the tower.
+Head down to the wave pool in casual clothes, then change into your swimwear once you're there, or wear it underneath your clothes. On the way back, you must be completely dry before re-entering the tower.
 
 - Make sure you're completely dry before re-entering the tower. Wet clothes aren't allowed inside, and Azure charges a ₱2,000 penalty for entering wet
 - Wear slippers on your way back in
