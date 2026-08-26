@@ -23,15 +23,17 @@ If you're staying at [Azure Urban Resort Residences](https://www.azure.com.ph/) 
 
 ![Azure wave pool shift schedule showing morning and afternoon slots](/images/blog/azure-wave-pool-guide/wave-pool-shifts.webp)
 
-The wave pool runs in two daily blocks, Wednesday through Monday:
+The Wave pool operating hours are divided into two daily blocks, Wednesday through Monday:
 
 **Morning block: 7:00 AM to 12:00 NN**
+🌊 Wave sessions:
 - 8:30 AM
 - 9:30 AM
 - 10:30 AM
 - 11:30 AM
 
 **Afternoon block: 2:00 PM to 7:00 PM**
+🌊 Wave sessions:
 - 2:30 PM
 - 3:30 PM
 - 4:30 PM
@@ -176,6 +178,7 @@ Yes, but a valid ID must be presented at registration. No ID means no discount.
 ### Do young children pay to enter the wave pool?
 
 Guests 3 ft. tall and below enter free.
+**Please note: The height requirement is strictly enforced by the pool administration.**
 
 ### Where can I book a staycation near the Azure wave pool?
 
