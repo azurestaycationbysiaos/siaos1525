@@ -104,8 +104,6 @@ If you show up in the wrong attire, you may be turned away at the pool, so pack 
 
 ## How to Get to the Wave Pool from Santorini Tower
 
-![Directions from Santorini Tower ground floor to the wave pool entrance](/images/blog/azure-wave-pool-guide/directions-to-wave-pool.webp)
-
 1. Go down to the Ground Floor
 2. Facing the glass door on your way out of the tower, turn left
 3. Walk straight to the corner, just before the ramp to Rio Parking
