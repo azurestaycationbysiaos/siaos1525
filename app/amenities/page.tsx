@@ -98,11 +98,30 @@ export default function AmenitiesPage() {
   return (
     <div className="flex flex-col">
       <Header />
+
+      <div className="relative h-[60vh] min-h-[420px] w-full overflow-hidden">
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          src="/videos/azure-hero.mp4"
+          poster="/images/azure-hero-poster.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/20 to-ink/40" />
+        <div className="relative z-10 flex h-full flex-col items-start justify-end px-6 pb-12 mx-auto max-w-4xl">
+          <p className="uppercase tracking-[0.2em] text-xs font-semibold text-cream-card mb-3">
+            Azure Urban Resort Residences
+          </p>
+          <h1 className="font-display text-4xl text-cream-card mb-2">Property Amenities</h1>
+          <p className="text-cream-card/80 text-sm max-w-md">
+            Resort-style amenities available to staycation guests, day and night.
+          </p>
+        </div>
+      </div>
+
       <article className="mx-auto max-w-4xl px-6 pt-16 pb-24">
-        <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-3">
-          Azure Urban Resort Residences
-        </p>
-        <h1 className="font-display text-4xl text-ink mb-4">Property Amenities</h1>
         <p className="text-ink-soft leading-relaxed mb-2 max-w-2xl">
           Beyond your unit, Azure Urban Resort Residences offers several
           resort-style amenities that staycation guests can enjoy during
