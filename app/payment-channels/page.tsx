@@ -9,10 +9,10 @@ export const metadata = {
 };
 
 const CHANNELS = [
-  { name: "GCash", number: "0920 970 1226", qr: "/images/payment/qr-gcash.jpg" },
-  { name: "Maya", number: "0920 970 1226", qr: "/images/payment/qr-maya.jpg" },
-  { name: "Vybe", number: "0920 970 1226", qr: "/images/payment/qr-vybe.jpg" },
   { name: "BPI", number: "8159416654", qr: "/images/payment/qr-bpi.jpg" },
+   { name: "Maya", number: "0947 504 2783", qr: "/images/payment/qr-maya.jpg" },
+  { name: "GCash", number: "0920 970 1226", qr: "/images/payment/qr-gcash.jpg" },
+  { name: "Vybe", number: "0920 970 1226", qr: "/images/payment/qr-vybe.jpg" },
 ];
 
 export default function PaymentChannelsPage() {
