@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import HeroVideo from "../components/HeroVideo";
 import { SITE_NAME } from "../../lib/site";
 
 export const metadata = {
@@ -100,15 +101,7 @@ export default function AmenitiesPage() {
       <Header />
 
       <div className="relative h-[60vh] min-h-[420px] w-full overflow-hidden">
-        <video
-          className="absolute inset-0 h-full w-full object-cover"
-          src="/videos/azure-hero.mp4"
-          poster="/images/azure-hero-poster.jpg"
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
+        <HeroVideo />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/20 to-ink/40" />
         <div className="relative z-10 flex h-full flex-col items-start justify-end px-6 pb-12 mx-auto max-w-4xl">
           <p className="uppercase tracking-[0.2em] text-xs font-semibold text-cream-card mb-3">
