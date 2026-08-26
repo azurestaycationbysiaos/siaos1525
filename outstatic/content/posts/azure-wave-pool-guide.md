@@ -26,6 +26,7 @@ If you're staying at [Azure Urban Resort Residences](https://www.azure.com.ph/) 
 The Wave pool operating hours are divided into two daily blocks, Wednesday through Monday:
 
 **Morning block: 7:00 AM to 12:00 NN**
+
 🌊 Wave sessions:
 - 8:30 AM
 - 9:30 AM
@@ -33,6 +34,7 @@ The Wave pool operating hours are divided into two daily blocks, Wednesday throu
 - 11:30 AM
 
 **Afternoon block: 2:00 PM to 7:00 PM**
+
 🌊 Wave sessions:
 - 2:30 PM
 - 3:30 PM
