@@ -161,10 +161,6 @@ Yes. You need a visitor's pass to purchase swim bands, and without one, you can'
 
 It depends on unit size: 4 passes for a 1-bedroom, 6 for a 2-bedroom, and 8 for a 3-bedroom.
 
-### Can I wear regular shorts or a sports bra to the wave pool?
-
-No. Only swim-specific attire is allowed. Regular shorts, sports bras, leotards, and similar non-swim apparel will not be permitted.
-
 ### What happens if I lose my visitor's pass?
 
 You'll be charged ₱500 for a lost or damaged visitor's pass.
