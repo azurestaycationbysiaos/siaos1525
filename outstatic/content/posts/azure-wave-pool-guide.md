@@ -5,7 +5,7 @@ description: "Planning to swim at Azure's wave pool during your staycation? Here
 slug: "azure-wave-pool-guide"
 author:
   name: "Azure Staycation by Siaos"
-coverImage: "/images/blog/azure-bicutan-wave-pool.webp"
+coverImage: "/images/blog/azure-bicutan-wave-pool-guide.webp"
 status: "published"
 ---
 
@@ -104,8 +104,6 @@ If you show up in the wrong attire, you may be turned away at the pool, so pack 
 
 ## How to Get to the Wave Pool from Santorini Tower
 
-![Directions from Santorini Tower ground floor to the wave pool entrance](/images/blog/azure-wave-pool-guide/directions-to-wave-pool.webp)
-
 1. Go down to the Ground Floor
 2. Facing the glass door on your way out of the tower, turn left
 3. Walk straight to the corner, just before the ramp to Rio Parking
@@ -139,7 +137,7 @@ Right next to the wave pool is **The Sands**, a beachfront bistro and bar where 
 
 ## Before You Head Back to Your Unit
 
-You're free to head down to the wave pool already in your swimwear, no need to change first. The rule only applies on the way back: you must be completely dry before re-entering the tower.
+Head down to the wave pool in casual clothes, then change into your swimwear once you're there, or wear it underneath your clothes. On the way back, you must be completely dry before re-entering the tower.
 
 - Make sure you're completely dry before re-entering the tower. Wet clothes aren't allowed inside, and Azure charges a ₱2,000 penalty for entering wet
 - Wear slippers on your way back in
@@ -162,10 +160,6 @@ Yes. You need a visitor's pass to purchase swim bands, and without one, you can'
 ### How many visitor passes come with my unit?
 
 It depends on unit size: 4 passes for a 1-bedroom, 6 for a 2-bedroom, and 8 for a 3-bedroom.
-
-### Can I wear regular shorts or a sports bra to the wave pool?
-
-No. Only swim-specific attire is allowed. Regular shorts, sports bras, leotards, and similar non-swim apparel will not be permitted.
 
 ### What happens if I lose my visitor's pass?
 
