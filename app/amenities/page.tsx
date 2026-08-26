@@ -109,7 +109,7 @@ export default function AmenitiesPage() {
           </p>
           <h1 className="font-display text-4xl text-cream-card mb-2">Property Amenities</h1>
           <p className="text-cream-card/80 text-sm max-w-md">
-            Resort-style amenities available to staycation guests, day and night.
+           Resort-style amenities available for staycation guests to enjoy throughout their stay.
           </p>
         </div>
       </div>
