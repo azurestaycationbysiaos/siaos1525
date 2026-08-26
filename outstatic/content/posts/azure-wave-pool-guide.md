@@ -5,7 +5,7 @@ description: "Planning to swim at Azure's wave pool during your staycation? Here
 slug: "azure-wave-pool-guide"
 author:
   name: "Azure Staycation by Siaos"
-coverImage: "/images/blog/azure-wave-pool-guide.webp"
+coverImage: "/images/blog/azure-bicutan-wave-pool.webp"
 status: "published"
 ---
 
