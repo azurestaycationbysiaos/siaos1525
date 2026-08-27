@@ -42,7 +42,6 @@ const INCLUSION_GROUPS = [
       "Multi-cooker",
       "Electric kettle",
       "Refrigerator and microwave oven",
-      "Circular induction cooker",
     ],
   },
   {
