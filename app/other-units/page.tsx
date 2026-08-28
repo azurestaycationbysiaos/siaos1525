@@ -1,8 +1,7 @@
+import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import UnitGallery, { UnitPhoto } from "../components/UnitGallery";
-import RoomInclusionsButton from "../components/RoomInclusionsButton";
-import Link from "next/link";
 import { SITE_NAME } from "../../lib/site";
 
 export const metadata = {
@@ -89,8 +88,7 @@ const UNITS: Unit[] = [
     amenities: ["PS4", "Billiards", "Bluetooth karaoke", "YouTube", "Netflix", "4 bath towels", "Cookingwares", "Diningwares"],
     checkIn: "3 PM",
     checkOut: "1 PM",
-    // Trimmed to 5 photos (main + 4 thumbnails = one row) to remove the stray 2nd row.
-    photos: [1, 2, 3, 4, 5].map((n) => ({
+    photos: [1, 2, 3, 4, 5, 6].map((n) => ({
       src: `/images/other-units/unit-2br-deluxe-16th-floor-${n}.jpg`,
       alt: `2 BR Deluxe Santorini 16th floor beach and city view unit photo ${n}`,
     })),
@@ -104,8 +102,7 @@ const UNITS: Unit[] = [
     amenities: ["PS4", "Billiards", "Bluetooth karaoke", "YouTube", "Netflix", "4 bath towels", "Cookingwares", "Diningwares"],
     checkIn: "3 PM",
     checkOut: "1 PM",
-    // Trimmed to 5 photos (main + 4 thumbnails = one row) to remove the stray 2nd row.
-    photos: [1, 2, 3, 4, 5].map((n) => ({
+    photos: [1, 2, 3, 4, 5, 6].map((n) => ({
       src: `/images/other-units/unit-2br-deluxe-17th-floor-${n}.jpg`,
       alt: `2 BR Deluxe Santorini 17th floor beach and city view unit photo ${n}`,
     })),
@@ -173,7 +170,12 @@ export default function OtherUnitsPage() {
                 ))}
               </div>
 
-              <RoomInclusionsButton unit={unit} />
+              <Link
+                href="/#contact"
+                className="mt-6 inline-block text-center rounded-full bg-clay-deep text-sand-light px-6 py-3 text-sm font-semibold hover:bg-ink transition-colors"
+              >
+                Inquire about this unit
+              </Link>
             </div>
           </div>
         ))}
@@ -200,4 +202,3 @@ export default function OtherUnitsPage() {
     </div>
   );
 }
-
