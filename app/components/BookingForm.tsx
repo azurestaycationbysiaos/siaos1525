@@ -109,7 +109,7 @@ export default function BookingForm({
                 type="date"
                 name="preferred_date"
                 required
-                className="mt-1 w-full rounded-lg bg-cream-card border border-ink/20 px-4 py-3 text-ink focus:outline-none focus:border-clay-deep"
+                className="mt-1 w-full rounded-lg bg-cream-card border border-ink/20 px-4 py-3 text-ink placeholder:text-ink-soft/40 focus:outline-none focus:border-clay-deep [color-scheme:light] [&::-webkit-calendar-picker-indicator]:opacity-100 [&::-webkit-calendar-picker-indicator]:cursor-pointer"
               />
             </div>
             <div>
