@@ -115,9 +115,8 @@ export default function BookingForm({
                   color: "#1a1a1a",
                   WebkitTextFillColor: "#1a1a1a",
                   appearance: "auto",
-                  WebkitAppearance: "auto",
                   minHeight: "3rem",
-                }}
+                } as React.CSSProperties}
               />
             </div>
             <div>
