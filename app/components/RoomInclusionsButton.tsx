@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import type { UnitPhoto } from "./UnitGallery";
 
 export type InclusionUnit = {
@@ -53,13 +52,15 @@ export default function RoomInclusionsButton({ unit }: { unit: InclusionUnit }) 
 
   return (
     <>
-      <button
-        type="button"
-        onClick={() => setOpen(true)}
-        className="mt-6 inline-block text-center rounded-full bg-clay-deep text-sand-light px-6 py-3 text-sm font-semibold hover:bg-ink transition-colors"
-      >
-        Room inclusions
-      </button>
+      <div className="mt-auto pt-6">
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          className="inline-block text-center rounded-full bg-clay-deep text-sand-light px-6 py-3 text-sm font-semibold hover:bg-ink transition-colors"
+        >
+          Room inclusions
+        </button>
+      </div>
 
       {open && (
         <div
@@ -128,13 +129,6 @@ export default function RoomInclusionsButton({ unit }: { unit: InclusionUnit }) 
                 {unit.honestyStoreNote}
               </p>
             )}
-
-            <Link
-              href="/#contact"
-              className="mt-6 inline-block text-center rounded-full bg-ink text-sand-light px-6 py-3 text-sm font-semibold hover:bg-clay-deep transition-colors"
-            >
-              Inquire about this unit
-            </Link>
           </div>
 
           {activeIndex !== null && (
