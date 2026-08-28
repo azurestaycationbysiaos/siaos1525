@@ -23,6 +23,9 @@ type Unit = {
   checkIn: string;
   checkOut: string;
   photos: UnitPhoto[];
+  // Optional: extra photos shown only in the Room Inclusions modal gallery,
+  // beyond what's shown in the front-card gallery. Falls back to `photos` if omitted.
+  modalPhotos?: UnitPhoto[];
 };
 
 const UNITS: Unit[] = [
@@ -152,6 +155,10 @@ const UNITS: Unit[] = [
       src: `/images/other-units/unit-2br-15th-floor-${n}.jpg`,
       alt: `2 BR Santorini 15th floor beach view unit photo ${n}`,
     })),
+    modalPhotos: [1, 2, 3, 4, 5, 6, 7].map((n) => ({
+      src: `/images/other-units/unit-2br-15th-floor-${n}.jpg`,
+      alt: `2 BR Santorini 15th floor beach view unit photo ${n}`,
+    })),
   },
   {
     slug: "2br-deluxe-16th-floor",
@@ -183,13 +190,23 @@ const UNITS: Unit[] = [
     ],
     honestyStoreNote:
       "Mini honesty store in the unit. Prices are on the inventory list in the kitchen drawer. Charges are deducted from your security deposit; if the deposit can't cover all expenses (e.g. grocery items and penalties incurred), an additional payment will be required.",
-    // Trimmed to 5 photos (main + 4 thumbnails = one row) to remove the stray 2nd row.
+    // Front-card gallery stays at 5 photos (main + 4 thumbnails = one row); the modal gets 9 via modalPhotos below.
     checkIn: "3 PM",
     checkOut: "1 PM",
     photos: [1, 2, 3, 4, 5].map((n) => ({
       src: `/images/other-units/unit-2br-deluxe-16th-floor-${n}.jpg`,
       alt: `2 BR Deluxe Santorini 16th floor beach and city view unit photo ${n}`,
     })),
+    modalPhotos: [
+      ...[1, 2, 3, 4, 5].map((n) => ({
+        src: `/images/other-units/unit-2br-deluxe-16th-floor-${n}.jpg`,
+        alt: `2 BR Deluxe Santorini 16th floor beach and city view unit photo ${n}`,
+      })),
+      ...[6, 7, 8, 9].map((n) => ({
+        src: `/images/other-units/unit-2br-deluxe-16th-floor-${n}.png`,
+        alt: `2 BR Deluxe Santorini 16th floor beach and city view unit photo ${n}`,
+      })),
+    ],
   },
   {
     slug: "2br-deluxe-17th-floor",
@@ -219,13 +236,23 @@ const UNITS: Unit[] = [
     ],
     honestyStoreNote:
       "Mini honesty store in the unit. Prices are on the inventory list in the kitchen drawer. Charges are deducted from your security deposit; if the deposit can't cover all expenses (e.g. grocery items and penalties incurred), an additional payment will be required.",
-    // Trimmed to 5 photos (main + 4 thumbnails = one row) to remove the stray 2nd row.
+    // Front-card gallery stays at 5 photos (main + 4 thumbnails = one row); the modal gets 9 via modalPhotos below.
     checkIn: "2 PM",
     checkOut: "12 NN",
     photos: [1, 2, 3, 4, 5].map((n) => ({
       src: `/images/other-units/unit-2br-deluxe-17th-floor-${n}.jpg`,
       alt: `2 BR Deluxe Santorini 17th floor beach and city view unit photo ${n}`,
     })),
+    modalPhotos: [
+      ...[1, 2, 3, 4, 5].map((n) => ({
+        src: `/images/other-units/unit-2br-deluxe-17th-floor-${n}.jpg`,
+        alt: `2 BR Deluxe Santorini 17th floor beach and city view unit photo ${n}`,
+      })),
+      ...[6, 7, 8, 9].map((n) => ({
+        src: `/images/other-units/unit-2br-deluxe-17th-floor-${n}.png`,
+        alt: `2 BR Deluxe Santorini 17th floor beach and city view unit photo ${n}`,
+      })),
+    ],
   },
 ];
 
