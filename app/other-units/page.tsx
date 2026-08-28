@@ -161,8 +161,8 @@ const UNITS: Unit[] = [
     })),
   },
   {
-    slug: "2br-deluxe-14th-floor",
-    title: "2 BR Deluxe Santorini, 14th Floor",
+    slug: "2br-14th-floor",
+    title: "2 BR Santorini, 14th Floor",
     view: "Beach and pool view",
     floor: "14th Floor",
     maxGuests: "6 adults + 1 infant/baby/kid (strictly below 3 feet)",
