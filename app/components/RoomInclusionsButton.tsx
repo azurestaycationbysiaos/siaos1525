@@ -12,6 +12,8 @@ export type InclusionUnit = {
   checkIn: string;
   checkOut: string;
   amenities: string[];
+  inclusions: string[];
+  honestyStoreNote?: string;
   photos: UnitPhoto[];
 };
 
@@ -112,16 +114,20 @@ export default function RoomInclusionsButton({ unit }: { unit: InclusionUnit }) 
               </p>
             </div>
 
-            <div className="mt-4 flex flex-wrap gap-1.5">
-              {unit.amenities.map((a) => (
-                <span
-                  key={a}
-                  className="text-xs font-medium text-sage-deep bg-sage/10 border border-sage/20 rounded-full px-2.5 py-1"
-                >
-                  {a}
-                </span>
-              ))}
+            <div className="mt-6">
+              <h4 className="font-display text-lg text-ink mb-2">Room Inclusions</h4>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-sm text-ink-soft list-disc list-inside">
+                {unit.inclusions.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
             </div>
+
+            {unit.honestyStoreNote && (
+              <p className="mt-5 text-xs text-ink-soft/80 italic border-t border-ink/10 pt-4">
+                {unit.honestyStoreNote}
+              </p>
+            )}
 
             <Link
               href="/#contact"
@@ -192,4 +198,3 @@ export default function RoomInclusionsButton({ unit }: { unit: InclusionUnit }) 
     </>
   );
 }
-
