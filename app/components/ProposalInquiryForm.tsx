@@ -108,7 +108,14 @@ export default function ProposalInquiryForm() {
           name="date"
           type="date"
           required
-          className="mt-1 w-full rounded-lg bg-sand-light border border-ink/20 px-4 py-3 text-ink focus:outline-none focus:border-clay-deep [color-scheme:light] [&::-webkit-calendar-picker-indicator]:opacity-100 [&::-webkit-calendar-picker-indicator]:cursor-pointer"
+          className="mt-1 w-full rounded-lg bg-sand-light border border-ink/20 px-4 py-3 focus:outline-none focus:border-clay-deep"
+          style={{
+            colorScheme: "light",
+            color: "#1a1a1a",
+            WebkitTextFillColor: "#1a1a1a",
+            appearance: "auto",
+            minHeight: "3rem",
+          } as React.CSSProperties}
         />
       </div>
       <div>
