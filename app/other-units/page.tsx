@@ -155,7 +155,7 @@ const UNITS: Unit[] = [
       src: `/images/other-units/unit-2br-15th-floor-${n}.jpg`,
       alt: `2 BR Santorini 15th floor beach view unit photo ${n}`,
     })),
-    modalPhotos: [1, 2, 3, 4, 5, 6, 7].map((n) => ({
+    modalPhotos: [1, 2, 3, 4, 5].map((n) => ({
       src: `/images/other-units/unit-2br-15th-floor-${n}.jpg`,
       alt: `2 BR Santorini 15th floor beach view unit photo ${n}`,
     })),
