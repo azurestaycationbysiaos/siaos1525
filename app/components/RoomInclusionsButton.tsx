@@ -14,11 +14,14 @@ export type InclusionUnit = {
   inclusions: string[];
   honestyStoreNote?: string;
   photos: UnitPhoto[];
+  // Optional: extra photos shown only in this modal's gallery. Falls back to `photos` if omitted.
+  modalPhotos?: UnitPhoto[];
 };
 
 export default function RoomInclusionsButton({ unit }: { unit: InclusionUnit }) {
   const [open, setOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const galleryPhotos = unit.modalPhotos ?? unit.photos;
 
   useEffect(() => {
     if (!open) return;
@@ -34,7 +37,7 @@ export default function RoomInclusionsButton({ unit }: { unit: InclusionUnit }) 
       if (
         activeIndex !== null &&
         e.key === "ArrowRight" &&
-        activeIndex < unit.photos.length - 1
+        activeIndex < galleryPhotos.length - 1
       ) {
         setActiveIndex(activeIndex + 1);
       }
@@ -48,7 +51,7 @@ export default function RoomInclusionsButton({ unit }: { unit: InclusionUnit }) 
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = prevOverflow;
     };
-  }, [open, activeIndex, unit.photos.length]);
+  }, [open, activeIndex, galleryPhotos.length]);
 
   return (
     <>
@@ -84,7 +87,7 @@ export default function RoomInclusionsButton({ unit }: { unit: InclusionUnit }) 
             <p className="text-sm font-semibold text-clay-deep mt-1">{unit.view}</p>
 
             <div className="mt-5 grid grid-cols-2 sm:grid-cols-3 gap-2">
-              {unit.photos.map((photo, i) => (
+              {galleryPhotos.map((photo, i) => (
                 <button
                   key={photo.src}
                   type="button"
@@ -159,7 +162,7 @@ export default function RoomInclusionsButton({ unit }: { unit: InclusionUnit }) 
                 </button>
               )}
 
-              {activeIndex < unit.photos.length - 1 && (
+              {activeIndex < galleryPhotos.length - 1 && (
                 <button
                   type="button"
                   onClick={(e) => {
@@ -178,8 +181,8 @@ export default function RoomInclusionsButton({ unit }: { unit: InclusionUnit }) 
                 onClick={(e) => e.stopPropagation()}
               >
                 <Image
-                  src={unit.photos[activeIndex].src}
-                  alt={unit.photos[activeIndex].alt}
+                  src={galleryPhotos[activeIndex].src}
+                  alt={galleryPhotos[activeIndex].alt}
                   fill
                   className="object-contain"
                   sizes="90vw"
