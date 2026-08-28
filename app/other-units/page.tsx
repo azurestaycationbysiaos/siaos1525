@@ -1,195 +1,202 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import Image from "next/image";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import UnitGallery, { UnitPhoto } from "../components/UnitGallery";
+import RoomInclusionsButton from "../components/RoomInclusionsButton";
 import Link from "next/link";
-import type { UnitPhoto } from "./UnitGallery";
+import { SITE_NAME } from "../../lib/site";
 
-export type InclusionUnit = {
+export const metadata = {
+  title: `Other Units at Azure Urban Resort Residences — Partner Units | ${SITE_NAME}`,
+  description:
+    "Our Modern Boho 1-Bedroom unit fully booked? Browse our partner units at Azure Urban Resort Residences — 1BR and 2BR Santorini units with beach and city views, still available for your staycation or celebration.",
+};
+
+type Unit = {
+  slug: string;
   title: string;
   view: string;
+  floor: string;
   maxGuests: string;
+  amenities: string[];
   checkIn: string;
   checkOut: string;
-  amenities: string[];
   photos: UnitPhoto[];
 };
 
-export default function RoomInclusionsButton({ unit }: { unit: InclusionUnit }) {
-  const [open, setOpen] = useState(false);
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+const UNITS: Unit[] = [
+  {
+    slug: "1br-2nd-floor",
+    title: "1 BR Santorini, 2nd Floor",
+    view: "Beach view",
+    floor: "2nd Floor",
+    maxGuests: "4 adults + 1 infant/baby/kid (strictly below 3 feet)",
+    amenities: ["PS4", "Bluetooth karaoke", "Billiard table", "YouTube", "Netflix", "Bath towels", "Cookingwares", "Diningwares"],
+    checkIn: "2 PM",
+    checkOut: "12 NN",
+    photos: [1, 2, 3, 4, 5].map((n) => ({
+      src: `/images/other-units/unit-2nd-floor-${n}.jpg`,
+      alt: `1 BR Santorini 2nd floor beach view unit photo ${n}`,
+    })),
+  },
+  {
+    slug: "1br-14th-floor",
+    title: "1 BR Santorini, 14th Floor",
+    view: "Beach view",
+    floor: "14th Floor",
+    maxGuests: "4 adults + 1 infant/baby/kid (strictly below 3 feet)",
+    amenities: ["PS4", "YouTube", "Netflix", "Bath towels", "Cookingwares", "Diningwares"],
+    checkIn: "2 PM",
+    checkOut: "12 NN",
+    photos: [1, 2, 3, 4, 5].map((n) => ({
+      src: `/images/other-units/unit-14th-floor-${n}.jpg`,
+      alt: `1 BR Santorini 14th floor beach view unit photo ${n}`,
+    })),
+  },
+  {
+    slug: "1br-8th-floor",
+    title: "1 BR Santorini, 8th Floor",
+    view: "Beach view",
+    floor: "8th Floor",
+    maxGuests: "4 adults + 1 infant/baby/kid (strictly below 3 feet)",
+    amenities: ["YouTube", "Netflix", "Bath towels", "Cookingwares", "Diningwares"],
+    checkIn: "2 PM",
+    checkOut: "12 NN",
+    photos: [1, 2, 3, 4, 5].map((n) => ({
+      src: `/images/other-units/unit-8th-floor-${n}.jpg`,
+      alt: `1 BR Santorini 8th floor beach view unit photo ${n}`,
+    })),
+  },
+  {
+    slug: "2br-15th-floor",
+    title: "2 BR Santorini, 15th Floor",
+    view: "Beach view",
+    floor: "15th Floor",
+    maxGuests: "6 adults + 1 infant/baby/kid (strictly below 3 feet)",
+    amenities: ["YouTube", "Netflix", "4 bath towels", "Cookingwares", "Diningwares"],
+    checkIn: "2 PM",
+    checkOut: "12 NN",
+    photos: [1, 2, 3, 4, 5].map((n) => ({
+      src: `/images/other-units/unit-2br-15th-floor-${n}.jpg`,
+      alt: `2 BR Santorini 15th floor beach view unit photo ${n}`,
+    })),
+  },
+  {
+    slug: "2br-deluxe-16th-floor",
+    title: "2 BR Deluxe Santorini, 16th Floor",
+    view: "Beach and city view",
+    floor: "16th Floor",
+    maxGuests: "8 adults + 1 infant/baby/kid (strictly below 3 feet)",
+    amenities: ["PS4", "Billiards", "Bluetooth karaoke", "YouTube", "Netflix", "4 bath towels", "Cookingwares", "Diningwares"],
+    checkIn: "3 PM",
+    checkOut: "1 PM",
+    // Trimmed to 5 photos (main + 4 thumbnails = one row) to remove the stray 2nd row.
+    photos: [1, 2, 3, 4, 5].map((n) => ({
+      src: `/images/other-units/unit-2br-deluxe-16th-floor-${n}.jpg`,
+      alt: `2 BR Deluxe Santorini 16th floor beach and city view unit photo ${n}`,
+    })),
+  },
+  {
+    slug: "2br-deluxe-17th-floor",
+    title: "2 BR Deluxe Santorini, 17th Floor",
+    view: "Beach and city view",
+    floor: "17th Floor",
+    maxGuests: "8 adults + 1 infant/baby/kid (strictly below 3 feet)",
+    amenities: ["PS4", "Billiards", "Bluetooth karaoke", "YouTube", "Netflix", "4 bath towels", "Cookingwares", "Diningwares"],
+    checkIn: "3 PM",
+    checkOut: "1 PM",
+    // Trimmed to 5 photos (main + 4 thumbnails = one row) to remove the stray 2nd row.
+    photos: [1, 2, 3, 4, 5].map((n) => ({
+      src: `/images/other-units/unit-2br-deluxe-17th-floor-${n}.jpg`,
+      alt: `2 BR Deluxe Santorini 17th floor beach and city view unit photo ${n}`,
+    })),
+  },
+];
 
-  useEffect(() => {
-    if (!open) return;
-
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        if (activeIndex !== null) setActiveIndex(null);
-        else setOpen(false);
-      }
-      if (activeIndex !== null && e.key === "ArrowLeft" && activeIndex > 0) {
-        setActiveIndex(activeIndex - 1);
-      }
-      if (
-        activeIndex !== null &&
-        e.key === "ArrowRight" &&
-        activeIndex < unit.photos.length - 1
-      ) {
-        setActiveIndex(activeIndex + 1);
-      }
-    };
-
-    document.addEventListener("keydown", onKey);
-    const prevOverflow = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-
-    return () => {
-      document.removeEventListener("keydown", onKey);
-      document.body.style.overflow = prevOverflow;
-    };
-  }, [open, activeIndex, unit.photos.length]);
-
+export default function OtherUnitsPage() {
   return (
-    <>
-      <button
-        type="button"
-        onClick={() => setOpen(true)}
-        className="mt-6 inline-block text-center rounded-full bg-clay-deep text-sand-light px-6 py-3 text-sm font-semibold hover:bg-ink transition-colors"
-      >
-        Room inclusions
-      </button>
+    <div className="flex flex-col">
+      <Header />
 
-      {open && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-ink/70 px-4 py-8"
-          onClick={() => setOpen(false)}
-        >
+      <section className="mx-auto max-w-6xl px-6 pt-16 pb-8 text-center">
+        <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-4">
+          Other Units
+        </p>
+        <h1 className="font-display text-4xl sm:text-5xl text-ink leading-[1.05] max-w-3xl mx-auto">
+          Partner Units at{" "}
+          <em className="italic text-clay-deep">Azure Urban Resort Residences</em>
+        </h1>
+        <p className="mt-6 text-lg text-ink-soft max-w-2xl mx-auto">
+          Sometimes our Modern Boho-themed 1-Bedroom Staycation Unit gets
+          fully booked. But don&rsquo;t worry — we&rsquo;ve partnered with
+          trusted units within the same property so we can still accommodate
+          your special celebration, or even a simple getaway with no
+          decorations.
+        </p>
+        <p className="mt-4 text-sm text-ink-soft/80 italic max-w-2xl mx-auto">
+          Disclaimer: our partner units are still subject to availability.
+        </p>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-24 grid gap-10 sm:grid-cols-2">
+        {UNITS.map((unit) => (
           <div
-            className="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-2xl bg-cream-card p-6 sm:p-8"
-            onClick={(e) => e.stopPropagation()}
+            key={unit.slug}
+            id={unit.slug}
+            className="rounded-2xl border border-ink/10 bg-cream-card p-4 sm:p-5 flex flex-col"
           >
-            <button
-              type="button"
-              onClick={() => setOpen(false)}
-              aria-label="Close"
-              className="absolute right-4 top-4 rounded-full w-9 h-9 flex items-center justify-center text-ink hover:bg-ink/10 transition-colors"
-            >
-              ✕
-            </button>
+            <UnitGallery photos={unit.photos} title={unit.title} />
 
-            <h3 className="font-display text-2xl text-ink pr-8">{unit.title}</h3>
-            <p className="text-sm font-semibold text-clay-deep mt-1">{unit.view}</p>
+            <div className="mt-5 flex-1 flex flex-col">
+              <h2 className="font-display text-2xl text-ink">{unit.title}</h2>
+              <p className="text-sm font-semibold text-clay-deep mt-1">{unit.view}</p>
 
-            <div className="mt-5 grid grid-cols-2 sm:grid-cols-3 gap-2">
-              {unit.photos.map((photo, i) => (
-                <button
-                  key={photo.src}
-                  type="button"
-                  onClick={() => setActiveIndex(i)}
-                  className="relative aspect-[4/3] overflow-hidden rounded-lg border border-ink/10"
-                >
-                  <Image
-                    src={photo.src}
-                    alt={photo.alt}
-                    fill
-                    className="object-cover"
-                    sizes="(min-width: 640px) 33vw, 50vw"
-                  />
-                </button>
-              ))}
-            </div>
-
-            <div className="mt-6 space-y-2 text-sm text-ink-soft">
-              <p>
+              <p className="mt-3 text-sm text-ink-soft">
                 <span className="font-semibold text-ink">Max guests:</span>{" "}
                 {unit.maxGuests}
               </p>
-              <p>
+
+              <p className="mt-2 text-sm text-ink-soft">
                 <span className="font-semibold text-ink">Check-in:</span>{" "}
                 {unit.checkIn} &nbsp;|&nbsp;{" "}
                 <span className="font-semibold text-ink">Check-out:</span>{" "}
                 {unit.checkOut}
               </p>
-            </div>
 
-            <div className="mt-4 flex flex-wrap gap-1.5">
-              {unit.amenities.map((a) => (
-                <span
-                  key={a}
-                  className="text-xs font-medium text-sage-deep bg-sage/10 border border-sage/20 rounded-full px-2.5 py-1"
-                >
-                  {a}
-                </span>
-              ))}
-            </div>
-
-            <Link
-              href="/#contact"
-              className="mt-6 inline-block text-center rounded-full bg-ink text-sand-light px-6 py-3 text-sm font-semibold hover:bg-clay-deep transition-colors"
-            >
-              Inquire about this unit
-            </Link>
-          </div>
-
-          {activeIndex !== null && (
-            <div
-              className="fixed inset-0 z-[60] flex items-center justify-center bg-black/90 px-4"
-              onClick={() => setActiveIndex(null)}
-            >
-              <button
-                type="button"
-                onClick={() => setActiveIndex(null)}
-                aria-label="Close photo"
-                className="absolute right-4 top-4 rounded-full w-9 h-9 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
-              >
-                ✕
-              </button>
-
-              {activeIndex > 0 && (
-                <button
-                  type="button"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setActiveIndex((i) => (i === null ? i : i - 1));
-                  }}
-                  aria-label="Previous photo"
-                  className="absolute left-4 sm:left-8 rounded-full w-10 h-10 flex items-center justify-center text-white bg-white/10 hover:bg-white/20 transition-colors"
-                >
-                  ‹
-                </button>
-              )}
-
-              {activeIndex < unit.photos.length - 1 && (
-                <button
-                  type="button"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setActiveIndex((i) => (i === null ? i : i + 1));
-                  }}
-                  aria-label="Next photo"
-                  className="absolute right-4 sm:right-8 rounded-full w-10 h-10 flex items-center justify-center text-white bg-white/10 hover:bg-white/20 transition-colors"
-                >
-                  ›
-                </button>
-              )}
-
-              <div
-                className="relative w-full max-w-4xl aspect-[4/3]"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <Image
-                  src={unit.photos[activeIndex].src}
-                  alt={unit.photos[activeIndex].alt}
-                  fill
-                  className="object-contain"
-                  sizes="90vw"
-                />
+              <div className="mt-3 flex flex-wrap gap-1.5">
+                {unit.amenities.map((a) => (
+                  <span
+                    key={a}
+                    className="text-xs font-medium text-sage-deep bg-sage/10 border border-sage/20 rounded-full px-2.5 py-1"
+                  >
+                    {a}
+                  </span>
+                ))}
               </div>
+
+              <RoomInclusionsButton unit={unit} />
             </div>
-          )}
-        </div>
-      )}
-    </>
+          </div>
+        ))}
+      </section>
+
+      <section className="mx-auto max-w-3xl px-6 pb-24 text-center">
+        <h2 className="font-display text-2xl text-ink mb-3">
+          Want the full Azure Staycation by Siaos experience?
+        </h2>
+        <p className="text-ink-soft mb-6">
+          Our own Modern Boho-themed 1-Bedroom unit comes with our
+          celebration-ready room decoration packages. Check availability
+          first before browsing our partner units above.
+        </p>
+        <Link
+          href="/#contact"
+          className="inline-block rounded-full bg-ink text-sand-light px-6 py-3 text-sm font-semibold hover:bg-clay-deep transition-colors"
+        >
+          Check our main unit&rsquo;s availability
+        </Link>
+      </section>
+
+      <Footer />
+    </div>
   );
 }
-
