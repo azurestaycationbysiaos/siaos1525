@@ -120,9 +120,11 @@ export default function RoomInclusionsButton({ unit }: { unit: InclusionUnit }) 
 
             <div className="mt-6">
               <h4 className="font-display text-lg text-ink mb-2">Room Inclusions</h4>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-sm text-ink-soft list-disc list-inside">
+              <ul className="sm:columns-2 sm:gap-x-6 space-y-1.5 text-sm text-ink-soft list-disc list-inside">
                 {unit.inclusions.map((item) => (
-                  <li key={item}>{item}</li>
+                  <li key={item} className="break-inside-avoid">
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>
