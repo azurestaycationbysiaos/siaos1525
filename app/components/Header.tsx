@@ -5,17 +5,20 @@ import { createPortal } from "react-dom";
 import Link from "next/link";
 import TopBanner from "./TopBanner";
 
+// Single flat list, shared by the desktop row and the mobile menu — no
+// dropdown. Order matches what should read left-to-right in the header,
+// with Other Units placed last, after Contact.
 const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/location", label: "Location" },
   { href: "/amenities", label: "Amenities" },
   { href: "/packages", label: "Room Decorations" },
   { href: "/proposals", label: "Proposal Packages" },
-  { href: "/other-units", label: "Other Units" },
   { href: "/food-offers", label: "Food Offers" },
   { href: "/faq", label: "FAQ" },
   { href: "/blog", label: "Blog" },
   { href: "/#contact", label: "Contact" },
+  { href: "/other-units", label: "Other Units" },
 ];
 
 export default function Header() {
@@ -60,7 +63,7 @@ export default function Header() {
     <>
       <TopBanner />
       <header className="sticky top-0 z-40 bg-sand-light/90 backdrop-blur border-b border-ink/10">
-        <nav className="mx-auto max-w-7xl pl-4 pr-6 py-4 flex items-center justify-between gap-6">
+        <nav className="mx-auto max-w-7xl pl-4 pr-6 py-4 flex items-center justify-between gap-4 lg:gap-6">
           <Link
             href="/"
             className="font-display text-lg tracking-wide text-ink shrink-0 whitespace-nowrap"
@@ -69,8 +72,11 @@ export default function Header() {
             Azure Staycation <span className="italic text-clay-deep">by Siaos</span>
           </Link>
 
-          {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-5 text-sm font-medium text-ink-soft whitespace-nowrap">
+          {/* Desktop nav — all 10 links in one flat row, no dropdown. Needs
+              xl+ to fit without crowding the CTA button; below xl, everything
+              (including these links) lives in the mobile/tablet menu instead
+              of squeezing into a row that's too narrow for it. */}
+          <div className="hidden xl:flex items-center gap-3.5 2xl:gap-5 text-[13px] 2xl:text-sm font-medium text-ink-soft whitespace-nowrap shrink-0">
             {NAV_LINKS.map((link) => (
               <Link key={link.href} href={link.href} className="hover:text-clay-deep transition-colors">
                 {link.label}
@@ -78,21 +84,21 @@ export default function Header() {
             ))}
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 shrink-0">
             <Link
               href="/proposals#book"
-              className="hidden sm:inline-block rounded-full bg-ink text-sand-light px-5 py-2 text-sm font-semibold hover:bg-clay-deep transition-colors"
+              className="hidden sm:inline-block shrink-0 whitespace-nowrap rounded-full bg-ink text-sand-light px-5 py-2 text-sm font-semibold hover:bg-clay-deep transition-colors"
             >
               Book a date
             </Link>
 
-            {/* Mobile hamburger button */}
+            {/* Hamburger button — visible below xl, matching the desktop nav's breakpoint */}
             <button
               type="button"
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? "Close menu" : "Open menu"}
               aria-expanded={open}
-              className="md:hidden relative z-[60] inline-flex flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-full border border-ink/15 text-ink bg-sand-light"
+              className="xl:hidden relative z-[60] inline-flex flex-col justify-center items-center gap-1.5 w-10 h-10 rounded-full border border-ink/15 text-ink bg-sand-light shrink-0"
             >
               <span
                 className={`block h-0.5 w-5 bg-current transition-transform ${
@@ -113,14 +119,14 @@ export default function Header() {
           </div>
         </nav>
 
-        {/* Mobile menu panel — portaled to <body> so it always renders above
-            everything else (e.g. TopBanner), regardless of header's own
-            stacking context */}
+        {/* Mobile/tablet menu panel — portaled to <body> so it always renders
+            above everything else (e.g. TopBanner), regardless of header's own
+            stacking context. Shows below xl now. */}
         {render &&
           mounted &&
           createPortal(
             <div
-              className={`md:hidden fixed inset-0 z-[2000] bg-sand-light px-6 pt-6 pb-6 flex flex-col gap-1 overflow-y-auto transition-all duration-300 ease-out ${
+              className={`xl:hidden fixed inset-0 z-[2000] bg-sand-light px-6 pt-6 pb-6 flex flex-col gap-1 overflow-y-auto transition-all duration-300 ease-out ${
                 enter ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
               }`}
             >
@@ -160,4 +166,3 @@ export default function Header() {
     </>
   );
 }
-

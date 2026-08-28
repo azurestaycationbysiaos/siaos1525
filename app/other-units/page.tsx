@@ -1,7 +1,8 @@
-import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import UnitGallery, { UnitPhoto } from "../components/UnitGallery";
+import RoomInclusionsButton from "../components/RoomInclusionsButton";
+import Link from "next/link";
 import { SITE_NAME } from "../../lib/site";
 
 export const metadata = {
@@ -17,9 +18,14 @@ type Unit = {
   floor: string;
   maxGuests: string;
   amenities: string[];
+  inclusions: string[];
+  honestyStoreNote?: string;
   checkIn: string;
   checkOut: string;
   photos: UnitPhoto[];
+  // Optional: extra photos shown only in the Room Inclusions modal gallery,
+  // beyond what's shown in the front-card gallery. Falls back to `photos` if omitted.
+  modalPhotos?: UnitPhoto[];
 };
 
 const UNITS: Unit[] = [
@@ -30,6 +36,27 @@ const UNITS: Unit[] = [
     floor: "2nd Floor",
     maxGuests: "4 adults + 1 infant/baby/kid (strictly below 3 feet)",
     amenities: ["PS4", "Bluetooth karaoke", "Billiard table", "YouTube", "Netflix", "Bath towels", "Cookingwares", "Diningwares"],
+    inclusions: [
+      "22 hours accommodation",
+      "50\" Smart TV with Netflix and YouTube",
+      "WiFi connection",
+      "Electric fan",
+      "Full body mirror",
+      "Billiards",
+      "Playstation 4",
+      "Board games and card games",
+      "Mini videoke with 2 mics",
+      "Induction stove",
+      "Refrigerator",
+      "Microwave oven",
+      "Rice cooker",
+      "Electric kettle",
+      "Dining and kitchenware for light cooking",
+      "2 bath towels",
+      "Hot and cold shower",
+      "Dental kit",
+      "Hair blower",
+    ],
     checkIn: "2 PM",
     checkOut: "12 NN",
     photos: [1, 2, 3, 4, 5].map((n) => ({
@@ -44,6 +71,18 @@ const UNITS: Unit[] = [
     floor: "14th Floor",
     maxGuests: "4 adults + 1 infant/baby/kid (strictly below 3 feet)",
     amenities: ["PS4", "YouTube", "Netflix", "Bath towels", "Cookingwares", "Diningwares"],
+    inclusions: [
+      "PS4 + 6 CDs",
+      "Fully airconditioned room",
+      "FREE use of unlimited WiFi",
+      "Unli karaoke (Magic Sing)",
+      "Smart TV with Netflix, YouTube",
+      "Premium queen size bed and sofabed",
+      "Induction stove, refrigerator, microwave, rice cooker, and electric kettle",
+      "Pans and other basic kitchen utensils",
+      "Fresh bedding, towels, and blankets",
+      "Guest kits (toothbrush, toothpaste, soap, and shampoo)",
+    ],
     checkIn: "2 PM",
     checkOut: "12 NN",
     photos: [1, 2, 3, 4, 5].map((n) => ({
@@ -58,6 +97,21 @@ const UNITS: Unit[] = [
     floor: "8th Floor",
     maxGuests: "4 adults + 1 infant/baby/kid (strictly below 3 feet)",
     amenities: ["YouTube", "Netflix", "Bath towels", "Cookingwares", "Diningwares"],
+    inclusions: [
+      "Fully airconditioned room",
+      "FREE use of unlimited WiFi",
+      "Karaoke (Magic Sing)",
+      "Smart TV with Netflix and YouTube",
+      "Premium queen size bed and sofabed",
+      "Induction stove",
+      "Refrigerator",
+      "Microwave",
+      "Rice cooker",
+      "Electric kettle",
+      "Pans and other basic kitchen utensils",
+      "Fresh bedding, towels, and blankets",
+      "Guest kits (toothbrush, toothpaste, soap, and shampoo)",
+    ],
     checkIn: "2 PM",
     checkOut: "12 NN",
     photos: [1, 2, 3, 4, 5].map((n) => ({
@@ -72,9 +126,36 @@ const UNITS: Unit[] = [
     floor: "15th Floor",
     maxGuests: "6 adults + 1 infant/baby/kid (strictly below 3 feet)",
     amenities: ["YouTube", "Netflix", "4 bath towels", "Cookingwares", "Diningwares"],
+    inclusions: [
+      "Air-conditioned rooms",
+      "55\" Smart TV (Netflix ready)",
+      "Bluetooth speaker",
+      "Mini karaoke",
+      "Wi-Fi",
+      "Cookwares",
+      "Dining set",
+      "Stove (light cooking only)",
+      "Air fryer",
+      "Microwave oven",
+      "Refrigerator",
+      "Electric kettle",
+      "Rice cooker",
+      "Electric fans",
+      "2 double-size beds",
+      "2-seater sofa bed",
+      "Water heater",
+      "Toiletries",
+      "4 bath towels",
+      "Hair blower",
+      "Iron/steamer",
+    ],
     checkIn: "2 PM",
     checkOut: "12 NN",
     photos: [1, 2, 3, 4, 5].map((n) => ({
+      src: `/images/other-units/unit-2br-15th-floor-${n}.jpg`,
+      alt: `2 BR Santorini 15th floor beach view unit photo ${n}`,
+    })),
+    modalPhotos: [1, 2, 3, 4, 5, 6, 7].map((n) => ({
       src: `/images/other-units/unit-2br-15th-floor-${n}.jpg`,
       alt: `2 BR Santorini 15th floor beach view unit photo ${n}`,
     })),
@@ -86,12 +167,46 @@ const UNITS: Unit[] = [
     floor: "16th Floor",
     maxGuests: "8 adults + 1 infant/baby/kid (strictly below 3 feet)",
     amenities: ["PS4", "Billiards", "Bluetooth karaoke", "YouTube", "Netflix", "4 bath towels", "Cookingwares", "Diningwares"],
+    inclusions: [
+      "Fully furnished unit with 2 rooms and a balcony",
+      "Room 1: queen-size bed + extra mattress",
+      "Room 2: single bed + extra mattress",
+      "Fully airconditioned rooms",
+      "UNLI WiFi, Netflix, and YouTube",
+      "Mini bluetooth karaoke",
+      "Gaming cards, boards, and many more games",
+      "PS4",
+      "Billiards",
+      "Study table",
+      "Hair blower",
+      "55-inch smart TV",
+      "Free use of 4 towels",
+      "Sofa",
+      "Dining table, refrigerator, microwave, rice cooker, kettle, induction cooker, and basic kitchen utensils",
+      "4 bath towels",
+      "Room slippers",
+      "Free use of shampoo, bath wash, and hand soap",
+      "Hot and cold shower",
+    ],
+    honestyStoreNote:
+      "Mini honesty store in the unit. Prices are on the inventory list in the kitchen drawer. Charges are deducted from your security deposit; if the deposit can't cover all expenses (e.g. grocery items and penalties incurred), an additional payment will be required.",
+    // Front-card gallery stays at 5 photos (main + 4 thumbnails = one row); the modal gets 9 via modalPhotos below.
     checkIn: "3 PM",
     checkOut: "1 PM",
-    photos: [1, 2, 3, 4, 5, 6].map((n) => ({
+    photos: [1, 2, 3, 4, 5].map((n) => ({
       src: `/images/other-units/unit-2br-deluxe-16th-floor-${n}.jpg`,
       alt: `2 BR Deluxe Santorini 16th floor beach and city view unit photo ${n}`,
     })),
+    modalPhotos: [
+      ...[1, 2, 3, 4, 5].map((n) => ({
+        src: `/images/other-units/unit-2br-deluxe-16th-floor-${n}.jpg`,
+        alt: `2 BR Deluxe Santorini 16th floor beach and city view unit photo ${n}`,
+      })),
+      ...[6, 7, 8, 9].map((n) => ({
+        src: `/images/other-units/unit-2br-deluxe-16th-floor-${n}.png`,
+        alt: `2 BR Deluxe Santorini 16th floor beach and city view unit photo ${n}`,
+      })),
+    ],
   },
   {
     slug: "2br-deluxe-17th-floor",
@@ -100,12 +215,44 @@ const UNITS: Unit[] = [
     floor: "17th Floor",
     maxGuests: "8 adults + 1 infant/baby/kid (strictly below 3 feet)",
     amenities: ["PS4", "Billiards", "Bluetooth karaoke", "YouTube", "Netflix", "4 bath towels", "Cookingwares", "Diningwares"],
-    checkIn: "3 PM",
-    checkOut: "1 PM",
-    photos: [1, 2, 3, 4, 5, 6].map((n) => ({
+    inclusions: [
+      "Fully furnished unit with 2 rooms and a balcony",
+      "Room 1: double-size bed + extra mattress",
+      "Room 2: single bed + extra mattress",
+      "Fully airconditioned rooms",
+      "UNLI WiFi, Netflix, and YouTube",
+      "Mini bluetooth karaoke",
+      "Gaming cards, boards, and many more games",
+      "PS4",
+      "Mini billiards",
+      "Full body mirror",
+      "43-inch smart TV",
+      "Free use of 4 towels",
+      "Sofa",
+      "Kitchen basic utensils, dining table, refrigerator, microwave, rice cooker, kettle, induction cooker",
+      "Room slippers",
+      "Free use of shampoo, bath wash, and hand soap",
+      "Hot and cold shower",
+    ],
+    honestyStoreNote:
+      "Mini honesty store in the unit. Prices are on the inventory list in the kitchen drawer. Charges are deducted from your security deposit; if the deposit can't cover all expenses (e.g. grocery items and penalties incurred), an additional payment will be required.",
+    // Front-card gallery stays at 5 photos (main + 4 thumbnails = one row); the modal gets 9 via modalPhotos below.
+    checkIn: "2 PM",
+    checkOut: "12 NN",
+    photos: [1, 2, 3, 4, 5].map((n) => ({
       src: `/images/other-units/unit-2br-deluxe-17th-floor-${n}.jpg`,
       alt: `2 BR Deluxe Santorini 17th floor beach and city view unit photo ${n}`,
     })),
+    modalPhotos: [
+      ...[1, 2, 3, 4, 5].map((n) => ({
+        src: `/images/other-units/unit-2br-deluxe-17th-floor-${n}.jpg`,
+        alt: `2 BR Deluxe Santorini 17th floor beach and city view unit photo ${n}`,
+      })),
+      ...[6, 7, 8, 9].map((n) => ({
+        src: `/images/other-units/unit-2br-deluxe-17th-floor-${n}.png`,
+        alt: `2 BR Deluxe Santorini 17th floor beach and city view unit photo ${n}`,
+      })),
+    ],
   },
 ];
 
@@ -170,12 +317,7 @@ export default function OtherUnitsPage() {
                 ))}
               </div>
 
-              <Link
-                href="/#contact"
-                className="mt-6 inline-block text-center rounded-full bg-clay-deep text-sand-light px-6 py-3 text-sm font-semibold hover:bg-ink transition-colors"
-              >
-                Inquire about this unit
-              </Link>
+              <RoomInclusionsButton unit={unit} />
             </div>
           </div>
         ))}
@@ -202,4 +344,3 @@ export default function OtherUnitsPage() {
     </div>
   );
 }
-
