@@ -15,7 +15,6 @@ const INCLUSION_GROUPS = [
       "PS4 (Games: NBA2K23, Tekken 7, It Takes Two, COD Black Ops, Uncharted, Grand Theft Auto V, Assassin's Creed IV, Resident Evil 6)",
       "Projector with projector screen",
       "40\" Google TV w/ JBL soundbar",
-      "Bluetooth karaoke (with 2 microphones)",
       "Platinum karaoke with song book (with 2 microphones)",
       "Board games",
       "Card games",
@@ -42,7 +41,6 @@ const INCLUSION_GROUPS = [
       "Multi-cooker",
       "Electric kettle",
       "Refrigerator and microwave oven",
-      "Circular induction cooker",
     ],
   },
   {

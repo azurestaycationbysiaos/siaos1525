@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { href: "/amenities", label: "Amenities" },
   { href: "/packages", label: "Room Decorations" },
   { href: "/proposals", label: "Proposal Packages" },
+  { href: "/other-units", label: "Other Units" },
   { href: "/food-offers", label: "Food Offers" },
   { href: "/faq", label: "FAQ" },
   { href: "/blog", label: "Blog" },
@@ -159,3 +160,4 @@ export default function Header() {
     </>
   );
 }
+
