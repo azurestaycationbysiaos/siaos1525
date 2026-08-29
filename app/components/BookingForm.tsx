@@ -37,6 +37,9 @@ export default function BookingForm({
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
         body: formData,
       });
       const result = await response.json();
@@ -45,9 +48,11 @@ export default function BookingForm({
         setStatus("success");
         form.reset();
       } else {
+        console.error("Web3Forms error:", result);
         setStatus("error");
       }
-    } catch {
+    } catch (err) {
+      console.error("Network error:", err);
       setStatus("error");
     }
   }
