@@ -4,7 +4,7 @@ import { useState, type FormEvent } from "react";
 
 const WEB3FORMS_ACCESS_KEY =
   process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ||
-  "ae425060-9d68-442b-a10c-8209a831d280";
+  "5701c29b-c2ee-4527-adf3-72e048ec7e35";
 
 type BookingFormProps = {
   heading: string;
