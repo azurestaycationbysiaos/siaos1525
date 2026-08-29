@@ -192,11 +192,11 @@ const UNITS: Unit[] = [
     ],
     checkIn: "2 PM",
     checkOut: "12 NN",
-    photos: [1, 2, 3, 4, 5].map((n) => ({
+    photos: [3, 1, 2, 4, 5].map((n) => ({
       src: `/images/other-units/unit-2br-deluxe-14th-floor-${n}.jpg`,
       alt: `2 BR Deluxe Santorini 14th floor beach and pool view unit photo ${n}`,
     })),
-    modalPhotos: [1, 2, 3, 4, 5, 6, 7, 8].map((n) => ({
+    modalPhotos: [3, 1, 2, 4, 5, 6, 7, 8].map((n) => ({
       src: `/images/other-units/unit-2br-deluxe-14th-floor-${n}.jpg`,
       alt: `2 BR Deluxe Santorini 14th floor beach and pool view unit photo ${n}`,
     })),
@@ -230,11 +230,11 @@ const UNITS: Unit[] = [
     ],
     checkIn: "2 PM",
     checkOut: "12 NN",
-    photos: [1, 2, 3, 4, 5].map((n) => ({
+    photos: [2, 1, 3, 4, 5].map((n) => ({
       src: `/images/other-units/unit-2br-14th-floor-beachview-${n}.jpg`,
       alt: `2 BR Santorini 14th floor beach view unit photo ${n}`,
     })),
-    modalPhotos: [1, 2, 3, 4, 5, 6].map((n) => ({
+    modalPhotos: [2, 1, 3, 4, 5, 6].map((n) => ({
       src: `/images/other-units/unit-2br-14th-floor-beachview-${n}.jpg`,
       alt: `2 BR Santorini 14th floor beach view unit photo ${n}`,
     })),
@@ -300,11 +300,11 @@ const UNITS: Unit[] = [
     ],
     checkIn: "2 PM",
     checkOut: "12 NN",
-    photos: [1, 2, 3, 4, 5].map((n) => ({
+    photos: [6, 2, 3, 4, 5].map((n) => ({
       src: `/images/other-units/unit-2br-18th-floor-positano-${n}.jpg`,
       alt: `2 BR Positano 18th floor beach view unit photo ${n}`,
     })),
-    modalPhotos: [1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => ({
+    modalPhotos: [6, 2, 3, 4, 5, 1, 7, 8, 9].map((n) => ({
       src: `/images/other-units/unit-2br-18th-floor-positano-${n}.jpg`,
       alt: `2 BR Positano 18th floor beach view unit photo ${n}`,
     })),
