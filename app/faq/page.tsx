@@ -68,16 +68,18 @@ const FAQS: {
     q: "What's included in the staycation?",
     a: "Every stay includes the 1-bedroom unit, a fully equipped kitchen, Netflix access, a projector, PS4 with games, Platinum karaoke with 2 microphones, and card and board games. Parking fees and wave pool access are not included and are paid separately at the building.",
   },
-    {
+  {
     q: "What is not included in the staycation price?",
-    a: "Parking (motorcycle ₱250–₱280, car ₱300–₱350 depending on duration) and wave pool access (₱250 per head per shift) are excluded and paid directly to Azure Urban Resort Residences, not to Azure Staycation by Siaos. For more information, visit our exclusions page.",
+    a: "Parking and wave pool access are excluded and paid directly to Azure Urban Resort Residences, not to Azure Staycation by Siaos. Wave pool access is ₱250 per head per shift. Parking can be pre-arranged with us (motorcycle ₱250–₱280, car ₱300–₱350), or paid at Azure's own booth, which charges ₱380 for overnight parking. For more information, visit our exclusions page.",
     aNode: (
       <>
-        Parking (motorcycle ₱250–₱280, car ₱300–₱350 depending on duration)
-        and wave pool access (₱250 per head per shift) are excluded and paid
-        directly to Azure Urban Resort Residences, not to Azure Staycation by
-              Siaos. For more information, visit our{" "}
-           <a
+        Parking and wave pool access are excluded and paid directly to Azure
+        Urban Resort Residences, not to Azure Staycation by Siaos. Wave pool
+        access is ₱250 per head per shift. Parking can be pre-arranged with
+        us (motorcycle ₱250–₱280, car ₱300–₱350), or paid at Azure&rsquo;s
+        own booth, which charges ₱380 for overnight parking. For more
+        information, visit our{" "}
+        <a
           href="https://azurestaycationbysiaos.com/exclusions"
           target="_blank"
           rel="noopener noreferrer"
@@ -111,6 +113,81 @@ const FAQS: {
   {
     q: "What payment methods are accepted?",
     a: "GCash, Maya, Vybe, and BPI (upon request). All accounts are under Lyryque Lysl Camylle Siaotong — always ask for payment proof verification.",
+  },
+  {
+    q: "Do I need to bring a valid ID?",
+    a: "Yes. Azure Urban Resort Residences requires a valid, government-issued ID for all occupants above 18 years old as part of their check-in and security protocol.",
+  },
+  {
+    q: "Can I enter via Grab, Angkas, or other ride-hailing apps?",
+    a: "Yes. Simply present your QR code and ID, and remove any glasses or caps if applicable. Your driver will also be asked to present an ID upon entering the premises.",
+  },
+  {
+    q: "What are the check-in and check-out times?",
+    a: "Check-in is at 2:00 PM and check-out is at 12:00 NN.",
+  },
+  {
+    q: "Can I cook or bring my own food?",
+    a: "Yes. Outside food and drinks are welcome with no corkage fee, and the unit has a full kitchen for light cooking such as reheating, boiling, and shallow frying. Grilling and slow-cooking methods aren't allowed. Full details are on our House Rules page.",
+    aNode: (
+      <>
+        Yes. Outside food and drinks are welcome with no corkage fee, and the
+        unit has a full kitchen for light cooking such as reheating, boiling,
+        and shallow frying. Grilling and slow-cooking methods aren&rsquo;t
+        allowed. Full details are on our{" "}
+        <Link href="/house-rules" className="text-clay-deep underline">
+          House Rules page
+        </Link>
+        .
+      </>
+    ),
+  },
+  {
+    q: "Can I order food delivery to the unit?",
+    a: "Yes, guests may order food, groceries, or other items via online delivery services. All deliveries must be picked up at the lobby or ground floor, not brought directly to the unit.",
+  },
+  {
+    q: "Is there a pool I can use?",
+    a: "Yes. Azure's wave pool and man-made beach are open Wednesday through Monday for a separate fee of ₱250 per head per shift, paid in cash directly to Azure. See our full Wave Pool Guide for schedules, dress code, and directions.",
+    aNode: (
+      <>
+        Yes. Azure&rsquo;s wave pool and man-made beach are open Wednesday
+        through Monday for a separate fee of ₱250 per head per shift, paid in
+        cash directly to Azure. See our full{" "}
+        <Link
+          href="/blog/azure-wave-pool-guide"
+          className="text-clay-deep underline"
+        >
+          Wave Pool Guide
+        </Link>{" "}
+        for schedules, dress code, and directions.
+      </>
+    ),
+  },
+  {
+    q: "What's nearby the unit?",
+    a: "SM Bicutan is about 1km away, along with convenience stores, restaurants, and cafes inside Azure Urban Resort Residences itself. See our guides to what's inside Azure and nearby places to eat for the full list.",
+    aNode: (
+      <>
+        SM Bicutan is about 1km away, along with convenience stores,
+        restaurants, and cafes inside Azure Urban Resort Residences itself.
+        See our guides to{" "}
+        <Link
+          href="/blog/establishments-inside-azure"
+          className="text-clay-deep underline"
+        >
+          what&rsquo;s inside Azure
+        </Link>{" "}
+        and{" "}
+        <Link
+          href="/blog/places-to-eat-near-azure-urban-resort-residences"
+          className="text-clay-deep underline"
+        >
+          nearby places to eat
+        </Link>
+        {" "}for the full list.
+      </>
+    ),
   },
 ];
 
