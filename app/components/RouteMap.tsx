@@ -48,8 +48,8 @@ export default function RouteMap() {
       const map = L.map(mapContainerRef.current).setView([DESTINATION.lat, DESTINATION.lng], 12);
       mapRef.current = map;
 
-      L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
-        attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: '&copy; OpenStreetMap contributors',
         maxZoom: 19,
       }).addTo(map);
 
@@ -135,24 +135,3 @@ function getOrigin(): Promise<{ lat: number; lng: number; name: string }> {
     if (!navigator.geolocation) {
       resolve(FALLBACK_ORIGIN);
       return;
-    }
-    navigator.geolocation.getCurrentPosition(
-      (pos) => resolve({ lat: pos.coords.latitude, lng: pos.coords.longitude, name: "Your location" }),
-      () => resolve(FALLBACK_ORIGIN),
-      { timeout: 6000 }
-    );
-  });
-}
-
-async function fetchRoute(
-  origin: { lat: number; lng: number },
-  dest: { lat: number; lng: number }
-): Promise<[number, number][]> {
-  const url = `https://router.project-osrm.org/route/v1/driving/${origin.lng},${origin.lat};${dest.lng},${dest.lat}?overview=full&geometries=geojson`;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error("Routing request failed");
-  const data = await res.json();
-  const coords = data?.routes?.[0]?.geometry?.coordinates;
-  if (!coords) throw new Error("No route found");
-  return coords;
-}
