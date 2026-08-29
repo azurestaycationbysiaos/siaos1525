@@ -28,7 +28,7 @@ export default function AcceptedIdsPage() {
   return (
     <div className="flex flex-col">
       <Header />
-      <section className="max-w-3xl px-6 pt-16 pb-10 mr-auto">
+      <section className="mx-auto max-w-3xl px-6 pt-16 pb-10">
         <p className="uppercase tracking-[0.2em] text-xs font-semibold text-sage-deep mb-3">
           {SITE_NAME}
         </p>
@@ -42,17 +42,21 @@ export default function AcceptedIdsPage() {
         </p>
       </section>
 
-      <section className="max-w-3xl px-6 pb-10 mr-auto">
+      <section className="mx-auto max-w-3xl px-6 pb-10">
         <ul className="divide-y divide-ink/10 border-t border-b border-ink/10">
           {ACCEPTED_IDS.map((id) => (
-            <li key={id} className="py-3 text-ink text-sm">
-              ✦ &nbsp; {id}
+            <li
+              key={id}
+              className="py-3 pl-1 text-ink text-sm flex items-baseline gap-3"
+            >
+              <span className="text-clay-deep">✦</span>
+              <span>{id}</span>
             </li>
           ))}
         </ul>
       </section>
 
-      <section className="max-w-3xl px-6 pb-20 mr-auto">
+      <section className="mx-auto max-w-3xl px-6 pb-20">
         <div className="border border-clay-deep/30 rounded-2xl p-6 bg-[#f4ece1]">
           <p className="text-ink text-sm font-semibold mb-2">
             Company IDs are no longer accepted.
