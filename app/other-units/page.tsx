@@ -292,6 +292,7 @@ const UNITS: Unit[] = [
       "2 guest kits",
       "Equipped kitchen",
       "YouTube",
+      "Flip flops",
       "Water heater",
       "Game boards",
       "Electric fan",
@@ -345,16 +346,10 @@ const UNITS: Unit[] = [
       src: `/images/other-units/unit-2br-deluxe-16th-floor-${n}.jpg`,
       alt: `2 BR Deluxe Santorini 16th floor beach and city view unit photo ${n}`,
     })),
-    modalPhotos: [
-      ...[1, 2, 3, 4, 5].map((n) => ({
-        src: `/images/other-units/unit-2br-deluxe-16th-floor-${n}.jpg`,
-        alt: `2 BR Deluxe Santorini 16th floor beach and city view unit photo ${n}`,
-      })),
-      ...[6, 7, 8, 9].map((n) => ({
-        src: `/images/other-units/unit-2br-deluxe-16th-floor-${n}.png`,
-        alt: `2 BR Deluxe Santorini 16th floor beach and city view unit photo ${n}`,
-      })),
-    ],
+    modalPhotos: [1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => ({
+      src: `/images/other-units/unit-2br-deluxe-16th-floor-${n}.jpg`,
+      alt: `2 BR Deluxe Santorini 16th floor beach and city view unit photo ${n}`,
+    })),
   },
   {
     slug: "2br-deluxe-17th-floor",
