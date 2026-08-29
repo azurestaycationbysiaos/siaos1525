@@ -82,3 +82,15 @@ export default function AcceptedIdsPage() {
           or see our{" "}
           <Link href="/faq" className="text-clay-deep underline">
             FAQ
+          </Link>{" "}
+          and{" "}
+          <Link href="/house-rules" className="text-clay-deep underline">
+            house rules
+          </Link>
+          .
+        </p>
+      </section>
+      <Footer />
+    </div>
+  );
+}
