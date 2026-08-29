@@ -5,7 +5,7 @@ description: "Full arrival guide for staycation guests at Azure Urban Resort Res
 slug: "azure-urban-resort-residences-arrival-guide"
 author:
   name: "Azure Staycation by Siaos"
-coverImage: "/images/blog/azure-arrival-guide.webp"
+coverImage: "/images/blog/azure-arrival-guide/azure-arrival-guide-cover.webp"
 status: "published"
 ---
 
@@ -23,7 +23,7 @@ Every staycation guest enters through Azure's main entrance, Gate 2. Save your Q
 
 Visitor pass steps at Santorini Tower depend on which day you arrive.
 
-- **Monday to Thursday** — get your visitor pass at the lobby, present your QR code and the IDs of all occupants for verification, then leave one Philippine government-issued ID with the concierge
+- **Monday to Thursday** — get your visitor pass at the lobby, present your QR code and the IDs of all occupants for verification, then leave one [Philippine government-issued ID](https://azurestaycationbysiaos.com/accepted-ids) with the concierge
 - **Friday to Sunday** — go to the verifier booth and present your QR code plus occupant IDs, line up at the waiting area, then once called, go to the lobby, surrender one ID, and receive visitor passes for your whole group
 - **Take care of your pass** — a lost or damaged visitor pass costs ₱500 to replace, so keep it in the same pocket or bag for the length of your stay
 
@@ -71,14 +71,20 @@ No vehicle, no parking steps. Just follow the Gate 2 entry and visitor pass proc
 
 ## Settling Your Balance
 
-Once you're in the unit, settle any remaining balance through the available mode of payments sent by your host. 
+Once you're in the unit, settle any remaining balance through:
+
+- **Maya** — 09475042783
+- **GCash** — 09209701226
+- **BPI** — 8159416654
+- **Vybe** — 09209701226
+- **Account name** — Lyryque Lysl Camylle Siaotong
 
 Send a screenshot of your payment once it's done, so your booking is fully confirmed on both ends.
 
 ## Arrival Checklist
 
 1. Save your QR code to your phone before you leave home
-2. Bring a Philippine government-issued ID for every occupant
+2. Bring a [Philippine government-issued ID](https://azurestaycationbysiaos.com/accepted-ids) for every occupant
 3. Check whether your visitor pass process depends on the day (Monday to Thursday vs. Friday to Sunday)
 4. Confirm which parking option you're using, pre-arranged or direct, and have the right proof ready (authorization email or visitor's pass)
 5. Match your unit number against your QR code before heading up
@@ -88,7 +94,7 @@ Send a screenshot of your payment once it's done, so your booking is fully confi
 
 ### What do I need to bring to enter Azure Urban Resort Residences?
 
-Bring a Philippine government-issued ID for every occupant and have your QR code saved on your phone. One ID stays with the concierge or verifier for the length of your stay.
+Bring a [Philippine government-issued ID](https://azurestaycationbysiaos.com/accepted-ids) for every occupant and have your QR code saved on your phone. One ID stays with the concierge or verifier for the length of your stay.
 
 ### What happens if I lose my visitor pass?
 
