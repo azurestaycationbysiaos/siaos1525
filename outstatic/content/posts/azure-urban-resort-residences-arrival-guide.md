@@ -5,7 +5,7 @@ description: "Full arrival guide for staycation guests at Azure Urban Resort Res
 slug: "azure-urban-resort-residences-arrival-guide"
 author:
   name: "Azure Staycation by Siaos"
-coverImage: "/images/blog/azure-arrival-guide/azure-arrival-guide-cover.webp"
+coverImage: "/images/blog/azure-arrival-guide.webp"
 status: "published"
 ---
 
