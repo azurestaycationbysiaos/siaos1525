@@ -86,7 +86,7 @@ export default function Header() {
 
           <div className="flex items-center gap-3 shrink-0">
             <Link
-              href="/proposals#book"
+              href="/#book"
               className="hidden sm:inline-block shrink-0 whitespace-nowrap rounded-full bg-ink text-sand-light px-5 py-2 text-sm font-semibold hover:bg-clay-deep transition-colors"
             >
               Book a date
@@ -153,7 +153,7 @@ export default function Header() {
                 </Link>
               ))}
               <Link
-                href="/proposals#book"
+                href="/#book"
                 onClick={() => setOpen(false)}
                 className="mt-4 text-center rounded-full bg-ink text-sand-light px-5 py-3 text-sm font-semibold"
               >
