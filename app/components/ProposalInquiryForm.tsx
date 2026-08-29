@@ -106,9 +106,11 @@ export default function ProposalInquiryForm() {
         <input
           id="date"
           name="date"
-          type="date"
+          type="text"
           required
-          className="mt-1 w-full rounded-lg bg-sand-light border border-ink/20 px-4 py-3 text-ink focus:outline-none focus:border-clay-deep"
+          inputMode="numeric"
+          placeholder="mm/dd/yyyy"
+          className="mt-1 w-full rounded-lg bg-sand-light border border-ink/20 px-4 py-3 text-ink placeholder:text-ink-soft/40 focus:outline-none focus:border-clay-deep"
         />
       </div>
       <div>

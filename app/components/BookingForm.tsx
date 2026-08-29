@@ -106,10 +106,12 @@ export default function BookingForm({
               <label htmlFor="bf-date" className="text-sm text-ink-soft">Preferred date</label>
               <input
                 id="bf-date"
-                type="date"
+                type="text"
                 name="preferred_date"
                 required
-                className="mt-1 w-full rounded-lg bg-cream-card border border-ink/20 px-4 py-3 text-ink focus:outline-none focus:border-clay-deep"
+                inputMode="numeric"
+                placeholder="mm/dd/yyyy"
+                className="mt-1 w-full rounded-lg bg-cream-card border border-ink/20 px-4 py-3 text-ink placeholder:text-ink-soft/40 focus:outline-none focus:border-clay-deep"
               />
             </div>
             <div>
