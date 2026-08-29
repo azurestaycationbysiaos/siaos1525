@@ -5,7 +5,7 @@ description: "Full arrival guide for staycation guests at Azure Urban Resort Res
 slug: "azure-urban-resort-residences-arrival-guide"
 author:
   name: "Azure Staycation by Siaos"
-coverImage: "/images/blog/azure-arrival-guide/azure-arrival-guide-cover.webp"
+coverImage: "/images/blog/azure-arrival-guide.webp"
 status: "published"
 ---
 
@@ -71,13 +71,7 @@ No vehicle, no parking steps. Just follow the Gate 2 entry and visitor pass proc
 
 ## Settling Your Balance
 
-Once you're in the unit, settle any remaining balance through:
-
-- **Maya** — 09475042783
-- **GCash** — 09209701226
-- **BPI** — 8159416654
-- **Vybe** — 09209701226
-- **Account name** — Lyryque Lysl Camylle Siaotong
+Once you're in the unit, settle any remaining balance through the available payment channels of your host. 
 
 Send a screenshot of your payment once it's done, so your booking is fully confirmed on both ends.
 
