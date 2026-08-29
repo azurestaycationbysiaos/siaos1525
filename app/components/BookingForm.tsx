@@ -53,7 +53,7 @@ export default function BookingForm({
   }
 
   return (
-    <section className="bg-cream-card border-y border-ink/10">
+    <section id="book" className="bg-cream-card border-y border-ink/10">
       <div className="mx-auto max-w-4xl px-6 py-24">
         <div className="text-center mb-10">
           <h2 className="font-display text-3xl text-ink mb-3">{heading}</h2>
