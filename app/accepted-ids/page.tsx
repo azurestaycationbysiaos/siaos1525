@@ -43,11 +43,11 @@ export default function AcceptedIdsPage() {
       </section>
 
       <section className="mx-auto max-w-3xl px-6 pb-10">
-        <ul className="divide-y divide-ink/10 border-t border-b border-ink/10">
+        <ul className="list-none pl-0 divide-y divide-ink/10 border-t border-b border-ink/10">
           {ACCEPTED_IDS.map((id) => (
             <li
               key={id}
-              className="py-3 pl-1 text-ink text-sm flex items-baseline gap-3"
+              className="py-3 text-ink text-sm flex items-baseline gap-3"
             >
               <span className="text-clay-deep">✦</span>
               <span>{id}</span>
