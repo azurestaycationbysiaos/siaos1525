@@ -25,6 +25,9 @@ export default function ProposalInquiryForm() {
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
         body: formData,
       });
       const result = await res.json();
@@ -33,9 +36,11 @@ export default function ProposalInquiryForm() {
         setStatus("success");
         form.reset();
       } else {
+        console.error("Web3Forms error:", result);
         setStatus("error");
       }
-    } catch {
+    } catch (err) {
+      console.error("Network error:", err);
       setStatus("error");
     }
   }
