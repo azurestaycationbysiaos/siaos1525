@@ -292,7 +292,6 @@ const UNITS: Unit[] = [
       "2 guest kits",
       "Equipped kitchen",
       "YouTube",
-      "Flip flops",
       "Water heater",
       "Game boards",
       "Electric fan",
