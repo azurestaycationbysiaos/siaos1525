@@ -116,7 +116,17 @@ const FAQS: {
   },
   {
     q: "Do I need to bring a valid ID?",
-    a: "Yes. Azure Urban Resort Residences requires a valid, government-issued ID for all occupants above 18 years old as part of their check-in and security protocol.",
+    a: "Yes. Azure Urban Resort Residences requires a valid, government-issued ID for all occupants above 18 years old. See our accepted IDs page for the full list.",
+    aNode: (
+      <>
+        Yes. Azure Urban Resort Residences requires a valid, government-issued
+        ID for all occupants above 18 years old. See our{" "}
+        <Link href="/accepted-ids" className="text-clay-deep underline">
+          accepted IDs page
+        </Link>{" "}
+        for the full list.
+      </>
+    ),
   },
   {
     q: "Can I enter via Grab, Angkas, or other ride-hailing apps?",
@@ -124,7 +134,7 @@ const FAQS: {
   },
   {
     q: "What are the check-in and check-out times?",
-    a: "Check-in is at 2:00 PM and check-out is at 12:00 NN.",
+    a: "Standard check-in is at 2:00 PM and check-out is at 12:00 NN. We do offer flexible check-in and check-out times, provided they don't clash with our other bookings — just message us ahead of time so we can check availability.",
   },
   {
     q: "Can I cook or bring my own food?",
@@ -186,6 +196,57 @@ const FAQS: {
           nearby places to eat
         </Link>
         {" "}for the full list.
+      </>
+    ),
+  },
+  {
+    q: "Are pets allowed?",
+    a: "We love fur babies, but pets are not allowed for staycation guests at Azure. A ₱7,000 penalty applies for unauthorized pets. Pet registration is exclusive to residents and unit owners and is subject to Azure's approval process. However, there is a pet hotel inside Azure where you can board your pet. Contact them directly for more information before booking.",
+    aNode: (
+      <>
+        We love fur babies, but pets are not allowed for staycation guests at
+        Azure. A ₱7,000 penalty applies for unauthorized pets. Pet
+        registration is exclusive to residents and unit owners and is
+        subject to Azure&rsquo;s approval process.
+        <br />
+        <br />
+        However, there is a{" "}
+        <a
+          href="https://www.facebook.com/share/1Bipex53AF/?mibextid=wwXIfr"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-clay-deep underline"
+        >
+          pet hotel inside Azure
+        </a>{" "}
+        where you can board your pet. Contact them directly for more
+        information before booking.
+      </>
+    ),
+  },
+  {
+    q: "Can I just park directly at Azure instead of pre-arranging it?",
+    a: "Yes, but there's a process. You'll need to be verified first and get your visitor's pass before lining up at the cashier booth to have a parking card issued. Please note we have no control over the queue or the cashier's efficiency, so this is running time that may take a while, similar to any other establishment. Azure's direct parking rates are: car ₱65 for the first 3 hours, then ₱15/hour; motorcycle ₱50 for the first 3 hours, then ₱10/hour; overnight charge ₱380; lost ticket charge ₱300. Alternatively, you can have your parking pre-arranged by us, subject to availability — just let us know if you'll need a parking slot. Pre-arranged parking means you don't need to line up before parking or exiting. You'll still need to line up briefly at the verification booth on arrival, but after that, you'll be issued a parking pass instead of a parking card, with a designated slot letting you enter and exit multiple times during your stay. Just inform the security guard at the parking entrance or exit.",
+  },
+  {
+    q: "What if we exceed the allowable number of pax in a unit?",
+    a: "Per Azure's policy, the maximum allowable number of occupants per unit is strictly enforced: 1BR fits 4 pax, 2BR fits 6 pax, and 2BR Deluxe fits 8 pax, plus 1 infant or child (0–3 years old, strictly below 3 ft). If your group is larger, you may book multiple units through our partner units page, subject to availability.",
+    aNode: (
+      <>
+        Per Azure&rsquo;s policy, the maximum allowable number of occupants
+        per unit is strictly enforced: 1BR fits 4 pax, 2BR fits 6 pax, and
+        2BR Deluxe fits 8 pax, plus 1 infant or child (0–3 years old,
+        strictly below 3 ft). If your group is larger, you may book
+        multiple units through our{" "}
+        <a
+          href="https://azurestaycationbysiaos.com/other-units"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-clay-deep underline"
+        >
+          partner units page
+        </a>
+        , subject to availability.
       </>
     ),
   },
