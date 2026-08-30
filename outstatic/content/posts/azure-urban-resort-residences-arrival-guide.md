@@ -49,7 +49,7 @@ Pre-arranged parking is booked ahead of time through your host and skips Azure's
 
 One clear benefit of this option: your pass lets you enter and exit multiple times during your stay, not just once.
 
-### Direct Azure Parking (Walk-In)
+### Direct Azure Parking
 
 ![Direct Azure parking rates card, Azure Urban Resort Residences](/images/blog/azure-arrival-guide/direct-azure-parking-rates.webp)
 

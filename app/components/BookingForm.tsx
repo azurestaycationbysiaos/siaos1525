@@ -4,7 +4,7 @@ import { useState, type FormEvent } from "react";
 
 const WEB3FORMS_ACCESS_KEY =
   process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ||
-  "ae425060-9d68-442b-a10c-8209a831d280";
+  "5701c29b-c2ee-4527-adf3-72e048ec7e35";
 
 type BookingFormProps = {
   heading: string;
@@ -37,6 +37,9 @@ export default function BookingForm({
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
         body: formData,
       });
       const result = await response.json();
@@ -45,15 +48,17 @@ export default function BookingForm({
         setStatus("success");
         form.reset();
       } else {
+        console.error("Web3Forms error:", result);
         setStatus("error");
       }
-    } catch {
+    } catch (err) {
+      console.error("Network error:", err);
       setStatus("error");
     }
   }
 
   return (
-    <section className="bg-cream-card border-y border-ink/10">
+    <section id="book" className="bg-cream-card border-y border-ink/10">
       <div className="mx-auto max-w-4xl px-6 py-24">
         <div className="text-center mb-10">
           <h2 className="font-display text-3xl text-ink mb-3">{heading}</h2>

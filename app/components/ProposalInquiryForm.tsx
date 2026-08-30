@@ -5,7 +5,7 @@ import { useState } from "react";
 // Matches the same key used across the rest of the site (see BookingForm.tsx)
 const WEB3FORMS_ACCESS_KEY =
   process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ||
-  "ae425060-9d68-442b-a10c-8209a831d280";
+  "5701c29b-c2ee-4527-adf3-72e048ec7e35";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -25,6 +25,9 @@ export default function ProposalInquiryForm() {
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
         body: formData,
       });
       const result = await res.json();
@@ -33,9 +36,11 @@ export default function ProposalInquiryForm() {
         setStatus("success");
         form.reset();
       } else {
+        console.error("Web3Forms error:", result);
         setStatus("error");
       }
-    } catch {
+    } catch (err) {
+      console.error("Network error:", err);
       setStatus("error");
     }
   }
