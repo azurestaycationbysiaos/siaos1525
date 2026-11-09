@@ -29,7 +29,7 @@ export const CONTACT = {
   addressFull: "15th Floor, Santorini Tower, Azure Urban Resort Residences, Parañaque",
   email: "staycationnearme2023@gmail.com",
   phone: "+639475042783",
-  viber: "+639209701226",
+  viber: "+639475042783",
   whatsapp1: "+639209701226",
   whatsapp2: "+639919252497",
   calendarEmbedSrc:
