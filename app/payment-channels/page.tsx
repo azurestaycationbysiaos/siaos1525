@@ -11,8 +11,8 @@ export const metadata = {
 const CHANNELS = [
   { name: "BPI", number: "8159416654", qr: "/images/payment/qr-bpi.jpg" },
    { name: "Maya", number: "0947 504 2783", qr: "/images/payment/qr-maya.jpg" },
-  { name: "GCash", number: "0920 970 1226", qr: "/images/payment/qr-gcash.jpg" },
-  { name: "Vybe", number: "0920 970 1226", qr: "/images/payment/qr-vybe.jpg" },
+  { name: "GCash", number: "0947 504 2783", qr: "/images/payment/qr-gcash.jpg" },
+  { name: "Vybe", number: "0947 504 2783", qr: "/images/payment/qr-vybe.jpg" },
 ];
 
 export default function PaymentChannelsPage() {
@@ -35,7 +35,7 @@ export default function PaymentChannelsPage() {
         <ul className="text-ink-soft leading-relaxed mb-10 max-w-xl list-disc list-inside space-y-1">
           <li>Email: <a href="mailto:staycationnearme2023@gmail.com" className="underline">staycationnearme2023@gmail.com</a></li>
           <li>Phone: <a href="tel:+639475042783" className="underline">0947 504 2783</a></li>
-          <li>Viber: 0920 970 1226</li>
+          <li>Viber: 0947 504 2783</li>
           <li>WhatsApp: <a href="https://wa.me/639209701226" className="underline">+63 920 970 1226</a></li>
           <li>WhatsApp: <a href="https://wa.me/639919252497" className="underline">+63 991 925 2497</a></li>
         </ul>
