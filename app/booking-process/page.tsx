@@ -29,9 +29,9 @@ export default function BookingProcessPage() {
             <h2>1. Send the reservation fee</h2>
             <p>QR codes are available on our Payment Channels page. You can pay via:</p>
             <ul className="list-disc pl-5 text-ink-soft space-y-1 mb-3">
-              <li>GCash — 0920 970 1226</li>
-              <li>Maya — 0920 970 1226</li>
-              <li>Vybe — 0920 970 1226</li>
+              <li>GCash — 0947 504 2783</li>
+              <li>Maya — 0947 504 2783</li>
+              <li>Vybe — 0947 504 2783</li>
               <li>BPI — available upon request</li>
             </ul>
             <p>All accounts are under Lyryque Lysl Camylle Siaotong. Once done, please send us your payment proof for verification.</p>
