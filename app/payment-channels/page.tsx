@@ -11,8 +11,8 @@ export const metadata = {
 const CHANNELS = [
   { name: "BPI", number: "8159416654", qr: "/images/payment/qr-bpi.jpg" },
    { name: "Maya", number: "0947 504 2783", qr: "/images/payment/qr-maya.jpg" },
-  { name: "GCash", number: "0947 504 2783", qr: "/images/payment/qr-gcash.jpg" },
-  { name: "Vybe", number: "0947 504 2783", qr: "/images/payment/qr-vybe.jpg" },
+  { name: "GCash", number: "0947 504 2783", qr: "/images/payment/qr-gcash.jpeg" },
+  { name: "Vybe", number: "0947 504 2783", qr: "/images/payment/qr-vybe.jpeg" },
 ];
 
 export default function PaymentChannelsPage() {
